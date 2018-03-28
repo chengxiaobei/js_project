@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>首页</title>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/public.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.css">
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<style type="text/css">
+.index-lb-btn{position:absolute;bottom:15px;right:0;z-index: 2;}
+.index-lb-btn a{display:inline-block;width:16px;height:4px;background:#dedede;}
+.index-lb-btn a.lb-checked{background:#008cd6;}
+.index-hx-bottomone{width: 100px;}
+</style>
+<script type="text/javascript">
+$(window).ready(function(){
+  //首页图片轮播
+  var mySwiper = new Swiper('.swiper-container', {
+    autoplay: 5000,//可选选项，自动滑动
+    // width : window.innerWidth,swiper-pagination
+    pagination : '.index-lb-btn',
+    paginationClickable :true,
+    loop:true
+  });
+  //图片上文字轮播
+  var mySwiper = new Swiper('.swiper-container-text', {
+    autoplay: 5000,//可选选项，自动滑动
+    // width : window.innerWidth,swiper-pagination
+    pagination : '.index-lb-btn',
+    paginationClickable :true,
+
+    loop:true
+  });
+  //核心产品轮播
+  // var mySwiper = new Swiper('.my-container',{
+  //   wrapperClass : 'my-wrapper',
+  //   slideClass : 'my-slide',
+  //   slidesPerView: 'auto',
+  //   // width:'auto',
+  //   spaceBetween: 40,
+  //   loop:true
+  // })
+})
+</script>
+</head>
+<body>
+  <header>
+    <div class="index-header">
+      <div class="header-main">
+        <img src="images/bbd-logo.png" class="left header-leftlogo">
+        <!--选中时使用类header-checkedtext-->
+        <div class="right header-main-righttext">
+          <ul>
+            <li class="header-checkedtext">首页</li>
+            <li>核心产品</li>
+            <li>商业案例</li>
+            <li>关于佰邦达</li>
+          </ul>
+          <div class="clearf"></div>
+        </div>
+        <div class="clearf"></div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <!--大轮播-->
+    <!-- 轮播图最外层容器 -->
+    <div class="index-lunbo">
+      <div class="swiper-container">
+      <ul class="swiper-wrapper">
+        <li class="index-lunbomain swiper-slide">
+           <img src="images/banner01.png">
+        </li>
+        <li class="index-lunbomain swiper-slide">
+           <img src="images/banner01.png">
+        </li>
+        <li class="index-lunbomain swiper-slide">
+           <img src="images/banner01.png">
+        </li>
+      </ul>
+      </div>
+      <!--<ul>
+          <li>
+            <img src="../images/hxpro-lunbo.png">
+          </li>
+        </ul>-->
+      <!--轮播下面的蒙层部分-->
+      <div class="index-mengceng swiper-container-text">
+        <div class="index-mengceng-main swiper-wrapper">
+          <!-- <div class="swiper-container-text"> -->
+            <!-- <ul class=""> -->
+              <!-- <li class="swiper-slide"> -->
+                <div class="left swiper-slide">
+                  <h3>天津中新生态城</h3>
+                  <h4>智慧城市项目</h4>
+                  <p>ECO CITY SMART CITY PROJECT</p>
+                </div>
+              <!-- </li> -->
+              <!-- <li class="swiper-slide"> -->
+                <div class="left swiper-slide">
+                  <h3>天津中新生态城</h3>
+                  <h4>智慧城市项目</h4>
+                  <p>ECO CITY SMART CITY PROJECT</p>
+                </div>
+              <!-- </li> -->
+              <!-- <li class="swiper-slide"> -->
+                <div class="left swiper-slide">
+                  <h3>天津中新生态城</h3>
+                  <h4>智慧城市项目</h4>
+                  <p>ECO CITY SMART CITY PROJECT</p>
+                </div>
+              <!-- </li> -->
+            <!-- </ul> -->
+          <!-- </div>   -->
+        </div>
+          <div class="right index-lb-btn">
+            <!--选中使用类lb-checked-->
+            <a class="lb-checked"></a>
+            <a></a>
+            <a></a>
+          </div>
+          <div class="clearf"></div>
+      </div>
+    </div>
+    <!--第二块核心产品上面-->
+    <div class="index-hx-linetwo">
+      <div class="index-hx">
+        <p>核心产品</p>
+      </div>
+    </div>
+    <!--第二块核心产品下面-->
+    <div class="index-hx-bottom">
+      <div class="index-hx-bottommain">
+        <!--第一个-->
+        <div class="left index-hx-bottomone">
+          <img src="images/icon-c2b.png">
+          <p class="index-hx-toptext">佰邦达转型云1</p>
+          <p class="index-hx-bottomtext">C2B移动云平台</p>
+          <a>了解详情</a>
+        </div>
+        <!--第二个-->
+        <div class="left index-hx-bottomone">
+          <img src="images/icon-b2b.png">
+          <p class="index-hx-toptext">佰邦达转型云2</p>
+          <p class="index-hx-bottomtext">C2B移动云平台</p>
+          <a>了解详情</a>
+        </div>
+        <!--第三个-->
+        <div class="left index-hx-bottomone">
+          <img src="images/icon-大数据.png">
+          <p class="index-hx-toptext">佰邦达转型云3</p>
+          <p class="index-hx-bottomtext">C2B移动云平台</p>
+          <a>了解详情</a>
+        </div>
+        <!--第一个-->
+        <div class="left index-hx-bottomone">
+          <img src="images/icon-c2b.png">
+          <p class="index-hx-toptext">佰邦达转型云4</p>
+          <p class="index-hx-bottomtext">C2B移动云平台</p>
+          <a>了解详情</a>
+        </div>
+        <!--第一个-->
+        <div class="left index-hx-bottomone">
+          <img src="images/icon-c2b.png">
+          <p class="index-hx-toptext">佰邦达转型云5</p>
+          <p class="index-hx-bottomtext">C2B移动云平台</p>
+          <a>了解详情</a>
+        </div>
+        <!-- <div class="clearf"></div> -->
+      </div>
+    </div>
+    <div class="huibeijing"></div>
+    <!--互联网模块-->
+    <div class="index-hlw">
+      <img src="images/hlw-jjfa.png" class="hlw-img">
+      <div class="index-hlw-tab">
+        <ul>
+          <li>
+            <!--点击加在这个div上-->
+            <div class="hlw-tab-main">
+              <img src="images/航空.png">
+              <p>航空</p>
+            </div>
+          </li>
+          <li>
+            <div class="hlw-tab-main">
+              <img src="images/医疗.png">
+              <p>医疗</p>
+            </div>
+          </li>
+          <li>
+            <div class="hlw-tab-main">
+              <img src="images/养殖.png">
+              <p>养殖</p>
+            </div>
+          </li>
+          <li>
+            <div class="hlw-tab-main">
+              <img src="images/美妆.png">
+              <p>美妆</p>
+            </div>
+          </li>
+          <li>
+            <div class="hlw-tab-main">
+              <img src="images/办公.png">
+              <p>办公</p>
+            </div>
+          </li>
+          <li>
+            <div class="hlw-tab-main">
+              <img src="images/政府.png">
+              <p>政府</p>
+            </div>
+          </li>
+        </ul>
+        <div class="clearf"></div>
+      </div>
+    </div>
+    <!--联系我们模块-->
+    <div class="index-lxus">
+      <div class="index-lxus-main">
+        <ul>
+          <li>
+            <img src="images/telephone.png" class="left">
+            <p class="left">022-65837100</p>
+          </li>
+          <li>
+            <img src="images/person.png" class="left">
+            <p class="left">022-65837100</p>
+          </li>
+          <li>
+            <img src="images/location.png" class="left">
+            <p class="left">天津经济技术开发区第二大街57号泰达MSD-G1座11层</p>
+          </li>
+          <li>
+            <img src="images/simple.png" class="left">
+            <p class="left">service@bbdtek.com</p>
+          </li>
+        </ul>
+        <div class="clearf"></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-main">
+      京ICP备09029096号-1京公网安备11010802011114
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@charset "utf-8";
+*{margin:0; padding:0; word-wrap:break-word;}
+body{color:#333;background:#fff;height: 100%; margin:0 auto;width:100%;-webkit-text-size-adjust:none;font-family:"微软雅黑","helvetica";min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+img,input,select{vertical-align:middle;}
+img {border:0;}
+li{list-style-type:none;}
+table{border-collapse:collapse; border-spacing:0;}
+th,td{padding:0;}
+input,textarea{color:#333 !important; font-family:'微软雅黑';}
+input,button,select,textarea{outline:none;} 
+/*li input::-webkit-input-placeholder{color: #BDBDBE;}
+li input::-moz-placeholder{color: #BDBDBE;}
+li input:-ms-input-placeholder{color: #BDBDBE;}
+li textarea::-webkit-textarea-placeholder{color: #BDBDBE;}
+li textarea::-moz-textarea-placeholder{color: #BDBDBE;}
+li textarea:-ms-textarea-placeholder{color: #BDBDBE;}*/
+a{outline:medium none; text-decoration:none;}
+a:hover{color:#333;text-decoration:none;}
+/* 浮动 、清除 其它 */
+.left{float:left !important; display:inline;}
+.right{float:right !important; display:inline;}
+.clearf{clear:both;line-height:0;height:0%;font:0px Arial; overflow:hidden;}
+.wrap{margin: 0 auto; width:100%; position:relative;}
+.dateHeadHk{background-color:rgb(249, 249, 249)}
+.clearfloat:after{
+	display:block;
+	clear:both;
+	content:"";
+	visibility:hidden;
+	height:0;}
+.clearfloat{
+	zoom:1;
+}
+/*
+ *遮罩
+ */
+.mask{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 6000;
+  background:url(../images/zhezhao-img.png) repeat left top;
+  /*background: rgba(255,255,255,.7);*/
+  display: none;
+}
+/*核心产品页面第二个导航的文字颜色*/
+.jhuang-color{color:#f1c886 !important;}

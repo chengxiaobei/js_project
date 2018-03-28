@@ -1,0 +1,704 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <title>佰邦达-首页</title>
+  <link type="text/css" rel="stylesheet" href="../css/style.css">
+  <link type="text/css" rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="">
+  <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+  <script src="../js/alert.js"></script>
+  <script type="text/javascript" src="../js/touchslider.dev.js"></script>
+  <script type="text/javascript" src="../js/jquery.touchSlider.js"></script>
+  <script type="text/javascript" src="../js/slick.min.js"></script>
+  <script type="text/javascript" src="../js/scripts.js"></script>
+
+
+  <style type="text/css">
+  .goup{
+    position:absolute;
+    bottom:480px;
+  }
+  .godown{
+    position: absolute;
+  }
+  </style>
+<script type="text/javascript">
+$(document).ready(function(){
+  //图片轮播和文字轮播
+  $(".index-pt").slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+  });
+  $('.index-text').slick();
+  
+  $("#oneimg").attr("src","../images/B2Bicon_V.png");
+  $("#onediv").removeClass("index-hexin-img");
+  $("#onediv").addClass("index-hexin-imgchecked");
+  $('.slick-prev').click(function(){
+    $('.index-pt').slickNext();
+    if($("#onediv").hasClass("slick-center")){
+      $("#twoimg").attr("src","../images/C2Bicon_V.png");
+      $("#twodiv").removeClass("index-hexin-img");
+      $("#twodiv").addClass("index-hexin-imgchecked");
+    }else{
+      $("#twoimg").attr("src","../images/C2Bicon.png");
+      $("#twodiv").removeClass("index-hexin-imgchecked");
+      $("#twodiv").addClass("index-hexin-img");
+    }
+    if($("#twodiv").hasClass("slick-center")){
+      $("#threeimg").attr("src","../images/BIGDATE_V.png");
+      $("#threediv").removeClass("index-hexin-img");
+      $("#threediv").addClass("index-hexin-imgchecked");
+    }else{
+      $("#threeimg").attr("src","../images/BIGDATE.png");
+      $("#threediv").removeClass("index-hexin-imgchecked");
+      $("#threediv").addClass("index-hexin-img");
+    }
+    if($("#threediv").hasClass("slick-center")){
+      $("#fourimg").attr("src","../images/进销存_V.png");
+      $("#fourdiv").removeClass("index-hexin-img");
+      $("#fourdiv").addClass("index-hexin-imgchecked");
+      
+    }else{
+      $("#fourimg").attr("src","../images/进销存.png");
+      $("#fourdiv").removeClass("index-hexin-imgchecked");
+      $("#fourdiv").addClass("index-hexin-img");
+    }
+    if($("#fourdiv").hasClass("slick-center")){
+      $("#fiveimg").attr("src","../images/旗舰店_V.png");
+      $("#fivediv").removeClass("index-hexin-img");
+      $("#fivediv").addClass("index-hexin-imgchecked");
+    }else{
+      $("#fiveimg").attr("src","../images/旗舰店.png");
+      $("#fivediv").removeClass("index-hexin-imgchecked");
+      $("#fivediv").addClass("index-hexin-img");
+    }
+    if($("#fivediv").hasClass("slick-center")){
+      $("#oneimg").attr("src","../images/B2Bicon_V.png");
+      $("#onediv").removeClass("index-hexin-img");
+      $("#onediv").addClass("index-hexin-imgchecked");
+    }else{
+      $("#oneimg").attr("src","../images/B2Bicon.png");
+      $("#onediv").removeClass("index-hexin-imgchecked");
+      $("#onediv").addClass("index-hexin-img");
+    }
+
+  })
+  $('.slick-next').click(function(){
+    $('.index-pt').slickPrev();
+    if($("#onediv").hasClass("slick-center")){
+      $("#fiveimg").attr("src","../images/旗舰店_V.png");
+      $("#fivediv").removeClass("index-hexin-img");
+      $("#fivediv").addClass("index-hexin-imgchecked");
+    }else{
+      $("#fiveimg").attr("src","../images/旗舰店.png");
+      $("#fivediv").removeClass("index-hexin-imgchecked");
+      $("#fivediv").addClass("index-hexin-img");
+    }
+    if($("#twodiv").hasClass("slick-center")){
+      $("#oneimg").attr("src","../images/B2Bicon_V.png");
+      $("#onediv").removeClass("index-hexin-img");
+      $("#onediv").addClass("index-hexin-imgchecked");
+    }else{
+      $("#oneimg").attr("src","../images/B2Bicon.png");
+      $("#onediv").removeClass("index-hexin-imgchecked");
+      $("#onediv").addClass("index-hexin-img");
+    }
+    if($("#threediv").hasClass("slick-center")){
+      $("#twoimg").attr("src","../images/C2Bicon_V.png");
+      $("#twodiv").removeClass("index-hexin-img");
+      $("#twodiv").addClass("index-hexin-imgchecked");
+    }else{
+      $("#twoimg").attr("src","../images/C2Bicon.png");
+      $("#twodiv").removeClass("index-hexin-imgchecked");
+      $("#twodiv").addClass("index-hexin-img");
+    }
+    if($("#fourdiv").hasClass("slick-center")){
+      $("#threeimg").attr("src","../images/BIGDATE_V.png");
+      $("#threediv").removeClass("index-hexin-img");
+      $("#threediv").addClass("index-hexin-imgchecked");
+    }else{
+      $("#threeimg").attr("src","../images/BIGDATE.png");
+      $("#threediv").removeClass("index-hexin-imgchecked");
+      $("#threediv").addClass("index-hexin-img");
+    }
+    if($("#fivediv").hasClass("slick-center")){
+      $("#fourimg").attr("src","../images/进销存_V.png");
+      $("#fourdiv").removeClass("index-hexin-img");
+      $("#fourdiv").addClass("index-hexin-imgchecked");
+    }else{
+      $("#fourimg").attr("src","../images/进销存.png");
+      $("#fourdiv").removeClass("index-hexin-imgchecked");
+      $("#fourdiv").addClass("index-hexin-img");
+    }
+
+  })
+
+//点击出先8张图片
+// $("#zhengfu").css( "cursor","pointer")
+  $("#hkli").addClass('jefa-checked');
+  $("#hkup").show();
+  $("#hkdown").show();
+  $("#hkli").click(function(){  
+    $("#hkli").addClass('jefa-checked');
+    $("#hkli").siblings().removeClass('jefa-checked');
+    var ret='<ul class="goup"  id="hkup" style="display:none;">'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/hk001top.png">'+
+    '<a href="shangyeanli.html#sy-linesix"></a>'+
+    '</li>'+
+    '<li><img src="../images/hk002top.png" id="changeimg"></li>'+
+    '<li class="no-bg"></li>'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/hk004top.png">'+
+    '<a href="shangyeanli.html#cargo"></a>'+
+    '</li>'+
+    '</ul>'+
+    '<ul class="godown" id="hkdown" style="display:none;">'+
+    '<li><img src="../images/hk001bo.png"></li>'+
+    '<li class="jjfa-litwo-abso" style="position:relative;">'+
+            '<img src="../images/hk002bo.png">'+
+            '<span style="position:absolute;top:150px;left:150px;color:#000;font-size:20px;">aaaa佰邦达</span>'+
+            '<a href="shangyeanli.html#scdiv"></a>'+
+          '</li>'+
+    '<li><img src="../images/hk003bo.png"></li>'+
+    '<li><img src="../images/hk004bo.png"></li>'+
+    '</ul>';
+    $(".jjfa-maincon-fangkuai").html(ret);
+    $("#hkup").slideDown(2000);
+    $("#hkdown").slideDown(2000);
+
+  });
+  $("#ylli").click(function(){
+    $("#ylli").addClass('jefa-checked');
+    $("#ylli").siblings().removeClass('jefa-checked');
+    var ret='<ul class="goup" style="display:none;" id="zfup">'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/yl001shang.png">'+
+    '<a href=""></a>'+
+    '</li>'+
+    '<li><img src="../images/yl002shang.png" id="changeimg"></li>'+
+    '<li class="no-bg"></li>'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/yl004shang.png">'+
+    '</li>'+
+    '</ul>'+
+    '<ul class="godown" style="display:none;" id="zfdown">'+
+    '<li><img src="../images/yl001xia.png"></li>'+
+    '<li class="jjfa-litwo-abso">'+
+    '<img src="../images/yl002xia.png">'+
+    '<a href=""></a>'+
+    '</li>'+
+    '<li><img src="../images/yl003.png"></li>'+
+    '<li><img src="../images/yl004xia.png"></li>'+
+    '</ul>';
+    $(".jjfa-maincon-fangkuai").html(ret);
+    $("#zfup").slideDown(2000);
+    $("#zfdown").slideDown(2000);
+  });
+  $("#bgli").click(function(){
+    $("#bgli").addClass('jefa-checked');
+    $("#bgli").siblings().removeClass('jefa-checked');
+    var ret='<ul class="goup" style="display:none;" id="zfup">'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/bgbg001top.png">'+
+    '<a href=""></a>'+
+    '</li>'+
+    '<li><img src="../images/bg002yop.png" id="changeimg"></li>'+
+    '<li class="no-bg"></li>'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/bg004top.png">'+
+    '</li>'+
+    '</ul>'+
+    '<ul class="godown" style="display:none;" id="zfdown">'+
+    '<li><img src="../images/bg001bo.png"></li>'+
+    '<li class="jjfa-litwo-abso">'+
+    '<img src="../images/bg002bo.png">'+
+    '<a href=""></a>'+
+    '</li>'+
+    '<li><img src="../images/bg003bo.png"></li>'+
+    '<li><img src="../images/bg004bo.png"></li>'+
+    '</ul>';
+    $(".jjfa-maincon-fangkuai").html(ret);
+    $("#zfup").slideDown(2000);
+    $("#zfdown").slideDown(2000);
+  });
+  $("#yzyli").click(function(){
+    $("#yzyli").addClass('jefa-checked');
+    $("#yzyli").siblings().removeClass('jefa-checked');
+    var ret='<ul class="goup" style="display:none;" id="zfup">'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/yz001top.png">'+
+    '<a href=""></a>'+
+    '</li>'+
+    '<li><img src="../images/yz002top.png" id="changeimg"></li>'+
+    '<li class="no-bg"></li>'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/yz004top.png">'+
+    '</li>'+
+    '</ul>'+
+    '<ul class="godown" style="display:none;" id="zfdown">'+
+    '<li><img src="../images/yz001bo.png"></li>'+
+    '<li class="jjfa-litwo-abso">'+
+    '<img src="../images/yz002bo.png">'+
+    '<a href=""></a>'+
+    '</li>'+
+    '<li><img src="../images/yz003bo.png"></li>'+
+    '<li><img src="../images/yz004bo.png"></li>'+
+    '</ul>';
+    $(".jjfa-maincon-fangkuai").html(ret);
+    $("#zfup").slideDown(2000);
+    $("#zfdown").slideDown(2000);
+  });
+  $("#mzli").click(function(){
+    $("#mzli").addClass('jefa-checked');
+    $("#mzli").siblings().removeClass('jefa-checked');
+    var ret='<ul class="goup" style="display:none;" id="zfup">'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/mz001top.png">'+
+    '<a href=""></a>'+
+    '</li>'+
+    '<li><img src="../images/mz002top.png" id="changeimg"></li>'+
+    '<li class="no-bg"></li>'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/mz004top.png">'+
+    '</li>'+
+    '</ul>'+
+    '<ul class="godown" style="display:none;" id="zfdown">'+
+    '<li><img src="../images/mz001bo.png"></li>'+
+    '<li class="jjfa-litwo-abso">'+
+    '<img src="../images/mz002bo.png">'+
+    '</li>'+
+    '<li><img src="../images/mz003bo.png"></li>'+
+    '<li><img src="../images/mz004bo.png"></li>'+
+    '</ul>';
+    $(".jjfa-maincon-fangkuai").html(ret);
+    $("#zfup").slideDown(2000);
+    $("#zfdown").slideDown(2000);
+  })
+  $("#zfli").click(function(){
+    $("#zfli").addClass('jefa-checked');
+    $("#zfli").siblings().removeClass('jefa-checked');
+    var ret='<ul class="goup" style="display:none;" id="zfup">'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/fa-img1.png">'+
+    '<a href=""></a>'+
+    '</li>'+
+    '<li><img src="../images/fa-img2.png" id="changeimg"></li>'+
+    '<li class="no-bg"></li>'+
+    '<li class="jjfa-lione-abso">'+
+    '<img src="../images/fa-img4.png">'+
+    '</li>'+
+    '</ul>'+
+    '<ul class="godown" style="display:none;" id="zfdown">'+
+    '<li><img src="../images/fa-img5.png"></li>'+
+    '<li class="jjfa-litwo-abso">'+
+    '<img src="../images/fa-img6.png">'+
+    '</li>'+
+    '<li><img src="../images/fa-img7.png"></li>'+
+    '<li><img src="../images/fa-img8.png"></li>'+
+    '</ul>';
+    $(".jjfa-maincon-fangkuai").html(ret);
+    $("#zfup").slideDown(2000);
+    $("#zfdown").slideDown(2000);
+  });
+  $(".returntop").hide();
+  // var height = $(document).height();
+  // console.info(height);
+  // console.info($(document).scrollTop());
+  console.info($(window).height());
+  $(window).scroll(function() {
+    console.info($(window).scrollTop());
+    if($(window).scrollTop()> $(window).height()){
+      $(".returntop").show();
+    }else{
+      $(".returntop").hide();
+    }
+  }); 
+  
+
+}); 
+
+
+</script>
+</head>
+<body>
+  <div id="oDialog"></div>
+  <div class="wrap">
+    <header>
+      <!--头部第一行logo-->
+      <div class="index-header">
+        <div class="index-header-lineonemain">
+          <div class="left index-logo"><img src="../images/bbd-logo.png"></div>
+          <div class="right">
+            <ul>
+                <!--选中的蓝色状态使用类index-toptab-checked-->
+                <a href="index.html" class="index-headertext"><li class="index-toptab-checked">首页<div class="toptab-checked"></div></li></a>
+                <a href="hx-pro.html" class="index-headertext"><li>核心产品<div class="toptab-checked"></div></li></a>
+                <a href="shangyeanli.html" class="index-headertext"><li>商业案例<div class="toptab-checked"></div></li></a>
+                <a href="bbd-one.html" class="index-headertext"><li>关于佰邦达<div class="toptab-checked"></div></li></a>
+              </ul>
+                <div class="clearf"></div>
+              </div>
+              <div class="clearf"></div>
+            </div>
+          </div>   
+        </header>
+        <section>
+          <!--图片及图片上的内容 第一-->
+          <div class="index-lunboone indexBannerHk"  style="overflow:hidden;">
+       <!-- <div class="index-jjfa-bgimg">
+          <div class="index-jjfa-bgimgmain" id="indexSlider">
+            <img src="../images/index-lunbo1.png">
+            <img src="../images/banner02.png">
+            <img src="../images/banner03.png">
+          </div>
+        </div>-->
+        <ul id="indexSlider">
+          <li>
+            <img src="../images/index-lunbo1.png">
+          </li>
+          <li>
+            <img src="../images/banner02.png">
+          </li>
+          <li>
+            <img src="../images/banner03.png">
+          </li>
+        </ul>
+        <!-- <div >
+          <a class="active"></a>
+          <a></a>
+          <a></a>
+        </div> -->
+        <!--里面带蒙层的内容-->
+        <div class="mengceng-main indexBannerHk">
+          <div id="pagenavi">
+            <a class="lunbobtn-one lunbobtn-checked"></a>
+            <a class="lunbobtn-two"></a>
+            <a class="lunbobtn-three"></a>
+          </div>
+          <!--<img src="../images/zz-img.png">-->
+          <div class="mengceng-left-main">
+            <div id="indexSlider1" style="width:1500px;">
+              <ul>
+                <li>
+                  <p class="mengceng-left-onetext">天津中心生态城</p>
+                  <p class="">智慧城市项目</p>
+                  <p class="mengceng-left-threetext">ECO CITY SMART CITY PROJECT</p>
+                  <p class="mengceng-left-fourtext">-咨询设计方法论</p>
+                  <p class="">-调研范围</p>
+                  <p class="">-阶段成果</p>
+                  <a href="shangyeanli.html#sy-linefour">了解详情></a>
+                </li>
+                <li>
+                  <p class="mengceng-left-onetext">互联网+升级改造</p>
+                  <p class="">航空篇</p>
+                  <p class="mengceng-left-threetext">AVATION ARTICLES</p>
+                  <p class="mengceng-left-fourtext">-航司全渠道营销平台</p>
+                  <p class="">-飞行管理系统</p>
+                  <p class="">-货运系统</p>
+                  <a href="shangyeanli.html#sy-linefour">了解详情></a>
+                </li>
+                <li>
+                  <p class="mengceng-left-onetext">互联网+升级改造</p>
+                  <p class="">养殖篇</p>
+                  <p class="mengceng-left-threetext">BREEDING</p>
+                  <p class="mengceng-left-fourtext">-瑞普生物与养殖宝APP</p>
+                  <a href="shangyeanli.html#sy-linefour">了解详情></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <a href="javascript:;" id="btn_prev"></a>
+        <a href="javascript:;" id="btn_next"></a>
+      </div>
+      <!--2个切换按钮切换内容区域 第二-->
+      <div class="index-width">
+        <div class="index-width-main">
+          <div class="index-hxpro-title">
+            <!--直线-->
+            <span class="left"></span>
+            <!--标题-->
+            <div class="left index-hxpro-text">
+              <p class="hxpro-text-lineone">核心产品</p>
+              <p>CORE PRODUCT</p>
+            </div>
+            <!--直线-->
+            <span class="right"></span>
+            <div class="clearf"></div>
+          </div>
+          <!--箭头切换出现的3个图片-->
+          <div class="index-pt">
+            <!--未选中时使用类pt-left 选中时使用类pt-left和pt-leftchecked-->
+            <div id="onediv" class="index-hexin-img">
+              <img src="../images/B2Bicon.png" id="oneimg">
+              <p>B2B移动平台</p>
+            </div>
+            <div id="twodiv" class="index-hexin-img">
+              <img src="../images/C2Bicon.png" id="twoimg">
+              <p>C2B移动云平台</p>
+            </div>
+            <div id="threediv" class="index-hexin-img">
+              <img src="../images/BIGDATE.png" id="threeimg">
+              <!-- <img src="../images/index-center2.png" style="display:none" id="twoimg"> -->
+              <p>大数据平台</p>
+            </div>
+            <div id="fourdiv" class="index-hexin-img">
+              <img src="../images/进销存.png" id="fourimg">
+              <p>移动进销存平台</p>
+            </div>
+            <div id="fivediv" class="index-hexin-img">
+              <img src="../images/旗舰店.png" id="fiveimg">
+              <p>经销商旗舰店</p>
+            </div>
+            <!--<div class="left pt-right pt-rightchecked">
+              <img src="../images/index-right2.png">
+              <p>大数据平台</p>
+            </div>-->
+          </div>
+          <!--左右箭头加中间的文字内容区域-->
+          <div class="index-ptshow">
+            <!-- <span class="left" id="left">
+              <img src="../images/index-left.png">
+            </span> -->
+            <div class="index-text">
+              <div class="left ptshow-text">
+                <p>提升渠道效率，降低渠道成本，通过大数据分析进行生产预测，</p>
+                <p>降低生产风险，减轻库存压力，使传统生产到柔性化生产转型。</p>
+                <p>帮助渠道或代理商逐渐转型为综合服务商</p>
+                <a href="hx-pro.html">了解详情></a>
+              </div>
+              <div class="left ptshow-text">
+                <p>企业可以通过给经销商建立移动旗舰店帮助经销商，</p>
+                <p>代理商更好的为他们的区域客户更好的提供服务，提升经销商服务品质，</p>
+                <p>同时也帮助企业获取经销商的客户信息</p>
+                <a href="hx-pro.html">了解详情></a>
+              </div>
+              <div class="left ptshow-text">
+                <p>帮助经销商，代理商高效管理进销存，实时查看反佣收入，</p>
+                <p>帮助企业实时获取经销商代理商库存情况，</p>
+                <p>通过数据分析生成方式逐渐转化成柔性生产</p>
+                <a href="hx-pro.html">了解详情></a>
+              </div>
+              <div class="left ptshow-text">
+                <p>收集各种生产、销售相关数据，用以建立精准用户画像，</p>
+                <p>为产品生产和研发提供数据支撑，也给商业策略的制定提供参考</p>
+                <a href="hx-pro.html?p=DSJdiv">了解详情></a>
+              </div>
+              <div class="left ptshow-text">
+                <p>-移动C2B云平台通过典型社交属性，将企业五个方面的信息传</p>
+                <p>达给公众，以赢得客户的青睐；-主要包括品牌推广、企业形象塑造、</p>
+                <p>企业文化呈现、产品推介、优势展示；</p>
+                <a href="hx-pro.html?p=C2Byundiv">了解详情></a>
+              </div>
+
+
+
+            </div>
+            <!-- <span class="right" id="right">
+              <img src="../images/index-right.png">
+            </span> -->
+            <div class="clearf"></div>
+          </div>
+        </div>
+      </div>
+      <!--解决方案一整行-->
+      <div class="index-width index-jjfa">
+        <div class="index-width-main jjfa-main">
+          <div class="left jjfa-main-left">
+            <img src="../images/hlw-jia.png" class="left">
+            <p>解决方案</p>
+            <div class="clearf"></div>
+          </div>
+          <ul class="left">
+            <li id="hkli"><a>航空</a></li>
+            <li id="ylli"><a>医疗</a></li>
+            <li id="yzyli"><a>养殖业</a></li>
+            <li id="mzli"><a>美妆</a></li>
+            <!--选中的样式使用类jefa-checked-->
+            <li id="bgli"><a>办公</a></li>
+            <li id="zfli"><a>政府</a></li>
+          </ul>
+          <div class="clearf"></div>
+        </div>
+      </div>
+      <!--解决方案对应下面的方块模块-->
+      <div class="index-width jjfa-maincon">
+        <div class="index-jjfa-bgimg">
+          <div class="index-jjfa-bgimgmain">
+           <img src="../images/index-diqiu.png">
+         </div>
+       </div>
+       <div class="index-width-main jjfa-maincon-fangkuai">
+        <ul class="goup"  id="hkup" style="display:none;">
+          <li class="jjfa-lione-abso">
+            <img src="../images/hk001top.png">
+            <a href="shangyeanli.html#sy-linesix"></a>
+          </li>
+          <li><img src="../images/hk002top.png" id="changeimg"></li>
+          <li class="no-bg"></li>
+          <li class="jjfa-lione-abso">
+            <img src="../images/hk004top.png">
+            <a href="shangyeanli.html#cargo"></a>
+          </li>
+        </ul>
+        <ul class="godown" id="hkdown" style="display:none;">
+          <li><img src="../images/hk001bo.png"></li>
+          <li class="jjfa-litwo-abso" style="position:relative;">
+            <img src="../images/hk002bo.png"><span style="position:absolute;top:150px;left:150px;color:#000;font-size:20px;">aaaa佰邦达</span>
+            <a href="shangyeanli.html#scdiv"></a>
+          </li>
+          <li><img src="../images/hk003bo.png"></li>
+          <li><img src="../images/hk004bo.png"></li>
+        </ul>
+        <div class="clearf"></div>
+      </div>
+      <div class="jjfa-height"></div>
+    </div>
+    <!--联系我们模块-->
+    <div class="index-width index-lxus">
+      <div class="index-width-main index-lxus-main">
+        <div class="index-hxpro-title">
+          <!--直线-->
+          <span class="left"></span>
+          <!--标题-->
+          <div class="left index-hxpro-text">
+            <p class="hxpro-text-lineone">联系我们</p>
+            <p>CONTACT US</p>
+          </div>
+          <!--直线-->
+          <span class="right"></span>
+          <div class="clearf"></div>
+        </div>
+        <!--下面的图片加文字-->
+        <div class="lxus-imgtext">
+          <ul>
+            <li><img src="../images/person.png"><p>010-62553988</p></li>
+            <li><img src="../images/telephone-location.png"><p>010-62553988</p></li>
+            <li><img src="../images/location-pointer.png"><p>天津市滨海新区国家动漫园B1室</p></li>
+            <li class="lxus-imgtext-only"><img src="../images/simple-envelope.png"><p>admin@bbdtek.com</p></li>
+          </ul>
+          <div class="clearf"></div>
+          <a  class="right" id="xiangxi">详细信息></a>
+          <div class="clearf"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="footer-main">
+        <p>2016 BBDTEK All right reserved.各商标由其各自所有人持有。京ICP备09029096号-1京公网安备11010802011114</p>
+        <p class="footer-linetwo"><a  id="zhaopin">招聘</a> | <a  id="lianxi">联系方式</a> | <a  id="wangzhan">网站地图</a> |
+          <a  id="yinsi">隐私声明</a></p>
+        </div>
+      </div>
+    </footer>
+    <div class="returntop">
+      <div><a href="javascript:window.scrollTo( 0, 0 );"><img src="../images/return .png" /></a></div>
+      <div><a href="javascript:window.scrollTo( 0, 1345 );"><img src="../images/search.png" /></a></div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+//轮播图
+// console=window.console || {dir:new Function(),log:new Function()};
+// var active=0,
+//   as=document.getElementById('pagenavi').getElementsByTagName('a');
+//   for(var i=0;i<as.length;i++){
+//   (function(){
+//     var j=i;
+//     as[i].onclick=function(){
+//       t4.slide(j);
+//       t5.slide(j);
+//       return false;
+//     }
+//   })();
+// }
+// var t4=new TouchSlider({id:'indexSlider', speed:500, timeout:3000, before:function(index){
+//     as[active].className='';
+//     active=index;
+//     as[active].className='lunbobtn-checked';
+//   }});
+// var t5=new TouchSlider({id:'indexSlider1', speed:500, timeout:3001, before:function(index){
+//     as[active].className='';
+//     active=index;
+//     as[active].className='lunbobtn-checked';
+//   }});
+$(document).ready(function(){
+  $dragBln = false;
+  $('#indexSlider').touchSlider({
+    speed : 500,
+    btn_prev : $("#btn_prev"),
+    btn_next : $("#btn_next"),
+    paging: $("#pagenavi a"),
+    counter : function (e){
+      $("#pagenavi a").removeClass("lunbobtn-checked").eq(e.current-1).addClass("lunbobtn-checked");
+    }
+  });
+  $('#indexSlider1').touchSlider({
+    container: this,
+    speed : 500,
+    fixWidth:true,
+    margin:1,
+    viewport:'#indexSlider1',
+    btn_prev : $("#btn_prev"),
+    btn_next : $("#btn_next"),
+    paging: $("#pagenavi a"),
+    counter : function (e){
+      $("#pagenavi a").removeClass("lunbobtn-checked").eq(e.current-1).addClass("lunbobtn-checked");
+    }
+  });
+  $("#pagenavi a").click(function(){
+    if($dragBln) {
+      return false;
+    }
+  });
+})
+timer = setInterval(function(){
+  $("#btn_next").click();
+}, 3000);
+
+$("#indexSlider").hover(function(){
+  clearInterval(timer);
+},function(){
+  timer = setInterval(function(){
+    $("#btn_next").click();
+  },3000);
+});
+
+$("#indexSlider").bind("touchstart",function(){
+  clearInterval(timer);
+}).bind("touchend", function(){
+  timer = setInterval(function(){
+    $("#btn_next").click();
+  }, 3000);
+});
+$("#indexSlider1").hover(function(){
+  clearInterval(timer);
+},function(){
+  timer = setInterval(function(){
+    $("#btn_next").click();
+  },3000);
+});
+
+$("#indexSlider1").bind("touchstart",function(){
+  clearInterval(timer);
+}).bind("touchend", function(){
+  timer = setInterval(function(){
+    $("#btn_next").click();
+  }, 3000);
+});
+
+
+
+</script>
+</html>
