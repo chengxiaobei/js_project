@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>2动物诊疗--申请成功页面+弹窗</title>
+<link type="text/css" rel="stylesheet" href="../../css/rp_style3.css">
+</head>
+<body class="whiteBg">
+  <div class="wrap">
+    <header>
+      <a class="back-btn"></a>
+      <h2>动物诊疗</h2>
+    </header>
+    <section class="main-section">
+    <!--弹窗-->
+     <div class="animal-alert">
+       <p class="jb-alerttext">再次按键取消本地申请！</p>
+     </div>
+      <!--内容-->
+      <div class="animal-sqcgmain">
+        <div class="sqcgmain-lineone">
+          <span class="left"></span>
+          <p class="right">申请成功！您可在我的检测档案里查看检测处理进度。</p>
+          <div class="clearf"></div>
+        </div>
+        <a href="">查看我的检测档案</a>
+        <p class="sqcgmain-lineone-textp">如您已寄送病料，可以现在去</p>
+        <a href="">填写送料信息</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网页练习2</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/mycss2.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+			<!-- 响应式导航栏 -->
+				<button type="button" data-toggle="collapse" class="navbar-toggle collapsed" data-target="#mydemo">
+					<span class="sr-only">切换导航栏</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">现代浏览器博物馆</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mydemo">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">综述</a></li>
+					<li><a href="#">简介</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">特点<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Fierfox</a></li>
+							<li><a href="#">Chrome</a></li>
+							<li><a href="#">IE</a></li>
+							<li><a href="#">Opera</a></li>
+							<li><a href="#">Safari</a></li>
+						</ul>
+					</li>
+					<li><a href="#">关于</a></li>
+				</ul>
+			</div>	
+		</div>		
+	</div>
+	<!-- 轮播图 -->
+	<div class="carousel slide" id="mycarousel">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#mycarousel" data-slide-to="0"></li>
+			<li class="active" data-target="#mycarousel" data-slide-to="1"></li>
+			<li class="active" data-target="#mycarousel" data-slide-to="2"></li>
+			<li class="active" data-target="#mycarousel" data-slide-to="3"></li>
+			<li class="active" data-target="#mycarousel" data-slide-to="4"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="active item">
+				<img src="../image/1.jpg" alt="Fierfox">
+				<div class="carousel-caption">
+					<h1>Firefox</h1>
+					<p>Mozilla Firefox，中文俗称“火狐”，是一个自由及开放源代码网页浏览器</p>
+					<a href="#" class="btn-lg btn-primary">点击下载</a>
+				</div>
+			</div>
+			<div class="item">
+				<img src="../image/2.jpg" alt="Chrome">
+				<div class="carousel-caption">
+					<h1>Chrome</h1>
+					<p>Google是第一个被公认为全球最大的搜索引擎，在全球范围内拥有无数的用户</p>
+					<a href="#" class="btn-lg btn-primary">点击下载</a>
+				</div>
+			<div class="item">
+				<img src="../image/1.jpg" alt="Fierfox">
+				<div class="carousel-caption">
+					<h2>Firefox</h2>
+					<p>Mozilla Firefox，中文俗称“火狐”，是一个自由及开放源代码网页浏览器</p>
+					<a href="#" class="btn-lg btn-primary">点击下载</a>
+				</div>
+			<div class="item">
+				<img src="../image/1.jpg" alt="Fierfox">
+				<div class="carousel-caption">
+					<h2>Firefox</h2>
+					<p>Mozilla Firefox，中文俗称“火狐”，是一个自由及开放源代码网页浏览器</p>
+					<a href="#" class="btn-lg btn-primary">点击下载</a>
+				</div>
+			<div class="item">
+				<img src="../image/1.jpg" alt="Fierfox">
+				<div class="carousel-caption">
+					<h2>Firefox</h2>
+					<p>Mozilla Firefox，中文俗称“火狐”，是一个自由及开放源代码网页浏览器</p>
+					<a href="#" class="btn-lg btn-primary">点击下载</a>
+				</div>
+		</div>		
+	</div>
+	<script src="../js/jquery-1.11.0.min.js"></script>
+  	<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

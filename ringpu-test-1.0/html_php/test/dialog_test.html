@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link type="text/css" rel="stylesheet" href="../../public/css/rp_style3.css">
+
+</head>
+<body>
+	<div style="height:500px;"></div>
+</body>
+<script type="text/javascript" src="../../public/js/common/dialog.js"></script>
+
+<script>
+
+	/**
+		type : 'alert'  'confrim'  'confirm_guide' :'引导确认框'
+	 */
+	var opts = {
+		type : 'confirm_guide',
+		cancel_fn : function(){
+			alert(11) ;
+		} ,
+		confirm_fn : function(){
+			alert(222) ;
+		}
+	} ;
+	var dialog = new Dialog(opts) ;
+
+</script>
+
+</html>

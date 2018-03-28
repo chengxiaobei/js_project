@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>登录</title>
+<link type="text/css" rel="stylesheet" href="../../css/rp_style2.css">
+<script type="text/javascript" src="../../less/less.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="back-btn" href=""></a>
+      <h2>登录</h2>
+      <a class="reg-btn" href="">注册</a>
+    </header>
+    <section class="main-section">
+      <div class="login-box center-top">
+        <!--手机号-->
+        <div class="login-phone">
+          <div class="login-sjmm left">手机号</div>
+          <div class="login-input left">
+            <input placeholder="请输入注册手机号">
+          </div>
+          <div class="clearf"></div>
+        </div>
+        <!--密码-->
+        <div class="login-password">
+          <div class="login-sjmm left">密码</div>
+          <div class="login-input left">
+            <input placeholder="请输入密码">
+          </div>
+          <div class="clearf"></div>
+        </div>
+      </div>
+      <!--自动登录和找回密码-->
+      <div class="login-found">
+        <!--类login-checked为选中状态，类login-check为没选中状态-->
+        <div class="login-checked left">自动登录</div>
+        <div class="login-find right">找回密码</div>
+        <div class="clearf"></div>
+      </div>
+      <a class="center-btn login-finbtn" href="">登录</a>
+    </section>
+  </div>
+</body>
+</html>
+
+
+
+

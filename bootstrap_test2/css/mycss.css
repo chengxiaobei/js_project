@@ -1,0 +1,101 @@
+	body{
+		padding: 50px 0;
+	}
+	.carousel{
+		height: 500px;
+		background-color: #000;
+		margin-bottom:60px; 
+	}
+	.carousel .item{
+		height: 500px;
+		background-color: #000;
+	}
+	.carousel img{
+		width: 100%;
+	}
+	.carousel-inner h3{
+		font-size: 50px;
+	}
+	.carousel-inner p{
+		font-size: 20px;
+	}
+	.carousel-caption {
+		margin-bottom:40px; 
+		z-index: 10px;/*新加*/
+	}
+	.content{
+		width: 1100px;
+		margin: 10px auto;
+	}
+	.container1{
+		margin: 0 auto;
+		/*margin-bottom: 60px;/*新加*/*/
+	}
+	.container1 img{
+		width: 150px;
+		height: 150px;
+	}
+	.divider{
+		margin: 60px 0;/*新加*/
+	}
+	.container1 .col-md-4{
+		text-align: center;
+	}
+	.tab-content{
+		margin-top: 50px;
+		margin-bottom: 500px;
+	}
+	.tab-content h2{
+		font-size: 50px;
+		color: #337AB7;
+		margin-top: 100px;
+	}
+	.tab-content span{
+		font-size: 28px;
+		color: #999;
+	}
+	.tab-content img{
+		width: 100%;
+	}
+	 /* 响应式布局 */
+
+        @media (max-width: 768px) {
+
+            .content {
+                padding-right: 3px;
+                padding-left: 3px;
+            }
+
+            .carousel {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+
+            .carousel .item {
+                height: 300px;
+            }
+
+            .carousel img {
+                min-height: 300px;
+            }
+
+            .carousel-caption p {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .feature-heading {
+                font-size: 50px;
+            	color: #2a6496;
+            }
+
+            .feature-heading .text-muted {
+                font-size: 28px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .feature-heading {
+                margin-top: 120px;
+            }
+        }

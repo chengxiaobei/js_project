@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>欢乐大转盘</title>
+<link type="text/css" rel="stylesheet" href="../../../css/activity.css">
+<script type="text/javascript" src="../../../less/less.js"></script>
+</head>
+<body class="zhuanpan-download-body">
+  <div class="wrap">
+    <section>
+      <div class="zhuanpan-main">
+        <div class="zhuanpan-main-con">
+          <img src="../../../images/大转盘02.png">
+          <img class="zhuanpan-check" src="../../../images/zhuanpan-check.png">
+          <!-- 机会个数-->
+          <div class="zhuanpan-jihui">
+            <p>今天还剩</p>
+            <p class="zhuanpan-jihui-num"><span>10</span>次抽奖机会</p>
+          </div>
+        </div>
+      </div>
+      <!-- 整体树杠背景-->
+      <div class="zhuanpan-bom-bg">
+        <!-- 我的奖品-->
+        <div class="zhuanpan-mypre">
+          <div class="zhuanpan-mypre-main">
+          <div class="right zhuanpan-mypre-right">
+             <!-- 带图片的-->
+            <div class="left">
+            <div class="left mypre-right-one">
+              <img class="left" src="../../../images/养殖币-alert.png">
+              <p class="left" style="margin: -38px 0 0 50px;">养殖币+<span>1000</span></p>
+              <div class="clearf"></div>
+            </div>
+            <!--带图片的-->
+            <div class="left mypre-right-one">
+              <img class="left" src="../../../images/双肩.png">
+              <p class="left" style="margin: -38px 0 0 50px;">双肩包一个</p>
+              <div class="clearf"></div>
+            </div>
+             <!-- 带图片的-->
+            <div class="left mypre-right-one">
+              <img class="left" src="../../../images/手拉车.png">
+              <p class="left" style="margin: -38px 0 0 50px;">手拉车一个</p>
+              <div class="clearf"></div>
+            </div>
+             <!-- 带图片的-->
+            <div class="left mypre-right-one">
+              <img class="left" src="../../../images/自拍杆.png">
+              <p class="left" style="margin: -38px 0 0 50px;">自拍杆一个</p>
+              <div class="clearf"></div>
+            </div>
+            <div class="clearf"></div>
+            </div>
+          </div>
+            <div class="clearf"></div>
+            </div>
+          <img class="zhuanpan-mypre-img" src="../../../images/zhuanpan-mypre.png">
+        </div>
+        <!-- 排行榜-->
+        <div class="zhuanpan-phb-bg">
+          <img class="left zhuanpan-phb-bgimg" src="../../../images/zhuanpan-dianbg.png">
+          <p>活动养殖币排行榜</p>
+          <div class="zhuanpan-mingdan">
+            <p class="left">01</p>
+            <p class="left mingdan-tel">158****7896</p>
+            <p class="right">123456</p>
+            <div class="clearf"></div>
+          </div>
+          <div class="zhuanpan-mingdan">
+            <p class="left">01</p>
+            <p class="left mingdan-tel">158****7896</p>
+            <p class="right">123456</p>
+            <div class="clearf"></div>
+          </div>
+          <div class="zhuanpan-mingdan">
+            <p class="left">01</p>
+            <p class="left mingdan-tel">158****7896</p>
+            <p class="right">123456</p>
+            <div class="clearf"></div>
+          </div>
+          <div class="zhuanpan-mingdan">
+            <p class="left">01</p>
+            <p class="left mingdan-tel">158****7896</p>
+            <p class="right">123456</p>
+            <div class="clearf"></div>
+          </div>
+          <div class="zhuanpan-mingdan">
+            <p class="left">01</p>
+            <p class="left mingdan-tel">158****7896</p>
+            <p class="right">123456</p>
+            <div class="clearf"></div>
+          </div>
+          <p class="zhuanpan-mingdan-martop">我的排名</p>
+          <div class="zhuanpan-mingdan">
+            <p class="left">35</p>
+            <p class="left mingdan-tel">158****7896</p>
+            <p class="right">123456</p>
+            <div class="clearf"></div>
+          </div>
+        </div>
+       <!-- 活动说明-->
+       <div class="zhuanpan-hd-con">
+         <p class="zhuanpan-hd-title">活动说明</p>
+         <div class="zhuanpan-hd-maincon">
+           <p>1.活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明</p>
+           <p>2.活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明</p>
+           <p>3.活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明</p>
+         </div>
+       </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

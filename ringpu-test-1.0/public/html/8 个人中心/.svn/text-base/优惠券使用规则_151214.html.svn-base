@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>使用规则</title>
+<link type="text/css" rel="stylesheet" href="../../css/rp_style2.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="back-btn" href=""></a>
+      <h2>使用规则</h2>
+    </header>
+    <section class="main-section">
+      <div class="center-mt yhq-rule-bg">
+      <ul>
+        <li>
+          1.养殖宝所发放的优惠券仅限在有效期内在养殖宝抵扣订单金额，过期作废。不能支付运费，不能兑换现金或其它用途，不开具发票。
+        </li>
+        <li>
+          2.使用优惠券的订单，如果未支付订单前取消，系统会在取消订单成功后24小时内把优惠券退回帐号，有效期不变。
+        </li>
+        <li>
+          3.订单支付后取消订单或者拒收，优惠券作废，不予退回。
+        </li>
+        <li>
+          4.使用优惠券的订单，若发生售后退换货，按商品售价所占订单金额比例等额拆分实际支付金额，已用优惠券不退还。比如：您购买了价格为80元的商品A，和价格为120元的商品B。使用了全场满200-50元的优惠券一张。实际付款为150元。
+        </li>
+        <li>
+          当您单独申请A商品退款时，应退金额为：150*(80/200)=150*0.4=60元
+        </li>
+        <li>
+          当您单独申请B商品退款时，应退金额为：150*(120/200)=150*0.6=90元
+        </li>
+        <li>
+          5.  每张优惠券仅可使用一次，每个订单仅可使用一张优惠券。
+        </li>
+        <li>
+          6.  规则最终解释权归瑞普生物所有。
+        </li>
+      </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+
+
+
+

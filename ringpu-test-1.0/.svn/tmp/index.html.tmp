@@ -1,0 +1,84 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>瑞普云 临时首页</title>
+</head>
+<style type="text/css">
+	*{
+	    margin: 0;
+	    padding: 0;
+	    
+	}
+	li{
+		height:100px;
+		background: #eee;
+		margin: 5% auto ;
+		text-align: center ;
+		line-height: 100px ;
+		list-style-type: none;
+		font-size: 20px;
+		width:90%;
+	}
+	a{
+		text-decoration: none; 
+	}
+</style>
+<body>
+	<!--  <h2 style="text-align:center;">测试环境</h2>-->
+<<<<<<< .mine
+	<ul>
+		<li><a href="../ringpu-test-1.0/html_php/advice_and_college/index.php?type=advice">养殖资讯</a></li>
+		<li><a href="../ringpu-test-1.0/html_php/advice_and_college/index.php?type=college">养殖学院</a></li>
+		<li><a href="../ringpu-test-1.0/html_php/culture_community/cultureCommunity.php">养殖社区</a></li>
+		<li><a href="../ringpu-test-1.0/html_php/shopping_store/index.php">商城</a></li>
+		<li><a href="../ringpu-test-1.0/html_php/personal_center/index.php">个人中心</a></li>
+		<li><a href="../ringpu-test-1.0/html_php/animal_cure/index.php">动物诊疗</a></li>
+		<li><a href="../ringpu-test-1.0/html_php/download/downloadApp.php">养殖户端下载</a></li>
+		<li><a href="../ringpu-test-1.0/html_php/download/downloadApp_jxs.php">经销商端下载</a></li>
+		<li><a href="../ringpu-test-1.0/html_php/download/downloadApp.php">兽医端下载</a></li>
+		<li><a href="../ringpu-test-1.0/html_php/activity/shake.html">摇一摇</a></li>
+		<li><a href="../ringpu-test-1.0/html_php/activity/flip.html">翻牌子</a></li>
+		<li><a href="../ringpu-test-1.0/html_php/activity/zhuan.html">转盘</a></li>
+	</ul>
+=======
+<!--     <ul>
+        <li><a href="../ringpu/html_php/advice_and_college/index.php?type=advice">养殖资讯</a></li>
+        <li><a href="../ringpu/html_php/advice_and_college/index.php?type=college">养殖学院</a></li>
+        <li><a href="../ringpu/html_php/culture_community/cultureCommunity.php">养殖社区</a></li>
+        <li><a href="../ringpu/html_php/shopping_store/index.php">商城</a></li>
+        <li><a href="../ringpu/html_php/personal_center/index.php">个人中心</a></li>
+        <li><a href="../ringpu/html_php/animal_cure/index.php">动物诊疗</a></li>
+        <li><a href="../ringpu/html_php/download/downloadApp.php">养殖户端下载</a></li>
+        <li><a href="../ringpu/html_php/download/downloadApp_jxs.php">经销商端下载</a></li>
+        <li><a href="../ringpu/html_php/download/downloadApp.php">兽医端下载</a></li>
+        <li><a href="../ringpu/html_php/activity/shake.html">摇一摇</a></li>
+        <li><a href="../ringpu/html_php/activity/flip.html">翻牌子</a></li>
+        <li><a href="../ringpu/html_php/activity/zhuan.html">转盘</a></li>
+        <li><a href="../ringpu/html_php/activity/moonFestival/moonShake.html">中秋摇月饼</a></li>
+        <li><a href="../ringpu/html_php/activity/beatjapanese/html/index.html">国庆打鬼子</a></li>
+    </ul> -->
+    <!-- 测试环境 -->
+        <ul>
+        <li><a href="../devringpu/html_php/advice_and_college/index.php?type=advice">养殖资讯</a></li>
+        <li><a href="../devringpu/html_php/advice_and_college/index.php?type=college">养殖学院</a></li>
+        <li><a href="../devringpu/html_php/culture_community/cultureCommunity.php">养殖社区</a></li>
+        <li><a href="../devringpu/html_php/shopping_store/index.php">商城</a></li>
+        <li><a href="../devringpu/html_php/personal_center/index.php">个人中心</a></li>
+        <li><a href="../devringpu/html_php/animal_cure/index.php">动物诊疗</a></li>
+        <li><a href="../devringpu/html_php/download/downloadApp.php">养殖户端下载</a></li>
+        <li><a href="../devringpu/html_php/download/downloadApp_jxs.php">经销商端下载</a></li>
+        <li><a href="../devringpu/html_php/download/downloadApp.php">兽医端下载</a></li>
+        <li><a href="../devringpu/html_php/activity/shake.html">摇一摇</a></li>
+        <li><a href="../devringpu/html_php/activity/flip.html">翻牌子</a></li>
+        <li><a href="../devringpu/html_php/activity/zhuan.html">转盘</a></li>
+        <li><a href="../devringpu/html_php/activity/moonFestival/moonShake.html">中秋摇月饼</a></li>
+        <li><a href="../devringpu/html_php/activity/beatjapanese/html/index.html">国庆打鬼子</a></li>
+    </ul>
+>>>>>>> .r3170
+</body>
+</html>

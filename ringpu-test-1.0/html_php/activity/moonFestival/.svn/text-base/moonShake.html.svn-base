@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no" />
+    <title>中秋摇月饼</title>
+    <link type="text/css" rel="stylesheet"
+          href="../../../public/css/activity.css">
+    <link rel="stylesheet" href="../../../public/css/rp_style4.css" />
+    <link type="text/css" rel="stylesheet" href="../../../public/css/rp_style3.css">
+    <script src="../shake.js"></script>
+    <script src="../../../public/js/common/jquery-1.9.1.min.js"></script>
+    <script src="../../../public/js/common/globalvar.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</head>
+<body class="body-money-tree">
+<!-- 下载弹窗-->
+<div class="weixin-tc" style="display: none;">
+    <div class="weixin-tc-img">
+        <img src="../../../public/images/weixinxiazaiimg.png" />
+    </div>
+    <div class="weixin-tc-text">
+        <h3>养殖宝APP</h3>
+        <p>养殖业<span>一站式</span>平台&nbsp;&nbsp;邀您加入</p>
+    </div>
+    <div class="lijixiazai" id="download">
+        <a href="">立即下载</a>
+    </div>
+    <div class="weixin-tc-close">
+        <a href=""></a>
+    </div>
+</div>
+<!--提示弹窗-->
+<div class="mask" id="tips-mask" style="display: none">
+    <div class="alert-nochance">
+        <div class="right tree-close close-btn">
+            <img src="../../../public/images/tree-close.png">
+        </div>
+        <div class="clearf"></div>
+        <div class="nochance-text">
+            <!--<p>今天的机会用光啦！</p>-->
+            <!--<p>关注［养殖宝］微信公众号，分享得机会，快去关注吧！</p>-->
+        </div>
+        <div class="money-tree-bombtn">
+            <a class="close-btn">关闭</a>
+        </div>
+    </div>
+</div>
+<!--微信去分享提示弹窗-->
+<!--<div class="mask" id="nochance-mask" style="display: none">-->
+    <!--<div class="alert-nochance">-->
+        <!--<div class="right tree-close close-btn">-->
+            <!--<img src="../../../public/images/tree-close.png">-->
+        <!--</div>-->
+        <!--<div class="clearf"></div>-->
+        <!--&lt;!&ndash;<div class="nochance-text">&ndash;&gt;-->
+            <!--&lt;!&ndash;<p>今天的机会用光啦！</p>&ndash;&gt;-->
+            <!--&lt;!&ndash;<p>分享给朋友增加摇奖机会！</p>&ndash;&gt;-->
+        <!--</div>-->
+        <!--<div class="money-tree-bombtn">-->
+            <!--<a class="left share">去分享</a>-->
+            <!--<a class="right again">关闭</a>-->
+            <!--<div class="clearf"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--微信摇奖弹窗-->
+<!--<div class="mask" id="prize-mask" style="display: none">-->
+    <!--<div class="money-tree-alert">-->
+        <!--<div class="right tree-close close-btn">-->
+            <!--<img src="../../../public/images/tree-close.png">-->
+        <!--</div>-->
+        <!--<div class="clearf"></div>-->
+        <!--<p class="money-tree-num">0</p>-->
+        <!--<div class="money-tree-bombtn">-->
+            <!--<a class="left share">我要炫耀</a>-->
+            <!--<a class="right again">在玩一次</a>-->
+            <!--<div class="clearf"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--app 摇奖弹窗-->
+<div class="mask" id="app-prize-mask" style="display: none">
+    <div class="money-tree-alert">
+        <div class="right tree-close close-btn">
+            <img src="../../../public/images/tree-close.png">
+        </div>
+        <div class="clearf"></div>
+        <p class="money-tree-num">0</p>
+        <p class="money-tree-times">0</p>
+        <div class="money-tree-bombtn">
+            <a class="app-close-btn">关闭</a>
+        </div>
+    </div>
+</div>
+<!--分享提示弹窗-->
+<!--<div class="mask" style="display: none;" id="showdownload">-->
+    <!--<div class="yyy-fenxiang">-->
+        <!--<p>请点击右上角 “<span><img src="../../../public/images/yyy-diandian.png"></span>”  分享<span style="text-align:center;display:block">成功之后将增加摇奖机会</span></p>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="wrap">
+    <section>
+        <!-- 头部的养殖币和月饼数量-->
+        <div class="money-tree-top">
+            <p class="tree-top-center">
+                <span>养殖币:</span>
+                <span class="score">0枚</span>
+            </p>
+            <p class="tree-top-right">
+                <span>月饼数:</span>
+                <span class="amount">0枚</span>
+            </p>
+        </div>
+        <div class="money-tree-centertree">
+            <div class="moon-tree"><!-- yaoyiyao-dongh-->
+                <img src="../../../public/images/ringstar1.png" style="width:100%;left:41%;top:9%;" class="ringstar starshine" >
+                <img src="../../../public/images/moon-tree.png" class="moon-tree-shake"><!--树-->
+                <img src="../../../public/images/ringlight1.png" style="width:100%;left:41%;top:20%;" class="ringlight shine1" ><!--光环-->
+                <img src="../../../public/images/ringlight2.png" style="width:100%;left:39%;top:20%;" class="ringlight shine2">
+                <img src="../../../public/images/ringlight3.png" style="width:100%;left:39%;top:20%;" class="ringlight shine3">
+                <img src="../../../public/images/ringlight4.png" style="width:100%;left:39%;top:20%;" class="ringlight shine4">
+                <img src="../../../public/images/ringlight5.png" style="width:100%;left:39%;top:20%;" class="ringlight shine5">
+            </div>
+        </div>
+        <!-- 页面中间的活动日期-->
+        <div class="money-tree-centerdate">
+            <img src="../../../public/images/tree-yyy.png" class="moon-tree-yyy">
+            <p>今天还有 <span class="total_times">0</span> 次机会</p>
+            <p>活动日期：2016.9.12－2016.9.19</p>
+        </div>
+        <!-- 底部的tab切换-->
+        <div class="money-tree-bottomnotice">
+            <ul class="tree-bottomnotice-tab">
+                <!-- 选中加上类tab-checked-->
+                <li class="left tab-checked">活动规则</li>
+                <li class="left">活动奖品</li>
+                <li class="left">牛人榜</li>
+                <li class="left">中奖名单</li>
+                <div class="clearf"></div>
+            </ul>
+            <div class="clearf"></div>
+            <!--活动规则-->
+            <div class="tree-bottomnotice-list">
+                <h3>活动规则：</h3>
+                <p>1．活动时间：2016年9月12日-2016年9月19日；</p>
+                <p>2．下载养殖宝并登录/注册即可参与游戏；</p>
+                <p>3．每位用户每日有3次抽奖机会；每参与一次消耗15个养殖币，请参考”个人中心“—”养殖币“—“赚养殖币”，增加中奖机会</p>
+                <p>4．点击“个人中心”—“分享app”邀请好友下载，和好友一起来玩，分享中秋豪礼；</p>
+                <p>5．每个身份信息仅有一次中奖机会；</p>
+                <p>6．根据摇到月饼数量排名即可获得相应奖品，若出现月饼数量一致，则以系统排名为准；</p>
+                <p>7．奖品于活动结束后三个工作日内统一发出，届时养殖宝客服人员会与您联系；</p>
+                <p>8．活动最终解释权归养殖宝所有，详情可致电：400-800-5696</p>
+
+            </div>
+            <!--活动奖品-->
+            <div class="tree-bottomnotice-list bottomnotice-listgift" style="display:none;">
+                <h3>活动奖品：</h3>
+                <p>1.&nbsp; <img src="../../../public/images/prize-01.png"> &nbsp;一等奖1名：山地自行车</p>
+                <p>2.&nbsp; <img src="../../../public/images/prize-02.png"> &nbsp;二等奖3名：儿童智能手表</p>
+                <p>3.&nbsp; <img src="../../../public/images/prize-03.png"> &nbsp;三等奖10名：夏凉被</p>
+                <p>4.&nbsp; <img src="../../../public/images/prize-04.jpg"> &nbsp;四等奖20名：300M流量</p>
+            </div>
+            <!--牛人榜-->
+            <div class="tree-bottomnotice-list bottomnotice-listniu" style="display: none;min-height: 200px;">
+                <!--<h3>牛人TOP榜：</h3>-->
+                <!--<p><span>01</span><span>189****9089</span><span>月饼总数8000</span></p>-->
+                <!--<p><span>02</span><span>189****9089</span><span>月饼总数8000</span></p>-->
+                <!--<p><span>03</span><span>189****9089</span><span>月饼总数8000</span></p>-->
+                <!--<p><span>04</span><span>189****9089</span><span>月饼总数8000</span></p>-->
+                <!--<p><span>05</span><span>189****9089</span><span>月饼总数8000</span></p>-->
+                <!--<p><span>06</span><span>189****9089</span><span>月饼总数8000</span></p>-->
+                <!--<p><span>07</span><span>189****9089</span><span>月饼总数8000</span></p>-->
+                <!--<p><span>08</span><span>189****9089</span><span>月饼总数8000</span></p>-->
+                <!--<h3>我的排名：</h3>-->
+                <!--<p><span>07</span><span>189****9089</span><span>月饼总数8000</span></p>-->
+            </div>
+            <!--中奖名单-->
+            <div class="tree-bottomnotice-list bottomnotice-giftget" style="display: none;min-height: 200px;">
+                <h3>领奖方式：</h3>
+                <p>1.微信添加“yangzhibao11”（名为：养殖宝客服）；</p>
+                <p>2.将收件人姓名、地址、电话发给该微信账号；</p>
+                <p>3.养殖宝客服将逐一与您联系确认。</p>
+                <h3>中奖名单:</h3>
+                <p>一等奖:</p>
+                <p>186*****3599</p>
+                <p>二等奖:</p>
+                <p class="left">186*****1909</p>
+                <p class="left">158*****4175</p>
+                <p>187*****2571</p>
+                <div class="clearf"></div>
+                <p>三等奖:</p>
+                <p class="left">137*****2670</p>
+                <p class="left">180*****5892</p>
+                <p class="left">156*****2677</p>
+                <p class="left">134*****7108</p>
+                <p class="left">139*****2702</p>
+                <p class="left">187*****8868</p>
+                <p class="left">182*****1332</p>
+                <p class="left">155*****0972</p>
+                <p class="left">186*****0699</p>
+                <p>189*****1966</p>
+                <div class="clearf"></div>
+                <p>四等奖:</p>
+                <p class="left">137*****1558</p>
+                <p class="left">132*****9888</p>
+                <p class="left">156*****5670</p>
+                <p class="left">187*****6139</p>
+                <p class="left">139*****0195</p>
+                <p class="left">187*****4814</p>
+                <p class="left">188*****1249</p>
+                <p class="left">133*****4636</p>
+                <p class="left">133*****1051</p>
+                <p class="left">135*****2012</p>
+                <p class="left">186*****0136</p>
+                <p class="left">185*****9076</p>
+                <p class="left">139*****4680</p>
+                <p class="left">158*****8731</p>
+                <p class="left">152*****3275</p>
+                <p class="left">159*****6029</p>
+                <p class="left">136*****3193</p>
+                <p class="left">187*****1320</p>
+                <p class="left">130*****9264</p>
+                <p>150*****9400</p>
+                <div class="clearf"></div>
+            </div>
+        </div>
+        <audio id="myaudio" controls="controls" hidden="hidden">
+            <source src="yyy.ogg" type="audio/ogg" />
+            <source src="yyy.mp3" type="audio/mpeg" />
+            <source src="yyy.wav"/>
+        </audio>
+    </section>
+</div>
+</body>
+
+<script src="moonShake.js" type="text/javascript"></script>
+</html>

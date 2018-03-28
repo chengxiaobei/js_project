@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" href="../../../css/main_rp.css"/>
+	</head>
+	<body>
+	<div class="hzz_Capacity" style="display:none;">
+	   		<div class="hzz_Capacity_conter">
+	   			<span id="_xs" style="background:none"></span>
+	   			<div class="hzz_ja_tp">
+	   				<p>是否删除此样品信息？</p>
+	   			</div>
+	   			<a href="javascript:;">确认</a><a href="javascript:;" class="hzz_right">取消</a>
+	   		</div>
+	   </div>
+		<div class="wrap">
+		   <header>
+		     <a class="back-btn" href=""></a>
+			   <h2>填写检测申请</h2>
+	       <a class="hzz_xinxi" href="">取消</a>
+		   </header>
+		   <div class="hzz_ja_t"></div>
+		   <ul class="hzz_ja_ul">
+		   		<li class="hzz_xl"><p>检测样品</p><img src="../../../images/添加@2x.png"/></li>
+		   		<li class="hzz_xl hzz_xxl"><p><img id="hzz_sc" src="../../../images/删除@2x.png"/>检测样品<span>1</span></p><img src="../../../images/收起@2x.png"/>
+		   			<ul><li class="hzz_xl hzz_xxl"><p>检测样品<span>2</span></p><img src="../../../images/展开@2x.png"/></li></ul>
+		   		</li>
+		   		
+		   		<li><p>检测大类<img src="../../../images/星号@2x.png"/></p><input class="active" type="text" placeholder=" 请选择(可多选)"/></li>
+		   		<li><p>检测项目<img src="../../../images/星号@2x.png"/></p><input class="active" type="text" placeholder=" 请选择(可多选)"/></li>
+		   		<li><p>检测部位及样品<img src="../../../images/星号@2x.png"/></p><input class="active" type="text" placeholder=" 请选择(可多选)"/></li>
+		   		<li><p>栋舍／厂名<img src="../../../images/星号@2x.png"/></p><input class="active" type="text" placeholder=" 请选择(可多选)"/></li>
+		   		<li><p>公司养殖量<em>/</em>月</p><input type="text" placeholder=" 请输入数字"/>日龄</li>
+		   		<li><p>公司养殖量<em>/</em>月</p><input type="text" placeholder=" 请输入数字"/>日龄</li>
+		   		<li><p>公司养殖量<em>/</em>月<img src="../../../images/星号@2x.png"/></p><input type="text" placeholder=" 请输入数字"/>只</li>
+		   </ul>
+		   
+		  </div>
+		  <footer class="hzz_ja_ft">
+	 		<h3>下一步</h3>
+	 	   </footer>
+	 	   
+	    <script type="text/jscript" src="../../../js/common/jquery-1.9.1.min.js"></script>
+	 <script>
+	 	$(document).ready(function(){
+	 		$("#hzz_sc").click(function(){
+	 			console.log(0);
+	 			$(".hzz_Capacity").css({"display":"block"});
+	 		})
+	 		$(".hzz_Capacity a").click(function(){
+	 			console.log(1);
+	 			$(".hzz_Capacity").css({"display":"none"});
+	 		})
+	 	})
+	 </script>
+	</body>
+</html>

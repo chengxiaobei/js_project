@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html id="Xmas-2014">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="mobile-agent" content="format=html5;url=http://ohsame.com/">
+    <meta name="renderer" content="webkit">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body style="background: url(img/bg2.png)repeat 36px center">
+		
+		<button id="rulesp" style="position:fixed;height:32px;width:107px;bottom: 40px; color:#fff;background: #FCD221;left:50%;transform:translateX(-50%);z-index: 500;font-size:18px;border-radius: 20px;">返回游戏</button>
+		<div class="money-tree-bottomnotice tenactive-notice2" id="scroller">
+			<ul class="tree-bottomnotice-tab" id="dd" style="background:#fff;width:100%">
+                <!-- 选中加上类tab-checked-->
+                <li value="1" class="left tab-checked" id="ww">活动规则</li>
+                <li value="2" class="left">活动奖品</li>
+                <li value="3" class="left">英雄榜</li>
+                <li value="4" class="left">中奖名单</li>
+                <div class="clearf"></div>
+            </ul>
+		<div id="huodongguize" class="tree-bottomnotice-list" style="background:none">
+                <h3>活动规则：</h3>
+                <p>1．活动时间：2016年12月24日00:00-2016年12月28日23:59；</p>
+                <p>2．下载养殖宝并登录/注册即可参与游戏；</p>
+                <p>3．每位用户每日有2次参与机会；每参与一次消耗10个养殖币，请参考”个人中心“—”养殖币“—“赚养殖币”，如想增加参与次数，点击分享按钮，每天最多增加5次参与机会。增加机会不消耗养殖币；</p>
+                <p>4．点击分享，分享至朋友圈，增加参与机会，邀请好友下载，和好友一起玩。分享豪礼；<p>
+                <p>5．圣诞吉祥被卡到烟筒里了，用户可选择游戏中有四个角色，开始拯救计划，点击不断上拉，看看能把它们的脖子拉多长。</p>
+                <p>6．每个身份，收货地址仅有一次中奖机会；</p>
+                <p>7．根据最高分数排名即可获得相应奖品，若出现分数数量一致，则以系统排名为准；</p>
+                <p>8．奖品于活动结束后三个工作日内统一发出，届时养殖宝客服人员会与您联系；</p>
+                <p>9．活动最终解释权归养殖宝所有，详情可致电：400-800-5696</p>
+            </div>
+            <!--活动奖品-->
+            <div id="huodongjiangpin" class="tree-bottomnotice-list bottomnotice-listgift" style="display:none;background:none">
+                <h3>活动奖品：</h3>
+                <p>1.&nbsp; <img src="img/drivingrecord.jpg"> &nbsp;一等奖1名：行车记录仪</p>
+                <p>2.&nbsp; <img src="img/bracelet.jpg"> &nbsp;二等奖3名：小米手环</p>
+                <p>3.&nbsp; <img src="img/chargingtreasure.jpg"> &nbsp;三等奖6名：充电宝</p>
+                <p>4.&nbsp; <img src="img/vacuumcup.jpg"> &nbsp;四等奖10名: 保温杯</p>
+            </div>
+            <!--牛人榜-->
+            <div id="niurenbang" class="tree-bottomnotice-list bottomnotice-listniu" style="display:none;background:none">
+            <h3>我的排名：</h3>
+                <div id="wodebang">
+                	
+                </div>
+            <h3>英雄TOP榜：</h3>
+            <div id="topbang">
+                </div>
+                <!-- <p><span>01</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>02</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>03</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>04</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>05</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>06</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>07</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>08</span><span>189****9089</span><span>月饼总数8000</span></p> -->
+                
+                <!-- <p><span>07</span><span>189****9089</span><span>月饼总数8000</span></p> -->
+            </div>
+            <!--中奖名单-->
+            <div id="zhongjiangmingdan" class="tree-bottomnotice-list bottomnotice-giftget" style="display:none;background:none">
+                <h3>领奖方式：</h3>
+                <p>1.微信添加“yangzhibao11”（名为：养殖宝客服）；</p>
+                <p>2.将参与活动名称、收件人姓名、地址、电话发给该微信账号；</p>
+                <p>3.养殖宝客服将逐一与您联系确认。</p>
+                <h3>中奖名单: 活动结束将会公布</h3>
+                <!--<p>一等奖:</p>
+                <p>187*****571</p>
+                <p>二等奖:</p>
+                <p class="left">186*****599</p>
+                <p class="left">158*****731</p>
+                <div class="clearf"></div>
+                <p>三等奖:</p>
+                <p class="left">136*****193</p>
+                <p class="left">133*****699</p>
+                <p class="left">156*****677</p>
+                <p class="left">156*****768</p>
+                <p class="left">186*****755</p>
+                <p class="left">187*****195</p>
+                <p class="left">186*****909</p>
+                <p class="left">133*****082</p>
+                <p class="left">156*****670</p>
+                <div class="clearf"></div>
+                <p>四等奖:</p>
+                <p class="left">137*****092</p>
+                <p class="left">136*****121</p>
+                <p class="left">137*****558</p>
+                <p class="left">187*****868</p>
+                <p class="left">133*****636</p>
+                <p class="left">186*****468</p>
+                <p class="left">180*****892</p>
+                <p class="left">186*****136</p>
+                <p class="left">135*****470</p>
+                <p class="left">139*****702</p>
+                <p class="left">155*****972</p>
+                <p class="left">134*****108</p>
+                <p class="left">186*****570</p>
+                <p class="left">189*****966</p>-->
+                <div class="clearf"></div>
+            </div>
+       </div>
+	</body>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="../../../public/js/common/globalvar.js"></script>
+	<script src="js/shake.js"></script>
+</html>  

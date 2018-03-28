@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>经销商旗舰店</title>
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<link type="text/css" rel="stylesheet" href="../css/public.css">
+</head>
+	<body>
+      <header>
+        <div class="index-header">
+          <div class="header-main">
+            <img src="../images/bbd-logo.png" class="left header-leftlogo">
+            <!--选中时使用类header-checkedtext-->
+            <div class="right header-main-righttext">
+              <ul>
+                <li>首页</li>
+                <li class="header-checkedtext">核心产品</li>
+                <li>商业案例</li>
+                <li>关于佰邦达</li>
+              </ul>
+              <div class="clearf"></div>
+            </div>
+            <div class="clearf"></div>
+          </div>
+        </div>
+      </header>
+      <section>
+      <!--公用下拉部分-->
+      <!--当页面超过一瓶时，将第二个导航栏定在头部，使用类 twoheader-fixed-->
+        <div class="bbd-head">
+            <a id="secondchoose" href="#"></a>
+            <p class="jhuang-color">佰邦达转型云产品</p>
+            <span>经销商旗舰店</span>
+        </div>
+        <!--第一部分-->
+        <div class="ctwob-lineone" style="margin-bottom:0">
+          <div class="ctwob-lineone-main">
+            <h3>概览</h3>
+            <p>企业可以通过给经销商建立移动旗舰店帮助经销商，代理商更好的为他们的区域客户更好的提供服务，提升经销商服务品质，同时也帮助企业获取经销商的客户信息。</p>
+          </div>
+          <div class="ctwob-lineone-main">
+            <h3>服务对象</h3>
+            <p>经销商、经销商的客户</p>
+          </div>
+          <!--五个功能的图片-->
+          <div class="ctwob-fivegn">
+            <img src="../images/hua-img.png" style="margin-bottom:20px;">
+          </div>
+          <!--蓝色背景下的内容-->
+          <div class="bigsj-lanse">
+            <img src="../images/diqiu-img.png">
+          </div>
+        </div>
+        <div class="blue-footer">
+			<p>销售代表期待为您提供任何有用的信息</p>
+			<span>您也可以直接致电：022-65837100</span>
+			<div id="yuyue">在线预约咨询</div>
+			<div id="huoqu">获取联系信息</div>
+		</div>
+      </section>
+      <footer>
+      <div class="footer-main">
+        京ICP备09029096号-1京公网安备11010802011114
+      </div>
+    </footer>
+	</body>
+</html>

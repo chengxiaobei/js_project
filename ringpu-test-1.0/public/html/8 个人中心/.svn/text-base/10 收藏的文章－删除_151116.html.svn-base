@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>收藏的文章</title>
+<link type="text/css" rel="stylesheet" href="../../css/rp_style2.css">
+<script type="text/javascript" src="../../less/less.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="back-btn" href=""></a>
+      <h2>收藏的文章</h2>
+    </header>
+    <section class="main-section">
+      <!--遮罩-->
+      <div class="mask"></div>
+      <!--删除  字体变红的类是center-red-->
+      <div class="scwz-del">
+        <div class="deledt-confirm">
+          <div class="confirm-top">确认取消收藏吗？</div>
+          <div class="confirm-bottom center-red">确认</div>
+        </div>
+        <div class="deledt-cancle">
+          <div class="cancle-btn">取消</div>
+        </div>
+      </div>
+      <div class="scwz-box">
+        <!--1 图片文字-->
+        <div class="scwz-img-word">
+          <img src="../../images/scwz-img.png" class="scwz-img left">
+          <div class="scwz-tit right">瑞普生物参与设立的蔡宝祥奖学金基金成立大会在南京农业大学……</div>
+          <div class="scwz-date">
+            <div class="left">2014-09-09</div>
+            <a class="right" href="">养猪</a>
+            <a class="right" href="">成本</a>
+            <div class="clearf"></div>
+          </div>
+          <div class="clearf"></div>
+        </div>
+        <!--2 文字-->
+        <div class="scwz-word">
+          <div class="scwz-tit">瑞普生物参与设立的蔡宝祥奖学金基金成立大会在南京农业大学……</div>
+          <div class="scwz-date">
+            <div class="left">2014-09-09</div>
+            <a class="right" href="">养猪</a>
+            <a class="right" href="">成本</a>
+            <div class="clearf"></div>
+          </div>
+        </div>
+        <!--3 文字图片-->
+        <div class="scwz-word-img">
+          <div class="scwz-tit">瑞普生物参与设立的蔡宝祥奖学金基金成立大会在南京农业大学……</div>
+          <div class="scwz-pic">
+            <img src="../../images/scwz-img.png" class="scwz-img">
+            <img src="../../images/scwz-img.png" class="scwz-img scwz-img-mid">
+            <img src="../../images/scwz-img.png" class="scwz-img">
+          </div>
+          <div class="scwz-date">
+            <div class="left">2014-09-09</div>
+            <a class="right" href="">养猪</a>
+            <a class="right" href="">成本</a>
+            <div class="clearf"></div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+
+
+
+

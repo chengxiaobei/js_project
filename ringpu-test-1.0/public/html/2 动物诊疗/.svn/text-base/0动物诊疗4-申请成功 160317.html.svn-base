@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>动物诊疗--申请成功</title>
+<link type="text/css" rel="stylesheet" href="../../css/rp_style1.css">
+  <link type="text/css" rel="stylesheet" href="../../css/rp_style3.css">
+<script type="text/javascript" src="../../less/less.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="back-btn" href=""></a>
+      <h2>动物诊疗</h2>
+      <a class="reg-btn help-btn">帮助信息</a>
+    </header>
+    <section class="main-section">
+      <div class="dw-sqcgsection">
+      <!-- 支付结果模块 -->
+      <div class="dw-sqcg-main">
+        <img src="../../images/dw-trueimg.png">
+        <h1 class="pay-fail">申请成功！</h1>
+        <p>我们会在48h内打电话询问具体信息<br>请您保持电话畅通</p>
+        <p>检测费用会按照实际情况计算</p>
+        <!-- 按钮 -->
+        <a href="" class="animal-bottombtn select-dangan-btn">查看我的检测档案</a>
+        <a href="" class="animal-bottombtn select-dangan-btn">完善采样单</a>
+       </div>
+         <span class="dw-shenqing-zhixian"></span>
+         <p class="dw-shenqing-tishi">如您已经寄送病料，现在去</p>
+         <a href="" class="animal-bottombtn select-dangan-btn">填写送料信息</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

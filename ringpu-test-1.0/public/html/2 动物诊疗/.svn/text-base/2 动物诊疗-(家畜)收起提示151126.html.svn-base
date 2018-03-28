@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>2动物诊疗-(家畜)收起提示</title>
+<link type="text/css" rel="stylesheet" href="../../css/public.css">
+<link type="text/css" rel="stylesheet" href="../../css/rp_style3.css">
+</head>
+<body class="whiteBg">
+  <div class="wrap">
+    <header>
+      <a class="back-btn"></a>
+      <h2>动物诊疗</h2>
+      <a class="reg-btn help-btn">帮助信息</a>
+    </header>
+    <section class="main-section-animal">
+    <!--弹窗-->
+     <div class="animal-alert">
+       <p class="jb-alerttext">基本信息中的联系人未填！</p>
+     </div>
+      <!--第一行-->
+      <div class="sfbz-main">
+        <div class="sfbz-lineone">
+       	  <p class="left">基本信息*</p>
+       	  <p class="right sfbz-lineone-color">编辑</p>
+       	  <div class="clearf"></div>
+        </div>
+      </div>
+      <!--第二行-->
+      <div class="sfbz-main sfbz-main-notopborder">
+        <div class="sfbz-lineone">
+       	  <p class="left">送检样品信息*</p>
+       	  <p class="right sfbz-lineone-color">编辑</p>
+       	  <div class="clearf"></div>
+        </div>
+      </div>
+      <!--第三行-->
+      <div class="sfbz-main sfbz-main-notopborder">
+        <div class="sfbz-lineone">
+          <p class="left">用药方案与疗效</p>
+          <p class="right sfbz-lineone-color">编辑</p>
+          <div class="clearf"></div>
+        </div>
+      </div>
+      <!--第四行-->
+      <div class="sfbz-main sfbz-main-notopborder">
+        <div class="sfbz-lineone">
+          <p class="left">免疫信息（检测抗体必填）</p>
+          <p class="right sfbz-lineone-color">编辑</p>
+          <div class="clearf"></div>
+        </div>
+      </div>
+      <!--第五行-->
+      <div class="sfbz-main sfbz-main-notopborder">
+        <div class="sfbz-lineone">
+          <p class="left">临床表现（检测病毒、细菌必填）</p>
+          <p class="right sfbz-lineone-color">编辑</p>
+          <div class="clearf"></div>
+        </div>
+      </div>
+      <!--第六行-->
+      <div class="sfbz-main sfbz-main-notopborder">
+        <div class="sfbz-lineone">
+          <p class="left">建议检查的项目</p>
+          <p class="right sfbz-lineone-color">编辑</p>
+          <div class="clearf"></div>
+        </div>
+      </div>
+      <!--如果用到提交按钮直接打开-->
+      <!--<a href="">提交采样单</a>-->
+    </section>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

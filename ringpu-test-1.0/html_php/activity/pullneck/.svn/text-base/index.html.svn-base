@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html id="Xmas-2014">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="mobile-agent" content="format=html5;url=http://ohsame.com/">
+    <meta name="renderer" content="webkit">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <!--<link rel="shortcut icon" type="image/x-icon" href="../src/images/website/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../src/images/website/favicon-192.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../src/images/website/favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../src/images/website/favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../src/images/website/favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../src/images/website/favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../src/images/website/favicon-72.png">-->
+
+    <script>
+      (function() {
+      	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+      	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        var fontSize = Math.min(w, h)/32;
+        if(fontSize > 16) {
+          fontSize = 16;
+        } 
+        document.getElementsByTagName('html')[0].setAttribute("style", "font-size:" + fontSize + "px");
+      }());
+    </script>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      user_id = "";
+      user_token = "";
+    </script>
+  </head>
+  <body>
+    <div class="content" style="overflow-y:scroll">
+    	<div class="logo">
+    		<ul>
+    			<li><img src="img/lzlogo.png"></li>
+    			<li class="geshu1">养殖币:<p id="money">0</p><span>枚</span><li>
+    		    <li class="geshu2" style="display:none;">距离游戏结束<p id="geshu">30</p><span>秒</span><li>
+    			<li>机会次数:<p id="scor">0</p><span>次</span></li>
+    		</ul>
+    	</div>
+      <div class="scroller-wrapper">
+      	<!--
+          	作者：offline
+          	时间：2016-12-08
+          	描述：云彩
+          -->
+        <div class="cloud-container">
+          <div class="cloud-wrapper">
+            <div class="cloud"></div>
+          </div>
+          <div class="cloud-wrapper">
+            <div class="cloud"></div>
+          </div>
+          <div class="cloud-wrapper">
+            <div class="cloud"></div>
+          </div>
+          <div class="cloud-wrapper">
+            <div class="cloud"></div>
+          </div>
+          <div class="cloud-wrapper">
+            <div class="cloud"></div>
+          </div>
+          <div class="cloud-wrapper">
+            <div class="cloud"></div>
+          </div>
+          <div class="cloud-wrapper">
+            <div class="cloud"></div>
+          </div>
+          <div class="cloud-wrapper">
+            <div class="cloud"></div>
+          </div>
+          <div class="cloud-wrapper">
+            <div class="cloud"></div>
+          </div>
+          <div class="cloud-wrapper">
+            <div class="cloud"></div>
+          </div>
+        </div>
+        <div class="scroll-background"></div>
+        <div class="character-wrapper">
+        	<!--脖子-->
+          <div class="idol-body idol-body-0"></div>
+         <!--头部-->
+          <div class="idol-head idol-head-0"></div>
+        </div>
+        <!--动物藏身的背景-->
+        <div class="pipe-container">
+          <div class="pipe-wrapper">
+            <div class="pipe-0 pipes"></div> 
+            <div class="pipe-1 pipes"></div>
+            <div class="pipe-2 pipes"></div>
+            <div class="pipe-3 pipes"></div>
+          </div>
+        </div>
+        <!--
+        	作者：offline
+        	时间：2016-12-08
+        	描述：角色选择
+        -->
+        <div class="game-start-bar">选择你的角色
+          <div class="idol-selector">
+            <div class="idol-a idols"></div>
+            <div class="idol-b idols grey"></div>
+            <div class="idol-c idols grey"></div>
+            <div id="idol-d" class="idol-d idols grey"></div>
+          </div>
+        </div>
+      </div>
+      <div class="guide-button" id="guide-button" style="z-index:-10"></div>
+      <div  class ="detailed" style="position: absolute;height:50px;width:80px;line-height:50px;top: 100px;text-decoration: underline; color: #f80000;left: 9px;z-index: 800;">查看活动细则</div>
+      <!--
+      	作者：offline
+      	时间：2016-12-08
+      	描述：分享按钮
+      -->
+      <div class="share-button" style="z-index:300"></div>
+      <!--
+      	作者：offline
+      	时间：2016-12-08
+      	描述：成绩
+      -->
+      <div class="rank">0 m</div>
+      <div class="high-rank">best: 0 m</div>
+      <div class="single-rank" style="display:none;">0 m</div>
+      <div class="money-tree-bottomnotice tenactive-notice">
+      	
+            <ul class="tree-bottomnotice-tab" id="dd">
+                <!-- 选中加上类tab-checked-->
+                <li value="1" class="left tab-checked" id="ww">活动规则</li>
+                <li value="2" class="left">活动奖品</li>
+                <li value="3" class="left">英雄榜</li>
+                <li value="4" class="left">中奖名单</li>
+                <div class="clearf"></div>
+            </ul>
+            <div class="clearf"></div>
+            <!--活动规则-->
+            <div id="huodongguize" class="tree-bottomnotice-list">
+                <h3>活动规则：</h3>
+                <p>1．活动时间：2016年12月24日00:00-2016年12月28日23:59；</p>
+                <p>2.活动对象：养殖宝专家</p>
+                <p>3.活动参与资格：</p>
+                	<p> &nbsp; &nbsp;1）下载养殖宝兽医端并登录/注册</p>
+                	<p> &nbsp; &nbsp;2）完成专家身份申请</p>
+                <p>4．每位用户每日有3次参与机会；每参与一次消耗10个养殖币，请参考”个人中心“—”养殖币“—“赚养殖币”，如想增加参与次数，点击分享按钮，每天最多增加5次参与机会。增加机会不消耗养殖币；</p>
+                <p>5．点击分享，分享至朋友圈，增加参与机会，邀请好友下载，和好友一起玩。分享豪礼；<p>
+                <p>6．圣诞吉祥被卡到烟筒里了，用户可选择游戏中有四个角色，开始拯救计划，点击不断上拉，看看能把它们的脖子拉多长。</p>
+                <p>7．每个身份，收货地址仅有一次中奖机会；</p>
+                <p>8．根据最高分数排名即可获得相应奖品，若出现分数数量一致，则以系统排名为准；</p>
+                <p>9．奖品于活动结束后三个工作日内统一发出，届时养殖宝客服人员会与您联系；</p>
+                <p>10．活动最终解释权归养殖宝所有，详情可致电：400-800-5696</p>
+            </div>
+            <!--活动奖品-->
+            <div id="huodongjiangpin" class="tree-bottomnotice-list bottomnotice-listgift" style="display:none">
+                <h3>活动奖品：</h3>
+                <p>1.&nbsp; <img src="img/drivingrecord.jpg"> &nbsp;一等奖1名：行车记录仪</p>
+                <p>2.&nbsp; <img src="img/bracelet.jpg"> &nbsp;二等奖3名：小米手环</p>
+                <p>3.&nbsp; <img src="img/chargingtreasure.jpg"> &nbsp;三等奖6名：充电宝</p>
+                <p>4.&nbsp; <img src="img/vacuumcup.jpg"> &nbsp;四等奖10名: 保温杯</p>
+            </div>
+            <!--牛人榜-->
+            <div id="niurenbang" class="tree-bottomnotice-list bottomnotice-listniu" style="display: none;">
+            <h3>我的排名：</h3>
+                <div id="wodebang">
+                	
+                </div>
+            <h3>英雄TOP榜：</h3>
+            <div id="topbang">
+                
+                </div>
+                <!-- <p><span>01</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>02</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>03</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>04</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>05</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>06</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>07</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>08</span><span>189****9089</span><span>月饼总数8000</span></p> -->
+                
+                <!-- <p><span>07</span><span>189****9089</span><span>月饼总数8000</span></p> -->
+
+            </div>
+            <!--中奖名单-->
+            <div id="zhongjiangmingdan" class="tree-bottomnotice-list bottomnotice-giftget" style="display: none;">
+                <h3>领奖方式：</h3>
+                <p>1.微信添加“yangzhibao11”（名为：养殖宝客服）；</p>
+                <p>2.将参与活动名称、收件人姓名、地址、电话发给该微信账号；</p>
+                <p>3.养殖宝客服将逐一与您联系确认。</p>
+                <h3>中奖名单: 活动结束将会公布</h3>
+                <!--<p>一等奖:</p>
+                <p>187*****571</p>
+                <p>二等奖:</p>
+                <p class="left">186*****599</p>
+                <p class="left">158*****731</p>
+                <div class="clearf"></div>
+                <p>三等奖:</p>
+                <p class="left">136*****193</p>
+                <p class="left">133*****699</p>
+                <p class="left">156*****677</p>
+                <p class="left">156*****768</p>
+                <p class="left">186*****755</p>
+                <p class="left">187*****195</p>
+                <p class="left">186*****909</p>
+                <p class="left">133*****082</p>
+                <p class="left">156*****670</p>
+                <div class="clearf"></div>
+                <p>四等奖:</p>
+                <p class="left">137*****092</p>
+                <p class="left">136*****121</p>
+                <p class="left">137*****558</p>
+                <p class="left">187*****868</p>
+                <p class="left">133*****636</p>
+                <p class="left">186*****468</p>
+                <p class="left">180*****892</p>
+                <p class="left">186*****136</p>
+                <p class="left">135*****470</p>
+                <p class="left">139*****702</p>
+                <p class="left">155*****972</p>
+                <p class="left">134*****108</p>
+                <p class="left">186*****570</p>
+                <p class="left">189*****966</p>-->
+                <div class="clearf"></div>
+            </div>
+            
+        </div>
+    </div>
+    <!--<a href="http://share.ohsame.com/market/down?name=xmas2015" class="ad-banner">-->
+     <!--<div class="ad-banner-left"></div>
+      <div class="ad-banner-right"></div></a>-->
+     <!--
+     	作者：offline
+     	时间：2016-12-08
+     	描述：进入页面的游戏提示
+     -->
+    <div style="display:none" class="guide">
+      <div class="guide-theme-wrapper">
+        <div class="guide-pic"></div>
+        <div class="guide-idol-wrapper">
+          <div class="guide-idol-head"></div>
+          <div class="guide-idol-stretch"></div>
+        </div>
+        <div class="guide-gesture-l"></div>
+        <div class="guide-gesture-r"></div>
+      </div>
+      <div class="guide-text-1">圣诞小吉祥物藏在箱子里了</div>
+      <div class="guide-text-2">点击开始 / 不断上拉</div>
+      <div class="guide-text-3">看看能把它们的脖子拉多长吧</div>
+      <div class="guide-ok">OK</div>
+    </div>
+    <div class="lunbo">
+          	<div class="lb-0 lb" style="overflow-y:scroll">
+          		<div id="gamestart" class="middle"></div>
+          		<div class="newmask">
+          			<div class="role"></div>
+          			<div class="role"></div>
+          			<div class="role"></div>
+          			<div class="role"></div>
+          		</div>
+          </div>
+          	</div>
+			<div class="lb-1 lb"></div>
+			<div class="lb-2 lb"></div>
+			<div class="lb-3 lb"></div>
+	</div>
+	<!--每次游戏结束后的弹框-->
+	<div class="endpop-ups alert-tips">
+		<div class="endpop-upsc">
+			<p class="endpop-text"><p>
+			<button class="again">再玩一次</button><br/>
+			<button class="toshowoff">我要炫耀</button>
+			<div class="endpop-upsx" style="height:45px;width:45px;"><img src="img/upend.png"></div>
+		</div>
+	</div>
+	<!--养殖币不足弹窗-->
+	<div class="nomoney alert-tips">
+		<div class="nomoneyc">
+			<p>养殖币不足啦</p>
+			<span>快去“个人中心”—“养殖币”—“赚<br/>养殖币”，赚取养殖币吧！</span>
+			<button class="nmy-determine">确定</button>
+			<div class="nomoneyx" style="height:45px;width:45px;"><img src="img/upend.png"></div>
+		</div>
+		
+	</div>
+	<!--分享获取机会-->
+	<div class="notimers alert-tips">
+		<div class="notimersc">
+			<p>今天的机会用完啦</p>
+			<span>赶快点击右上角，发送给朋友<br/>帮自己增加机会吧</span>
+			<button class="nms-determine">确定</button>
+			<div class="notimersx" style="height:45px;width:45px;"><img src="img/upend.png"></div>
+		</div>
+	</div>
+	<!--没有机会弹窗-->
+	<div class="notimersz alert-tips">
+		<div class="notimerscz">
+			<p>今天的机会用完啦</p>
+			<span>想得到更高的分数<br/>明天在来吧</span>
+			<button class="nms-determinez">确定</button>
+			<div class="notimerszx" style="height:45px;width:45px;"><img src="img/upend.png"></div>
+		</div>
+	</div>
+	<!--不是专家-->
+	<div class="experts alert-tips">
+		<div class="expertsc">
+			<p>您还不是专家</p>
+			<span>快去“在线答疑”申请成为专家<br/>再来玩吧</span>
+			<button class="es-determinez">确定</button>
+			<div class="expertsx" style="height:45px;width:45px;"><img src="img/upend.png"></div>
+		</div>
+	</div>
+	<!--活动结束-->
+	<div class="end alert-tips">
+		<div class="endc">
+			<p>活动已结束</p>
+			<button class="end-determinez">确定</button>
+			<div class="endx" style="height:45px;width:45px;"><img src="img/upend.png"></div>
+		</div>
+	</div>
+  <section id="wrap2" style="background: url(img/bg2.png)repeat 36px center;display: none;height: 100%;">        
+    <button id="rulesp" style="position:fixed;height:32px;width:107px;bottom: 40px; color:#fff;background: #FCD221;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);z-index: 500;font-size:18px;border-radius: 20px;">返回游戏</button>
+    <div class="money-tree-bottomnotice tenactive-notice2" id="scroller">
+      <ul class="tree-bottomnotice-tab" id="dd" style="background:#fff;width:100%">
+                <!-- 选中加上类tab-checked-->
+                <li value="1" class="left tab-checked" id="ww">活动规则</li>
+                <li value="2" class="left">活动奖品</li>
+                <li value="3" class="left">英雄榜</li>
+                <li value="4" class="left">中奖名单</li>
+                <div class="clearf"></div>
+            </ul>
+    <div id="huodongguizes" class="tree-bottomnotice-list" style="background:none">
+                <h3>活动规则：</h3>
+                <p>1．活动时间：2016年12月24日00:00-2016年12月28日23:59；</p>
+                <p>2.活动对象：养殖宝专家</p>
+                <p>3.活动参与资格：</p>
+                	<p>&nbsp; &nbsp;1）下载养殖宝兽医端并登录/注册</p>
+                	<p>&nbsp; &nbsp;2）完成专家身份申请</p>
+                <p>4．每位用户每日有2次参与机会；每参与一次消耗10个养殖币，请参考”个人中心“—”养殖币“—“赚养殖币”，如想增加参与次数，点击分享按钮，每天最多增加5次参与机会。增加机会不消耗养殖币；</p>
+                <p>5．点击分享，分享至朋友圈，增加参与机会，邀请好友下载，和好友一起玩。分享豪礼；<p>
+                <p>6．圣诞吉祥被卡到烟筒里了，用户可选择游戏中有四个角色，开始拯救计划，点击不断上拉，看看能把它们的脖子拉多长。</p>
+                <p>7．每个身份，收货地址仅有一次中奖机会；</p>
+                <p>8．根据最高分数排名即可获得相应奖品，若出现分数数量一致，则以系统排名为准；</p>
+                <p>9．奖品于活动结束后三个工作日内统一发出，届时养殖宝客服人员会与您联系；</p>
+                <p>10．活动最终解释权归养殖宝所有，详情可致电：400-800-5696</p>
+            </div>
+            <!--活动奖品-->
+            <div id="huodongjiangpins" class="tree-bottomnotice-list bottomnotice-listgift" style="display:none;background:none">
+                <h3>活动奖品：</h3>
+                <p>1.&nbsp; <img src="img/drivingrecord.jpg"> &nbsp;一等奖1名：行车记录仪</p>
+                <p>2.&nbsp; <img src="img/bracelet.jpg"> &nbsp;二等奖3名：小米手环</p>
+                <p>3.&nbsp; <img src="img/chargingtreasure.jpg"> &nbsp;三等奖6名：充电宝</p>
+                <p>4.&nbsp; <img src="img/vacuumcup.jpg"> &nbsp;四等奖10名: 保温杯</p>
+            </div>
+            <!--牛人榜-->
+            <div id="niurenbangs" class="tree-bottomnotice-list bottomnotice-listniu" style="display:none;background:none">
+            <h3>我的排名：</h3>
+                <div id="wodebangs">
+                  
+                </div>
+            <h3>英雄TOP榜：</h3>
+            <div id="topbangs" class="topbangs">
+                </div>
+                <!-- <p><span>01</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>02</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>03</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>04</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>05</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>06</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>07</span><span>189****9089</span><span>月饼总数8000</span></p>
+                <p><span>08</span><span>189****9089</span><span>月饼总数8000</span></p> -->
+                
+                <!-- <p><span>07</span><span>189****9089</span><span>月饼总数8000</span></p> -->
+            </div>
+            <!--中奖名单-->
+            <div id="zhongjiangmingdans" class="tree-bottomnotice-list bottomnotice-giftget hzz-left" style="display:none;background:none">
+                <h3>领奖方式：</h3>
+                <p style="float:none;width:100%;">1.微信添加“yangzhibao11”（名为：养殖宝客服）；</p>
+                <p  style="float:none;width:100%">2.将参与活动名称、收件人姓名、地址、电话发给该微信账号；</p>
+                <p  style="float:none;width:100%;">3.养殖宝客服将逐一与您联系确认。</p>
+                <h3>中奖名单: 活动结束将会公布</h3>
+                <p  style="float:none;padding-top:20px">一等奖:</p>
+                <p>138*****784<span style="padding-left:10px">分数：2344</span></p>
+                <p  style="float:none">二等奖:</p>
+                <p>186*****136<span style="padding-left:10px">分数：2052</span></p>
+                <p>133*****699<span style="padding-left:10px">分数：1893</span></p>
+                <p>186*****468<span style="padding-left:10px">分数：1893</span></p>
+                <div class="clearf"></div>
+                <p  style="float:none">三等奖:</p>
+                <p>186*****570<span style="padding-left:10px">分数：1473</span></p>
+                <p>155*****972<span style="padding-left:10px">分数：1106</span></p>
+                <p>151*****086<span style="padding-left:10px">分数：959</span></p>
+                <p>177*****377<span style="padding-left:10px">分数：918</span></p>
+                <p>134*****108<span style="padding-left:10px">分数：904</span></p>
+                <p>158*****175<span style="padding-left:10px">分数：878</span></p>
+                <div class="clearf"></div>
+                <p  style="float:none">四等奖:</p>
+                <p>186*****909<span style="padding-left:10px">分数：857</span></p>
+                <p>187*****814<span style="padding-left:10px">分数：749</span></p>
+                <p>188*****120<span style="padding-left:10px">分数：670</span></p>
+                <p>187*****624<span style="padding-left:10px">分数：661</span></p>
+                <p>135*****258<span style="padding-left:10px">分数：647</span></p>
+                <p>134*****733<span style="padding-left:10px">分数：640</span></p>
+                <p>158*****874<span style="padding-left:10px">分数：628</span></p>
+                <p>177*****099<span style="padding-left:10px">分数：570</span></p>
+                <p>177*****327<span style="padding-left:10px">分数：546</span></p>
+                <p>138*****996<span style="padding-left:10px">分数：511</span></p>
+                <div class="clearf"></div>
+            </div>
+       </div>
+  </section>
+	<!--js部分-->
+    <script>
+    console.log(document.getElementById('ww'));
+    	document.getElementById('ww').addEventListener('click',function(){alert(111)},false)
+    </script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="../../../public/js/common/globalvar.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+      $.fx.interval = 16;
+      if ('addEventListener' in document) {
+      	document.addEventListener('DOMContentLoaded', function() {
+      		FastClick.attach(document.body);
+      	}, false);
+      }
+    </script>
+    <script>
+      user_id = '';
+      function openProfile(uid){
+      	if(uid != "" && uid != undefined){
+      		var url = 'same2.0://user/'+uid;
+      		window.location.href= url;
+      	}
+      }
+    </script>
+    <script src="../../../public/js/common/globalvar.js"></script>
+    <script src="js/shake.js"></script>
+  </body>
+</html>

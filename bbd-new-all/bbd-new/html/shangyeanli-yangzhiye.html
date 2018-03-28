@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<title>商业案例--医疗</title>
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<link type="text/css" rel="stylesheet" href="../css/public.css">
+<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/alert.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    //弹出表单
+      $('#yvyue').click(function(){
+        $('#biaodan').show();
+      })
+
+    //返回顶部的隐藏和显示
+    $(".returntop").hide();
+    $(window).scroll(function() {
+      if($(window).scrollTop()> $(window).height()){
+        $(".returntop").show();
+      }else{
+        $(".returntop").hide();c
+      }
+    }); 
+    
+  })
+</script>
+</head>
+<body>
+  <div id="oDialog"></div>
+    <div class="wrap">
+    <header>
+        <!--头部顶部-->
+        <div class="header-width">
+          <div class="header-top">
+            <p class="right"><a id="lianxi2">联系方式</a></p>
+            <p class="right"><a id="yvyue2">预约咨询</a><span>|</span></p>
+            
+            <p class="right">服务电话400-0000-0000<span>|</span></p>
+            
+            <div class="clearf"></div>
+          </div>
+          <div class="clearf"></div>
+        </div>
+      <!--头部第一行logo-->
+      <div class="index-header">
+        <div class="index-header-lineonemain">
+          <div class="left index-logo"><img src="../images/bbd-logo.png"></div>
+          <div class="right">
+            <ul>
+                <!--选中的蓝色状态使用类index-toptab-checked-->
+                <li><a href="index.html" class="index-headertext">首页</a><div class="toptab-checked"></div></li>
+                <li><a href="hx-pro.html" class="index-headertext">核心产品</a><div class="toptab-checked"></div></li>
+                <li class="index-toptab-checked"><a href="shangyeanli.html" class="index-headertext">商业案例</a><div class="toptab-checked"></div></li>
+                <li><a href="bbd-one.html" class="index-headertext">关于佰邦达</a><div class="toptab-checked"></div></li>
+              </ul>
+                <div class="clearf"></div>
+              </div>
+              <div class="clearf"></div>
+            </div>
+          </div>   
+    </header>
+    <section>
+      <!--商业案例-整体宽度为1207px-->
+      <div class="sy-width">
+        <div class="sy-width-main">
+          <!--第一行-->
+          <img class="sy-imgoneclass" src="../images/sy-img1.png">
+          <!--第二行-->
+          <img class="sy-lintwo-img" src="../images/sy-img2.png">
+          <!--第三行-->
+          <div class="sy-linthree">
+            <!--<img src="../images/anliku-img.png">-->
+            <h3>案例库</h3>
+            <p>佰邦达专注传统企业互联网+升级改造事业</p>
+            <p>现已在六大领域拥有众多经典商业案例</p>
+          </div>
+          <!--第四行-->
+          <div class="sy-linefour" id="sy-linefour">
+            <ul>
+              <li class="">
+                <div class="sy-linefour-main"> 
+                  <img src="../images/sy-feiji.png">
+                  <p><a href="">航空</a></p>
+                </div>
+                <div class="sy-linefour-mainchecked" style="display:none;"> 
+                  <img src="../images/sy-feiji1.png">
+                  <p><a href="">航空</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="sy-linefour-main" style="display:none;"> 
+                  <img src="../images/sy-yiliao.png">
+                  <p><a href="">医疗</a></p>
+                </div>
+                <div class="sy-linefour-mainchecked"> 
+                  <img src="../images/sy-yiliao1.png">
+                  <p><a href="">医疗</a></p>
+                </div>
+              </li>
+              <li>
+                <!--当选中的时候使用类sy-linefour-checkedmain同时隐藏sy-linefour-main-->
+                <div class="sy-linefour-main"> 
+                  <img src="../images/sy-zhu.png">
+                  <p><a href="">养殖业</a></p>
+                </div>
+                <div class="sy-linefour-checkedmain" style="display:none;"> 
+                  <img src="../images/sy-zhu1.png">
+                  <p><a href="">养殖业</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="sy-linefour-main"> 
+                  <img src="../images/sy-yanjing.png">
+                  <p><a href="">美妆</a></p>
+                </div>
+                <div class="sy-linefour-mainchecked" style="display:none;"> 
+                  <img src="../images/sy-yanjing1.png">
+                  <p><a href="">美妆</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="sy-linefour-main"> 
+                  <img src="../images/sy-bi.png">
+                  <p><a href="">办公</a></p>
+                </div>
+                <div class="sy-linefour-mainchecked" style="display:none;"> 
+                  <img src="../images/sy-bi1.png">
+                  <p><a href="">办公</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="sy-linefour-main"> 
+                  <img src="../images/sy-qi.png">
+                  <p><a href="">政府</a></p>
+                </div>
+                <div class="sy-linefour-mainchecked" style="display:none;"> 
+                  <img src="../images/sy-qi1.png">
+                  <p><a href="">政府</a></p>
+                </div>
+              </li>
+            </ul>
+            <div class="clearf"></div>
+          </div>
+          <!--第五行-->
+          <div class="sy-linefive">
+            <img class="sy-imgfourclass" src="../images/shangyeanluyangzhi.jpg">
+          </div>
+          <!--第六行-->
+          <div class="sy-linesix" id="sy-linesix">
+            <div class="sy-linesix-main">
+              <div class="sy-linesix-one">
+                <div class="">
+                  <h2 class="left">养殖宝</h2>
+                  <img class="left yao-imgclass" src="../images/yangzhilogo.png">
+                  <div class="clearf"></div>
+                </div>
+                <div class="sy-linesix-p">
+                  <h3>产品概述</h3>
+                  <p>2015年，佰邦达公司协助瑞普生物开始了以“养殖宝APP”为中心的互联网+升级战略；如今瑞普生物正在成长为中国最优秀的动保行业信息化龙头企业，智慧养殖和动物疫病防治综合服务商。</p>
+                </div>
+                <div class="sy-linesix-p">
+                  <h3>业务模式</h3>
+                  <p>-卓越的品质 – 不断寻求品质改进，为客户提供稳定的、性能优越的产品与服务；<br /> -领先的效率 – 以领先的市场反应速度和资本运作效率确保‘抢先一步’满足客户需求；<br /> -持续的创新– 以创新精神作为瑞普人的标识，不断追求技术创新、管理创新，开拓更广阔的市场。 </p>
+                </div>
+                <div>
+                  <h3>用户价值与业务亮点</h3>
+                  <div class="sy-linesix-bg">
+                    <ul>
+                      <li>
+                        <span>战略定位</span>
+                        <p>以智慧养殖和动物疫病防治综合服务为切入点，将互联网技术（移动互联网、云计算、大数据）与疫病专业化诊疗体系（兽医专家远程诊断、高效检测服务网络）相结合，全力帮助养殖企业降低成本，提升效益，创造一个共赢的中国养殖产业生态圈。
+</p>
+                      </li>
+                      <li class="sy-linesix-bgtwo">
+                        <span>平台战略</span>
+                        <p>平台战略即线下通过吸纳全球最优秀的供应商加盟，通过整合最好的产品资源，与国内最优秀的经销商深度合作，同时通过线上和线下汇聚大批行业专家和本地专家，来给客户提供综合服务和一体化解决方案。
+</p>
+                      </li>
+                      <li class="sy-linesix-bgtwo">
+                        <span>重点发展策略</span>
+                        <p>构建三大业务组合：研发生产业务、大数据及大服务业务和大渠道业务; 打造两项基础设施：检测网络、互联网基础设施。</p>
+                      </li>
+                    </ul>
+                    <div class="clearf"></div>
+                  </div>
+                </div>
+              </div>
+                <div class="sy-linesix-p">
+                  <h3>战略举措</h3>
+                  <div class="sy-linesix-boder">
+                  	<span>搭建基于移动互联网的技术服务能力，构建智慧瑞普的增值服务模式</span>
+ 										<span>搭建在线产品展示和在线交易平台，通过线上线下融合提高效率</span>
+										<span>线下渠道资源和检测服务资源整合，共同打造瑞普互联网+生态圈</span>
+										<span>打造动保行业专家与互联网专家、供应链金融专家相结合的管理经营团队</span>
+										<span>推动互联网+项目增发，以建设线下检测网络和互联网基础设施</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--核心产品第九行-->
+      <div class="hx-linefive">
+        <div class="hx-linefive-main">
+          <div class="left hx-linefive-lefttext">
+            <p>如果您对我们的产品和服务感兴趣，</p>
+            <p>如果您准备做些不同的惊人的决定，</p>
+            <p>我们的销售代表很愿意为您提供一些有用的信息。</p>
+            <div class="hx-linefive-btn">
+              <a class="hx-linefive-leftbtn" id="yvyue1">在线预约咨询</a>
+              <a class="hx-linefive-rightbtn"  id="lianxi1">获取联系方式</a>
+              <div class="clearf"></div>
+            </div>
+            <div class="hx-linefive-bottomtext">
+              <p>您也可以直接致电佰邦达服务电话：400-8888-88888</p>
+              <p>销售代表期待为您解答任何问题。</p>
+            </div>
+          </div>
+          <div class="right hx-linefive-right">
+            <img class="diqiu-imgclass" src="../images/diqiu.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+      <div class="footer-main">
+        <p>2016 BBDTEK All right reserved.各商标由其各自所有人持有。京ICP备09029096号-1京公网安备11010802011114</p>
+        <p class="footer-linetwo"><a  id="zhaopin">招聘</a> | <a  id="lianxi">联系方式</a> | <a  id="wangzhan">网站地图</a> |
+          <a  id="yinsi">隐私声明</a></p>
+        </div>
+      </div>
+    </footer>
+    <div class="returntop">
+      <div><a href="javascript:window.scrollTo( 0, 0 );"><img src="../images/return .png" /></a></div>
+      <div><a href="javascript:window.scrollTo( 0, 1620 );"><img src="../images/search.png" /></a></div>
+    </div>
+  </div>
+</body>
+</html>

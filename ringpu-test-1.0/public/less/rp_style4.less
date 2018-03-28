@@ -1,0 +1,282 @@
+@import "_base.less";
+.mask{
+    //赚养殖币弹窗
+    .zhuanyzb-tc{
+        width:240px;
+        height: 106px;
+        margin:200px auto;
+        background: #fff;
+        padding:20px 16px ;
+        box-sizing: border-box;
+        p{
+            display: inline-block;
+            margin-bottom: 12px;
+            width: 168px;
+        }
+    }
+    //个人中心注册弹窗
+    .gezx-zhuce-tc{
+        background: #fff;
+        width: 254px;
+        height: 274px;
+        margin:105px auto 0;
+        border-radius:6px;
+        padding: 16px 14px 0 14px;
+        box-sizing: border-box;
+        h2{
+            font-size: 14px;
+            font-weight: normal;
+            margin-left: 50px;
+        }
+        .tc-zhu{
+            background: url(../images/tc-zhu.png);
+            width: 226px;
+            height: 88px;
+            display: inline-block;
+            padding-left:96px;
+            padding-top: 32px;
+            box-sizing: border-box;
+            margin-top: 22px;
+        }
+        .tc-ji{
+            background: url(../images/tc-ji.png);
+            width: 226px;
+            height: 88px;
+            display: inline-block;
+            padding-left:96px;
+            padding-top: 32px;
+            box-sizing: border-box;
+            margin-top: 22px;
+        }
+    }
+}
+
+.wrap{
+    //养殖币头部
+    header{
+        .yzblist-head-yiwen{
+            background:url(../images/yzb-head-yiwen.png) no-repeat right center;
+            padding-right: (100% - @main-width) / 2;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 500;
+            width: 38px;
+            height: 44px;
+            background-size: auto 24px;
+            background-origin: content-box;
+        }
+    }
+    
+    //养殖币-赚养殖币
+    .yzblist-zhuanyzb{  
+        top:44px;
+        position: fixed;
+        z-index: 500;
+        width: 100%;
+        height: 160x;
+        background:#fff;
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+        p{
+            font-size: 16px;
+            color: #00a6ec;
+            margin-bottom: 11px;
+        }
+        span{
+            font-size: 14px;
+            color: #ff7c00;
+        }
+        div{
+            width: 90px;
+            height: 28px;
+            border: 1px solid #00a6ec;
+            margin: 10px auto;
+            line-height: 28px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #00a6ec;
+        }
+        h2{
+            font-weight: normal;
+            background:#efeff4;
+            width: 100%;
+            height: 36px;
+            line-height: 36px;
+            border-bottom: 1px solid #c7c8c8;
+            border-top: 1px solid #c7c8c8;
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+        }
+    }
+    //养殖币明细
+    .yzblist-mingxi{
+        ul{
+            margin-top:198px;
+            width: 100%;
+            background: #fff;
+            li{
+                padding: 18px 5% 6px 5%;
+                box-sizing: border-box;
+                border-bottom: 1px solid #c7c8c8;
+                span{
+                    font-size: 16px;
+                }
+                p{
+                    border: none;
+                    text-align: left;
+                    color: #858585;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    //赚养殖币
+    .zhuanyzb-body{
+        margin-top:44px ;
+        .zhuanyzbsection{
+        width: 100%;
+        padding-top: 18px;
+        box-sizing: border-box;
+        .h3{
+            h3{
+            font-size: 14px;
+            font-weight: normal;
+            }
+            padding-left: 3%;
+            padding-bottom:14px;
+            border-bottom: 1px solid #dfe0e0;
+        }
+        ul{
+          
+            width: 100%;
+            background: #fff;
+            li{
+                .tuijianjiangli-tc{
+                background: url(../images/zhuanyzb-tc-tanhao.png) no-repeat 8px 15px ;
+                display: inline-block;
+                position: absolute;
+                width:80px;
+                height: 80px;
+                top: 2px;
+                }
+                position: relative;
+                width: 100%;
+                border-bottom: 1px solid #dfe0e0;
+                div{
+                    padding:18px 3%;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    p{
+                        display: inline-block;
+                        width: 25%;
+                    }
+                }
+                .wc{
+                    position: absolute;
+                    top:0px;
+                    right:0;
+                    text-align: right;
+                    span{
+                        color: #00a6ec;
+                    }
+                    img{
+                        width: 7px;
+                        margin-left:5px;
+                    }
+                }  
+            }
+        }
+        }
+    }
+    //养殖币规则
+    .yzbguize-body{
+        margin-top: 58px;
+        div{
+            width:92%;
+            background: #fff;
+            border: 1px solid #e2e2e2;
+            margin:4%;
+            padding:14px 5%;
+            box-sizing: border-box;
+            h3{
+                font-size: 14px;
+                font-weight: normal;
+                margin-bottom: 8px;
+            }
+            p{
+                font-size: 14px;
+                line-height:25px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.weixin-tc{
+    z-index: 9900;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 52px;
+    background: #333;
+    box-sizing: border-box;
+    .weixin-tc-img{
+        position: absolute;
+        left:4%;
+        top: 10px;
+        width: 10%;
+    img{
+      width:32px;
+      height:auto;
+    }
+    }
+    .weixin-tc-text{
+        width: 48%;
+        position: absolute;
+        top: 10px;
+        left: 18%;
+        h3{
+            color: #fff;
+            font-weight: normal;
+            font-size: 14px;
+        }
+        p{
+            color: #999;
+            font-size: 12px;
+            span{
+                color: #f5b903;
+            }
+        }
+    }
+    .lijixiazai{
+        width: 70px;
+        height: 30px;
+        background: #24a1de;
+        border-radius: 12px;
+        position: absolute;
+        top: 10px;
+        right: 12%;
+        text-align: center;
+        line-height: 30px;
+        a{
+            color:#fff;
+        }
+    }
+    .weixin-tc-close{
+        a{
+            background:url(../images/blueX.png) no-repeat right center;
+            display: inline-block;
+            width: 24px;
+            height: 52px;
+            position: absolute;
+            top: 0;
+            padding:0 2px;
+            right: 3%;
+        }
+    }
+}

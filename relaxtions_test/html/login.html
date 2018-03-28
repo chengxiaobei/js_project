@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<title>登录页面</title>
+</head>
+<body>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">账号登录</h3>
+		</div>
+		<div class="panel-body">
+			<form class="bs-example bs-example-form" role="form">
+				<div class="input-group">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+					<input type="text" class="form-control" placeholder="请输入用户名" id="username">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-lock" ></span></span>
+					<input type="password" class="form-control" placeholder="请输入密码" id="password">
+				</div>
+				<button type="button" class="btn btn-primary" id="login">登录</button>
+				<div class="bottom">
+					<a href="forget-password.html" id="forget">忘记密码？</a>
+					<div class="register pull-right">
+						<span class="glyphicon glyphicon-circle-arrow-right"></span>
+						<a href="register.html" id="register">立即注册</a>
+					</div>
+				</div>				
+			</form>
+		</div>
+	</div>
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script src="../js/datastore-test.js"></script>
+	<script src="../js/util.js"></script>
+	<script type="text/javascript">	
+		$("#login").click(function(){
+			var Phone=$('#username').val();
+			var Password=$("#password").val();
+			var arr=[];
+			// 判断手机号是否存在
+			if(checkPhone(Phone)){
+				var userList=storageUtil.get(store.key.users);
+				for(var i=0;i<=userList.length-1;i++){
+					// 手机号和初始用户的手机号匹配
+					if(Phone==userList[i].phone){
+						// 手机号和密码匹配
+						if(Password==userList[i].password){
+							window.location.href="./index.html" //.是指当前目录，..指上一级目录
+						}else{
+							alert("密码不正确");
+							return;//手机号和密码不匹配
+						}					
+					}else{
+						arr.push(1);
+					}				
+				}
+				if(arr.length==userList.length){
+					//手机号和初始用户的手机号不匹配
+					alert("手机号未注册");
+					return;
+				}
+				
+			}			
+		})
+
+
+		// $("#login").click(function(){
+		// 	var Phone=$('#username').val();
+		// 	var Password=$("#password").val();
+		// 	// 判断手机号是否存在
+		// 	if(!Phone){
+		// 		alert("手机号不能为空");
+		// 		return;
+		// 	}
+		// 	// 手机号和密码的正则匹配
+		// 	(function test(){
+		// 		// 判断手机号格式是否正确
+		// 		var phonenum=/^1\d{10}$/;
+		// 		var result=phonenum.test(Phone);
+		// 		if(!result){
+		// 			alert("请输入正确的手机号");
+		// 			return;
+		// 		}
+		// 		if(!checkPhone(Phone,Password)){
+		// 			alert('该手机号未注册');
+		// 			return;
+		// 		}
+				
+		// 	})();
+		// 	// window.location.href="./index.html";							
+		// })
+	</script>
+</body>
+</html>

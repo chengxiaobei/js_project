@@ -1,0 +1,896 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="renderer" content="webkit"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>商业案例</title>
+  <link type="text/css" rel="stylesheet" href="../css/style.css">
+  <link type="text/css" rel="stylesheet" href="../css/public.css">
+  <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+  <script src="../js/alert.js"></script>
+  <script src="../js/hover.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    
+    //返回顶部的隐藏和显示
+    $(".returntop").hide();
+    $(window).scroll(function() {
+      if($(window).scrollTop()> $(window).height()){
+        $(".returntop").show();
+      }else{
+        $(".returntop").hide();
+      }
+    }); 
+
+    // $('#hangkdiv').show();
+    if($('#hangkdiv').css('display')=='block'){
+      $('#hangkli2').show();
+      $('#hangkli1').hide();
+    }
+    var dizhi=window.location.href;
+    console.info(dizhi);
+    if(dizhi.indexOf('p=')<0){
+      console.info(11);
+    }else{
+      if(dizhi.indexOf('#')<0){
+        // console.info(dizhi);
+        if(dizhi.split('p=')[1]=='yiliaoli'){
+          window.location.hash='#sy-linefour';
+          $('#yiliaoli').find('.sy-linefour-main').hide();
+          $('#yiliaoli').find('.sy-linefour-mainchecked').show();
+          $('#hangkli2').hide();
+          $('#hangkli1').show();
+          // $('#hangkdiv').hide();
+          $('#yildiv').show();
+          $('#yildiv').siblings().hide();
+        }else if(dizhi.split('p=')[1]=='yangzyli'){
+          window.location.hash='#sy-linefour';
+          $('#yangzyli').find('.sy-linefour-main').hide();
+          $('#yangzyli').find('.sy-linefour-mainchecked').show();
+          $('#hangkli2').hide();
+          $('#hangkli1').show();
+          // $('#hangkdiv').hide();
+          $('#yangzydiv').show();
+          $('#yangzydiv').siblings().hide();
+        }else if(dizhi.split('p=')[1]=='meizli'){
+          window.location.hash='#sy-linefour';
+          $('#meizli').find('.sy-linefour-main').hide();
+          $('#meizli').find('.sy-linefour-mainchecked').show();
+          $('#hangkli2').hide();
+          $('#hangkli1').show();
+          // $('#hangkdiv').hide();
+          $('#meizdiv').show();
+          $('#meizdiv').siblings().hide();
+        }else if(dizhi.split('p=')[1]=='bangli'){
+          window.location.hash='#sy-linefour';
+          $('#bangli').find('.sy-linefour-main').hide();
+          $('#bangli').find('.sy-linefour-mainchecked').show();
+          $('#hangkli2').hide();
+          $('#hangkli1').show();
+          // $('#hangkdiv').hide();
+          $('#bangdiv').show();
+          $('#bangdiv').siblings().hide();
+        }else if(dizhi.split('p=')[1]=='zhengfli'){
+          window.location.hash='#sy-linefour';
+          $('#zhengfli').find('.sy-linefour-main').hide();
+          $('#zhengfli').find('.sy-linefour-mainchecked').show();
+          $('#hangkli2').hide();
+          $('#hangkli1').show();
+          // $('#hangkdiv').hide();
+          $('#zhangfdiv').show();
+          $('#zhangfdiv').siblings().hide();
+        }
+      }else{
+        console.info(dizhi.split('#')[0].split('p=')[1]);
+        if(dizhi.split('#')[0].split('p=')[1]=='yiliaoli'){
+          $('#yiliaoli').find('.sy-linefour-main').hide();
+          $('#yiliaoli').find('.sy-linefour-mainchecked').show();
+          $('#hangkli2').hide();
+          $('#hangkli1').show();
+          $('#yildiv').show();
+          $('#yildiv').siblings().hide();
+          window.location.hash='#'+dizhi.split('#')[1];
+        }else if(dizhi.split('#')[0].split('p=')[1]=='yangzyli'){
+          $('#yangzyli').find('.sy-linefour-main').hide();
+          $('#yangzyli').find('.sy-linefour-mainchecked').show();
+          $('#hangkli2').hide();
+          $('#hangkli1').show();
+          $('#yangzydiv').show();
+          $('#yangzydiv').siblings().hide();
+          window.location.hash='#'+dizhi.split('#')[1];
+        }else if(dizhi.split('#')[0].split('p=')[1]=='meizli'){
+          $('#meizli').find('.sy-linefour-main').hide();
+          $('#meizli').find('.sy-linefour-mainchecked').show();
+          $('#hangkli2').hide();
+          $('#hangkli1').show();
+          $('#meizdiv').show();
+          $('#meizdiv').siblings().hide();
+          window.location.hash='#'+dizhi.split('#')[1];
+        }else if(dizhi.split('#')[0].split('p=')[1]=='bangli'){
+          $('#bangli').find('.sy-linefour-main').hide();
+          $('#bangli').find('.sy-linefour-mainchecked').show();
+          $('#hangkli2').hide();
+          $('#hangkli1').show();
+          $('#bangdiv').show();
+          $('#bangdiv').siblings().hide();
+          window.location.hash='#'+dizhi.split('#')[1];
+        }else if(dizhi.split('#')[0].split('p=')[1]=='zhengfli'){
+          $('#zhengfli').find('.sy-linefour-main').hide();
+          $('#zhengfli').find('.sy-linefour-mainchecked').show();
+          $('#hangkli2').hide();
+          $('#hangkli1').show();
+          $('#zhangfdiv').show();
+          $('#zhangfdiv').siblings().hide();
+          window.location.hash='#'+dizhi.split('#')[1];
+        }
+      }
+    }
+
+
+    
+    //弹出表单
+    $('#yvyue').click(function(){
+      $('#biaodan').show();
+    })
+
+    
+
+    
+
+    console.info($("#sy-linefour ul li").find('img').closest('div'));
+    $("#sy-linefour ul li").find('img').click(function(){
+      if($(this).closest('div').attr('class')=='sy-linefour-mainchecked'){
+        // $(this).closest('div').hide();
+        // $(this).closest('div').siblings().show();
+        $(this).closest('li').siblings().find('.sy-linefour-mainchecked').hide();
+        $(this).closest('li').siblings().find('.sy-linefour-main').show();
+      }else if($(this).closest('div').attr('class')=='sy-linefour-main'){
+        $(this).closest('div').hide();
+        $(this).closest('div').siblings().show();
+        $(this).closest('li').siblings().find('.sy-linefour-main').show();
+        $(this).closest('li').siblings().find('.sy-linefour-mainchecked').hide();
+      }
+      if($('#hangkli').find('.sy-linefour-mainchecked').css('display')=='block'){
+        $('#hangkdiv').show();
+        $('#hangkdiv').siblings().hide();
+      }
+      if($('#yiliaoli').find('.sy-linefour-mainchecked').css('display')=='block'){
+        $('#yildiv').show();
+        $('#yildiv').siblings().hide();
+      }
+      if($('#yangzyli').find('.sy-linefour-mainchecked').css('display')=='block'){
+        $('#yangzydiv').show();
+        $('#yangzydiv').siblings().hide();
+      }
+      if($('#meizli').find('.sy-linefour-mainchecked').css('display')=='block'){
+        $('#meizdiv').show();
+        $('#meizdiv').siblings().hide();
+      }
+      if($('#bangli').find('.sy-linefour-mainchecked').css('display')=='block'){
+        $('#bangdiv').show();
+        $('#bangdiv').siblings().hide();
+      }
+      if($('#zhengfli').find('.sy-linefour-mainchecked').css('display')=='block'){
+        $('#zhangfdiv').show();
+        $('#zhangfdiv').siblings().hide();
+      }
+    });
+    $("#sy-linefour ul li").find('a').click(function(){
+      if($(this).closest('div').attr('class')=='sy-linefour-mainchecked'){
+        // $(this).closest('div').hide();
+        // $(this).closest('div').siblings().show();
+        $(this).closest('li').siblings().find('.sy-linefour-mainchecked').hide();
+        $(this).closest('li').siblings().find('.sy-linefour-main').show();
+      }else if($(this).closest('div').attr('class')=='sy-linefour-main'){
+        $(this).closest('div').hide();
+        $(this).closest('div').siblings().show();
+        $(this).closest('li').siblings().find('.sy-linefour-main').show();
+        $(this).closest('li').siblings().find('.sy-linefour-mainchecked').hide();
+      }
+      if($('#hangkli').find('.sy-linefour-mainchecked').css('display')=='block'){
+      $('#hangkdiv').show();
+      $('#hangkdiv').siblings().hide();
+      }
+      if($('#yiliaoli').find('.sy-linefour-mainchecked').css('display')=='block'){
+        $('#yildiv').show();
+        $('#yildiv').siblings().hide();
+      }
+      if($('#yangzyli').find('.sy-linefour-mainchecked').css('display')=='block'){
+        $('#yangzydiv').show();
+        $('#yangzydiv').siblings().hide();
+      }
+      if($('#meizli').find('.sy-linefour-mainchecked').css('display')=='block'){
+        $('#meizdiv').show();
+        $('#meizdiv').siblings().hide();
+      }
+      if($('#bangli').find('.sy-linefour-mainchecked').css('display')=='block'){
+        $('#bangdiv').show();
+        $('#bangdiv').siblings().hide();
+      }
+      if($('#zhengfli').find('.sy-linefour-mainchecked').css('display')=='block'){
+        $('#zhangfdiv').show();
+        $('#zhangfdiv').siblings().hide();
+      }
+    });
+
+  })
+  </script>
+</head>
+<body>
+  <div id="oDialog"></div>
+  <div class="wrap">
+    <header>
+      <!--头部顶部-->
+      <div class="header-width">
+        <div class="header-top">
+          <p class="right"><a id="lianxi2">联系方式</a></p>
+          <p class="right"><a id="yvyue2">预约咨询</a><span>|</span></p>
+
+          <p class="right">服务电话022-65837100<span>|</span></p>
+
+          <div class="clearf"></div>
+        </div>
+        <div class="clearf"></div>
+      </div>
+      <!--头部第一行logo-->
+      <div class="index-header">
+        <div class="index-header-lineonemain">
+          <div class="left index-logo"><img src="../images/bbd-logo.png"></div>
+          <div class="right">
+            <ul>
+              <!--选中的蓝色状态使用类index-toptab-checked-->
+              <li><a href="index.html" class="index-headertext">首页</a><div class="toptab-checked"></div></li>
+              <li><a href="hx-pro.html" class="index-headertext">核心产品</a><div class="toptab-checked"></div></li>
+              <li class="index-toptab-checked"><a href="shangyeanli.html" class="index-headertext">商业案例</a><div class="toptab-checked"></div></li>
+              <li><a href="bbd-one.html" class="index-headertext">关于佰邦达</a><div class="toptab-checked"></div></li>
+            </ul>
+            <div class="clearf"></div>
+          </div>
+          <div class="clearf"></div>
+        </div>
+      </div>   
+    </header>
+    <section>
+      <!--商业案例-整体宽度为1207px-->
+      <div class="sy-width">
+        <div class="sy-width-main">
+          <!--第一行-->
+          <img class="sy-imgoneclass" src="../images/sy-img1.jpg">
+          <!--第二行-->
+          <img class="sy-lintwo-img" src="../images/sy-img2.png">
+          <!--第三行-->
+          <div class="sy-linthree">
+            <!--<img src="../images/anliku-img.png">-->
+            <h3>案例库</h3>
+            <p>佰邦达专注传统企业互联网+升级改造事业</p>
+            <p>现已在六大领域拥有众多经典商业案例</p>
+          </div>
+          <!--第四行-->
+          <div class="sy-linefour" id="sy-linefour">
+            <ul>
+              <li class="" id="hangkli">
+                <div class="sy-linefour-main" id="hangkli1"> 
+                  <img src="../images/sy-feiji.png">
+                  <p><a href="javascript:void(0);">航空</a></p>
+                </div>
+                <div class="sy-linefour-mainchecked" style="display:none;" id="hangkli2"> 
+                  <img src="../images/sy-feiji1.png">
+                  <p><a href="javascript:void(0);">航空</a></p>
+                </div>
+              </li>
+              <li id="yiliaoli">
+                <div class="sy-linefour-main"> 
+                  <img src="../images/sy-yiliao.png">
+                  <p><a href="javascript:void(0);">医疗</a></p>
+                </div>
+                <div class="sy-linefour-mainchecked" style="display:none;"> 
+                  <img src="../images/sy-yiliao1.png">
+                  <p><a href="javascript:void(0);">医疗</a></p>
+                </div>
+              </li>
+              <li id="yangzyli">
+                <!--当选中的时候使用类sy-linefour-checkedmain同时隐藏sy-linefour-main-->
+                <div class="sy-linefour-main"> 
+                  <img src="../images/sy-zhu.png">
+                  <p><a href="javascript:void(0);">养殖业</a></p>
+                </div>
+                <div class="sy-linefour-mainchecked" style="display:none;"> 
+                  <img src="../images/sy-zhu1.png">
+                  <p><a href="javascript:void(0);">养殖业</a></p>
+                </div>
+              </li>
+              <li id="meizli">
+                <div class="sy-linefour-main"> 
+                  <img src="../images/sy-yanjing.png">
+                  <p><a href="javascript:void(0);">美妆</a></p>
+                </div>
+                <div class="sy-linefour-mainchecked" style="display:none;"> 
+                  <img src="../images/sy-yanjing1.png">
+                  <p><a href="javascript:void(0);">美妆</a></p>
+                </div>
+              </li>
+              <li id="bangli">
+                <div class="sy-linefour-main"> 
+                  <img src="../images/sy-bi.png">
+                  <p><a href="javascript:void(0);">办公</a></p>
+                </div>
+                <div class="sy-linefour-mainchecked" style="display:none;"> 
+                  <img src="../images/sy-bi1.png">
+                  <p><a href="javascript:void(0);">办公</a></p>
+                </div>
+              </li>
+              <li id="zhengfli">
+                <div class="sy-linefour-main"> 
+                  <img src="../images/sy-qi.png">
+                  <p><a href="javascript:void(0);">政府</a></p>
+                </div>
+                <div class="sy-linefour-mainchecked" style="display:none;"> 
+                  <img src="../images/sy-qi1.png">
+                  <p><a href="javascript:void(0);">政府</a></p>
+                </div>
+              </li>
+            </ul>
+            <div class="clearf"></div>
+          </div>
+          <!--第五行-->
+          <div id="content">
+            <div id="hangkdiv">
+              <div class="sy-linefive">
+                <img class="sy-imgfourclass" src="../images/sy-img4.png">
+              </div>
+              <!--第六行-->
+              <div class="sy-linesix" id="sy-linesix">
+                <div class="sy-linesix-main">
+                  <div class="sy-linesix-one">
+                    <h2>航司全渠道营销平台</h2>
+                    <div class="sy-linesix-p">
+                      <h3>产品概述</h3>
+                      <p>香港航空手机APP+网站，航司全渠道营销平台。通过移动iOS端、移动安卓端、微信端和PC端等多种营销平台的方式打造全渠道营销平台。采用全新的视觉设计、为您提供更方便易用的操作体验，更有源源不绝的机票优惠。
+                      </p>
+                    </div>
+                    <div class="sy-linesix-p">
+                      <h3>业务模式</h3>
+                      <p>香港航空的B2C模式即企业通过互联网为消费者提供一个新型的购票环境，消费者通过网络在网上购票、在网上支付。线上线下融合打造全渠道O2O模式，并通过空中互联网、APP和桌面程序实现精准营销，2015年取得4个亿的销售额。</p>
+                    </div>
+                    <div>
+                      <h3>用户价值与业务亮点</h3>
+                      <div class="sy-linesix-bg">
+                        <ul>
+                          <li>
+                            <span>用户价值</span>
+                            <p>-用户服务满意度：通过贴心服务提高用户出行满意度。</p>
+                            <p>-工作效率提升：提升客户服务质量、降低人工管理成本。</p>
+                            <p>-经济效益：2015年取得4个亿的销售额，占总收入的10%。</p>
+                          </li>
+                          <li class="sy-linesix-bgtwo">
+                            <span>增值服务</span>
+                            <p>-旅游保险</p>
+                            <p>-年票预订服务</p>
+                            <p>-餐食定制、促销优惠</p>
+                            <p>-超重行李付费</p>
+                            <p>-贵宾VIP服务</p>
+                          </li>
+                          <li class="sy-linesix-bgtwo">
+                            <span>品牌形象提升</span>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成立于2006年，香港航空乃全服务航空公司。以香港为基地，至今已发展成为一家国际知名的航空公司。凭着无微不至的优质服务，香港航空由2011年起荣获备受业界尊崇的Skytrax四星级评级，并于2014年荣获Skytrax「全球最杰出进步航空公司」</p>
+                          </li>
+                        </ul>
+                        <div class="clearf"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sy-linesix-one" id="scdiv">
+                    <h2>飞行管理系统（Station  Control）</h2>
+                    <div class="sy-linesix-p">
+                      <h3>产品概述</h3>
+                      <p>Station Control app实现了地勤与服务人员方便查看航班最新信息以及赔偿的相应信息，根据不同权限对其管理，添加、修改、提交、审核赔偿信息化、网络化、方便快捷。
+                      </p>
+                    </div>
+                    <div class="sy-linesix-p">
+                      <h3>业务模式</h3>
+                      <p>香港航空飞行管理系统是飞机从落地到起飞的全流程管理，包括记录航班信息、设备检修以及巡检、物资供给、航班的VIP、中转信息、航班异常管理、航班延误以及客户理赔服务等。根据不同账户所拥有的权限展示相应内容与操作。自动计算并列出航班赔偿列表，可对其add、save、submit、approval、release操作。</p>
+                    </div>
+                    <div>
+                      <h3>用户价值与业务亮点</h3>
+                      <div class="sy-linesix-bg">
+                        <ul>
+                          <li>
+                            <span>用户价值</span>
+                            <p>实现了地勤与服务人员方便查看航班最新信息以及赔偿的相应信息，根据不同权限对其管理，添加、修改、提交、审核赔偿信息化、网络化、方便快捷。</p>
+                          </li>
+                          <li class="sy-linesix-bgtwo">
+                            <span>增值服务</span>
+                            <p>-记录航班信息、VIP信息，飞行中转信息。</p>
+                            <p>-自动计算并列出航班延误赔偿列表。</p>
+                          </li>
+                          <li class="sy-linesix-bgtwo">
+                            <span>亮点分析</span>
+                            <p>管理时效性：飞机从落地到起飞的全流程的实时监管，任何环节的问题第一时间暴露给管理层。</p>
+                            <p>-用户服务满意度：通过贴心服务提高用户出行满意度。</p>
+                          </li>
+                        </ul>
+                        <div class="clearf"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sy-linesix-one" id="cargo">
+                    <h2>货运系统（Cargo）</h2>
+                    <div class="sy-linesix-p">
+                      <h3>产品概述</h3>
+                      <p>HKA Cargo APP为香港航空企业定制开发，专为香港航空货运部客户提供服务。基于香港航空货运部业务类型设计功能。该企业航空部专为客户提供代运服务，一直缺乏移动端的平台，故此APP利用移动端的优势，以货单查询功能为基础，扩展到货运新闻、航班状态、航班计划，帮助客户随时随地一手掌握货单情况，灵活选择代运。总体设计原则是便捷查询、及时提醒、信息全面。
+                      </p>
+                    </div>
+                    <div class="sy-linesix-p">
+                      <h3>业务模式</h3>
+                      <p>提供优质便捷的服务为企业客户实时掌握飞机物流货运状态。通过始发地和抵达地、航班日期查询航班计划。查询到的货单详情可查看货件基本信息以及运转状态。通过航班号、航班时间、起止地三种方式搜索航班状态。根据用户类型灵活设置需要的提醒运单状态。按照用户关心的类型设置常见7种资讯。通过前端员工管理和后台的实时数据连接，便捷查询航班方面信息，解决航空企业客户的业务需求。</p>
+                    </div>
+                    <div class="sy-linesix-bottom">
+                      <h3>用户价值与业务亮点</h3>
+                      <div class="sy-linesix-bg">
+                        <ul>
+                          <li>
+                            <span>用户价值</span>
+                            <p>实现了地勤与服务人员方便查看航班最新信息以及赔偿的相应信息，根据不同权限对其管理，添加、修改、提交、审核赔偿信息化、网络化、方便快捷。</p>
+                          </li>
+                          <li class="sy-linesix-bgtwo">
+                            <span>增值服务</span>
+                            <p>-记录航班信息、VIP信息，飞行中转信息。</p>
+                            <p>
+                              -自动计算并列出航班延误赔偿列表。</p>
+                            </li>
+                            <li class="sy-linesix-bgtwo">
+                              <span>亮点分析</span>
+                              <p>-管理时效性：飞机从落地到起飞的全流程的实时监管，任何环节的问题第一时间暴露给管理层。</p>
+                              <p>-用户服务满意度：通过贴心服务提高用户出行满意度。</p>
+                            </li>
+                        </ul>
+                        <div class="clearf"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="yildiv" style="display:none;">
+              <div class="sy-linefive">
+                <img class="sy-imgfourclass" src="../images/sy-imgyiliao.png">
+              </div>
+              <!--第六行-->
+              <div class="sy-linesix" id="sy-yilsix">
+                <div class="sy-linesix-main">
+                  <div class="sy-linesix-one">
+                    <div class="">
+                      <h2 class="left">掌上药店</h2>
+                      <img class="left yao-imgclass" src="../images/yao-img.png">
+                      <div class="clearf"></div>
+                    </div>
+                    <div class="sy-linesix-p">
+                      <h3>产品概述</h3>
+                      <p>掌上药店成立于2014年，是一款专注于大众健康的移动应用产品，将用户的需求放在第一位，大力发展药事服务业务。掌药提供更加精准、快捷、专业的健康信息服务，包括数万条药品信息、全国范围的药店信息、知名药厂信息、完善的症状库和疾病库、全面的养生保健知识等。随着掌上药店产品的不断优化，通过给用户带来更好的使用体验，从而得到更优秀的用户认知度和影响力。
+                      </p>
+                    </div>
+                    <div class="sy-linesix-p">
+                      <h3>业务模式</h3>
+                      <p>掌上药店最初的定位是患者的医药工具性应用，为他们提供药品说明书与症状百科，致力于帮助他们快速找到药品相关信息。2016年，掌上药店会应广大用户和众多药店的要求推出“附近购”的服务，让用户在移动互联网时代在家就能买到好药，让药店不用坐等客户也有生意做。截止到2014-07-09，掌上药店用户数已逾数千万，用户分布以一线城市为主，二三线城市为辅，用户活跃度良好，且保持健康的增长态势。未来大家可以在掌上药店实现找药、询药、购药、取药、用药管理的一站式药事服务。</p>
+                    </div>
+                    <div>
+                      <h3>用户价值与业务亮点</h3>
+                      <div class="sy-linesix-bg">
+                        <ul>
+                          <li>
+                            <span>医药咨询体系</span>
+                            <p>掌上药店的医药相关资讯十分全面完善，用户可以在此搜索到病症、药品、化验指标等与医药相关的各类信息，满足自身需求。</p>
+                          </li>
+                          <li class="sy-linesix-bgtwo">
+                            <span>线上药师咨询</span>
+                            <p>用户可以使用APP线上咨询专业药师，对自身用药相关问题进行咨询，得到医师的及时解答。同时服务反馈系统保证了药师的服务质量。</p>
+                          </li>
+                          <li class="sy-linesix-bgtwo">
+                            <span>健康自我管理</span>
+                            <p>用户可以通过APP自诊功能输入自身现状信息进行自诊，了解自身健康情况及可能患有的相关病症。</p>
+                          </li>
+                        </ul>
+                        <div class="clearf"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sy-linesix-one" id="hsxdiv">
+                    <div class="">
+                      <h2 class="left">好心舒冠心病管家</h2>
+                      <img class="left yao-imgclass" src="../images/xin-img.png">
+                      <div class="clearf"></div>
+                    </div>
+                    <div class="sy-linesix-p">
+                      <h3>产品概述</h3>
+                      <div class="sy-linesix-nopdding">
+                        <p class="">好心舒冠心病管家采用AARRR模型</p>
+                        <p class=""> -针对有相关病情的群体推广应用获取用户，提高该应用的独立设备的个数；</p>
+                        <p class="">-相关的资讯以及一对一咨询可保持用户活跃度和提高用户粘度；</p>
+                        <p class="">-远程会诊、专家转诊等功能通过在线付费带来相应的收入；</p>
+                        <p class="">-最后的自传播也就是病毒式传播，用户对应用使用的良好体验给予好的评价，传达到其它用户来进行新一轮的获取用户。</p>
+                      </div>
+                    </div>
+                    <div>
+                      <h3>用户价值与业务亮点</h3>
+                      <div class="sy-linesix-bg">
+                        <ul>
+                          <li>
+                            <span>用户价值</span>
+                            <p>解决了优质医疗资源不均衡的问题。提升行业影响力、产生经济效益。
+                              医生：可以通过用户线上购买服务获得相关利益。
+                              患者：避免了挂号难，看病难的问题，花少量的钱享受最好的服务。</p>
+                            </li>
+                            <li class="sy-linesix-bgtwo">
+                              <span>增值服务</span>
+                              <p>远程会诊：专家和基层医生会诊。</p>
+                              <p>预约转诊：患者从基层医院向专业医院预约转诊。</p>
+                              <p>向平台医生一对一在线咨询。慢性病管理服务。</p>
+                            </li>
+                            <li class="sy-linesix-bgtwo">
+                              <span>品牌形象</span>
+                              <p>冠心病管家”APP，系全国首个服务于冠心病患者的移动医患平台 。</p>
+                            </li>
+                          </ul>
+                          <div class="clearf"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div id="yangzydiv" style="display:none;">
+              <div class="sy-linefive">
+                <img class="sy-imgfourclass" src="../images/shangyeanluyangzhi.jpg">
+              </div>
+              <!--第六行-->
+              <div class="sy-linesix" id="sy-yangzbsix">
+                <div class="sy-linesix-main">
+                  <div class="sy-linesix-one">
+                    <div class="">
+                      <h2 class="left">养殖宝</h2>
+                      <img class="left yao-imgclass" src="../images/yangzhilogo.png">
+                      <div class="clearf"></div>
+                    </div>
+                    <div class="sy-linesix-p">
+                      <h3>产品概述</h3>
+                      <p>2015年，佰邦达公司协助瑞普生物开始了以“养殖宝APP”为中心的互联网+升级战略；如今瑞普生物正在成长为中国最优秀的动保行业信息化龙头企业，智慧养殖和动物疫病防治综合服务商。</p>
+                    </div>
+                    <div class="sy-linesix-p">
+                      <h3>业务模式</h3>
+                      <p>-卓越的品质 – 不断寻求品质改进，为客户提供稳定的、性能优越的产品与服务；<br /> -领先的效率 – 以领先的市场反应速度和资本运作效率确保‘抢先一步’满足客户需求；<br /> -持续的创新– 以创新精神作为瑞普人的标识，不断追求技术创新、管理创新，开拓更广阔的市场。 </p>
+                    </div>
+                    <div>
+                      <h3>用户价值与业务亮点</h3>
+                      <div class="sy-linesix-bg">
+                        <ul>
+                          <li>
+                            <span>战略定位</span>
+                            <p>以智慧养殖和动物疫病防治综合服务为切入点，将互联网技术（移动互联网、云计算、大数据）与疫病专业化诊疗体系（兽医专家远程诊断、高效检测服务网络）相结合，全力帮助养殖企业降低成本，提升效益，创造一个共赢的中国养殖产业生态圈。
+                            </p>
+                          </li>
+                          <li class="sy-linesix-bgtwo">
+                            <span>平台战略</span>
+                            <p>平台战略即线下通过吸纳全球最优秀的供应商加盟，通过整合最好的产品资源，与国内最优秀的经销商深度合作，同时通过线上和线下汇聚大批行业专家和本地专家，来给客户提供综合服务和一体化解决方案。
+                            </p>
+                          </li>
+                          <li class="sy-linesix-bgtwo">
+                            <span>重点发展策略</span>
+                            <p>构建三大业务组合：研发生产业务、大数据及大服务业务和大渠道业务; 打造两项基础设施：检测网络、互联网基础设施。</p>
+                          </li>
+                        </ul>
+                        <div class="clearf"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sy-linesix-p">
+                    <h3>战略举措</h3>
+                    <div class="sy-linesix-boder">
+                     <span>搭建基于移动互联网的技术服务能力，构建智慧瑞普的增值服务模式</span>
+                     <span>搭建在线产品展示和在线交易平台，通过线上线下融合提高效率</span>
+                     <span>线下渠道资源和检测服务资源整合，共同打造瑞普互联网+生态圈</span>
+                     <span>打造动保行业专家与互联网专家、供应链金融专家相结合的管理经营团队</span>
+                     <span>推动互联网+项目增发，以建设线下检测网络和互联网基础设施</span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div id="meizdiv" style="display:none;">
+            <div class="sy-linefive">
+              <img class="sy-imgfourclass" src="../images/shangyeanlimeizhuang.jpg">
+            </div>
+            <!--第六行-->
+            <div class="sy-linesix" id="sy-meizsix">
+              <div class="sy-linesix-main">
+                <div class="sy-linesix-one">
+                  <div class="">
+                    <h2 class="left">化妆宝典</h2>
+                    <img class="left yao-imgclass" src="../images/meizhuanglogo.png">
+                    <div class="clearf"></div>
+                  </div>
+                  <div class="sy-linesix-p">
+                    <h3>产品概述</h3>
+                    <p>化妆宝典是满足广大化妆爱好者对化妆知识的学习了解，对化妆品的了解购买需求的一款化妆类应用APP。使用者可以通过该款APP学习化妆知识，解答自身化妆问题，了解各类化妆品的优劣性并与其他用户进行互动交流。该APP在化妆类APP中下载量排名前三，下载总量已突破千万，积累了一批忠实的用户与粉丝。
+                    </p>
+                  </div>
+                  <div class="sy-linesix-p">
+                    <h3>业务模式</h3>
+                    <p>化妆宝典吸引用户进行主体讨论与分享，以实物奖品吸引用户在每周主题中选取感兴趣的话题进行自身意见的发布与讨论；用户在“化妆室”中了解专业化妆人士推荐的化妆产品并选择自己感兴趣的化妆产品进行购买；此外“美容达人”们通过发布化妆内容、推荐化妆品、和回答问题帖进行化妆知识分享，进一步增强了此社区的社交</p>
+                  </div>
+                  <div>
+                    <h3>用户价值与业务亮点</h3>
+                    <div class="sy-linesix-bg">
+                      <ul>
+                        <li>
+                          <span>客户价值</span>
+                          <p>-给用户提供了相互学习化妆技巧的机会，提高化妆水平。<br />-通过新媒体的隐形广告给化妆品公司进行品牌宣传，产生经济效益、获得用户群体。</p>
+                        </li>
+                        <li class="sy-linesix-bgtwo">
+                          <span>增值服务</span>
+                          <p>主体讨论与分享：对感兴趣的化妆话题发布与讨论。<br/>化妆品销售（化妆室）：用户根据推荐购买化妆品。<br/>问答功能 ：专业人士解答问题。</p>
+                        </li>
+                        <li class="sy-linesix-bgtwo">
+                          <span>新媒体属性</span>
+                          <p>新媒体的品牌营销，通过赠送给普通用户联合品牌试用装，美容达人经常发布内容，参与讨论与分享化妆品的使用技巧，通过教化妆的行为等隐性广告做新媒体模式。</p>
+                        </li>
+                      </ul>
+                      <div class="clearf"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div id="bangdiv" style="display:none;">
+            <div class="sy-linefive">
+              <img class="sy-imgfourclass" src="../images/shangyeanlibangong.jpg">
+            </div>
+            <!--第六行-->
+            <div class="sy-linesix" id="sy-linesix">
+              <div class="sy-linesix-main">
+                <div class="sy-linesix-one" id="SOdiv">
+                  <div class="">
+                    <h2 class="left">SmartO</h2>
+                    <div class="clearf"></div>
+                  </div>
+                  <div class="sy-linesix-p">
+                    <h3>产品概述</h3>
+                    <p>SmartO 为香港航空企业员工定制开发，是企业级内部移动办公台，已更新到v2.0.0，服务对象为公司内部员工及合作伙伴，产品形态为Android、iOS和Web。</p>
+                  </div>
+                  <div class="sy-linesix-p">
+                    <h3>业务模式</h3>
+                    <p>SmartO移动办公应用业务满足员工基本办公需求：公文审批，员工接收到待审批公文后进行审批操作，审批后可以撤销或者删除。操作过的公文进入到审批公文跟踪，如果该员工没有查看最新流转动态，此条动态将保留在公文跟踪消息里提示用户查看。所有和该员工相关的公文流转结束后均会保留在公文查询里，结果分为3种状态：删除、通过、撤回，不同结果不同标志，让员工一眼区分出来；为员工生活提供便利：查询航班信息；为员工工作提供便利：随时随地查看休假和值班信息、福利信息、请假信息、旅游记录、报销记录、员工通讯录；满足员工基本社交需求：自动生成商务名片，可根据二维码互相间成为联系人。 
+                    </p>
+                  </div>
+                  <div>
+                    <h3>用户价值与业务亮点</h3>
+                    <div class="sy-linesix-bg">
+                      <ul>
+                        <li>
+                          <span>客户价值</span>
+                          <p>员工公文业务处理的实效性大大提高； 领导在外办公效率大大提升； 公司职员提高工作效率，公司提高管理运营效率。</p>
+                        </li>
+                        <li class="sy-linesix-bgtwo">
+                          <span>增值服务</span>
+                          <p>功能全面、人性化。支持20多种公文流转类型，且所有公文流转类型可定制化。 公文审批和邮件结合。通过小米企邮签发OA的公文审批，邮件回复审批结果即可作为OA审批结果。</p>
+                        </li>
+                        <li class="sy-linesix-bgtwo">
+                          <span>功能特点</span>
+                          <p>-多层账号安全保障体制 -功能全面、个性化 -具有优秀交互体验</p>
+                        </li>
+                      </ul>
+                      <div class="clearf"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sy-linesix-one" id="xiaomidiv">
+                  <div class="">
+                    <h2 class="left">小米企邮</h2>
+                    <div class="clearf"></div>
+                  </div>
+                  <div class="sy-linesix-p">
+                    <h3>产品概述</h3>
+                    <div class="sy-linesix-nopdding">
+                      <p class="">小米企邮能够使企业形成跨平台的员工沟通与管理能力，提升企业内部沟通效果，服务对象为公司内部员工及合作伙伴，产品形态为Android、iOS。</p>
+
+                    </div>
+                  </div>
+                  <div>
+                    <h3>用户价值与业务亮点</h3>
+                    <div class="sy-linesix-bg">
+                      <ul>
+                        <li>
+                          <span>用户价值</span>
+                          <p>给用户提供了内部高效沟通协作的工具。 给用户带来便捷的沟通方式，随时随地的接收发送电子邮件。</p>
+                        </li>
+                        <li class="sy-linesix-bgtwo">
+                          <span>增值服务</span>
+                          <p>邮件群组讨论，通过群组讨论的方式完成更加高效的工作沟通。 无需注册，企业邮箱直接登录，快速便捷。</p>
+                        </li>
+                        <li class="sy-linesix-bgtwo">
+                          <span>跨平台</span>
+                          <p>采用小米企邮能够使企业形成跨平台的员工沟通与管理能力，提升企业内部沟通效果。</p>
+                        </li>
+                      </ul>
+                      <div class="clearf"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="zhangfdiv" style="display:none;">
+            <div class="sy-linefive">
+              <img class="sy-imgfourclass" src="../images/sy-imgzhengfu.png">
+            </div>
+            <!--第六行-->
+            <div class="sy-linesix" id="sy-zhengfsix">
+              <div class="sy-linesix-main">
+                <div class="sy-linesix-one">
+                  <div class="">
+                    <h2 class="left">中心生态城智慧政府</h2>
+                    <div class="clearf"></div>
+                  </div>
+                  <div class="sy-linesix-p">
+                    <h3>咨询设计方法论</h3>
+                    <!--咨询设计方法论-->
+                    <div class="syal-zfround">
+                      <img class="zf-roundimgclass" src="../images/zf-roundimg.png">
+                      <!--咨询设计方法论上-->
+                      <div class="zfround-maintextone">
+                       <span>调研分析</span>
+                       <p>-移动应用趋势；</p>
+                       <p>-现阶段使用中的APP的调研工作；</p>
+                       <p>-典型案例分析；</p>
+                       <p>-新加坡移动应用经验和IDA规划。</p>
+                     </div> 
+                     <div class="zfround-maintexttwo">
+                       <span>归纳需求</span>
+                       <p>结合调研分析的成果，对需求和期望进行分析归纳，形成移动办公、民生服务、企业服务功能结构分析。</p>
+                     </div>
+                     <div class="zfround-maintextthree">
+                       <span>对策建议</span>
+                       <p>基于实际需求归纳出的功能结构图制定可靠的解决对策和建设建议。</p>
+                     </div>
+                     <div class="zfround-maintextfour">
+                       <span>增量迭代</span>
+                       <p>-形成智慧城市移动应用APP蓝图；</p>
+                       <p>-通过增量迭代的方式，完成蓝图的功能深度和细化程度。</p>
+                     </div>
+                     <!--咨询设计方法论下-->
+                     <div class="zfround-bottomone">
+                       <span>实施管理</span>
+                       <p>归纳推行的具体项目和举措；</p>
+                       <p>针对项目和举措，确定实施推广的优先级和实施路径；</p>
+                       <p>明确投资需求与保障措施。</p>
+                     </div>
+                     <div class="zfround-bottomtwo">
+                       <span>运营模式</span>
+                       <p>移动应用建设与发展的长期性特点，需构建适合的运营模式。</p>
+                     </div>
+                     <div class="zfround-bottomthree">
+                       <span>投资估算</span>
+                       <p>保障建设投入的实现，需建立适合的投融资体系。</p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="sy-linesix-p">
+                  <h3 class="zf-diaoyan">调研范围</h3>
+                  <div class="left zffang-main">
+                    <div class="left zffang-left">
+                      <img class="zf-fangimg" src="../images/zf-fangimg.png">
+                      <p>移动办公</p>
+                    </div>
+                    <div class="left zffang-left">
+                      <img class="zf-fangimg" src="../images/zf-fangimg.png">
+                      <div class="zffang-minsheng">
+                        <p class="zf-one">民</p>
+                        <p class="zf-two">生</p>
+                        <p class="zf-three">服</p>
+                        <p class="zf-four">务</p>
+                      </div>
+                      <div class="zffang-anquan">
+                        <p class="aq-one">交通</p>
+                        <p class="aq-two">社区</p>
+                        <p class="aq-three">教育</p>
+                        <p class="aq-four">医疗</p>
+                        <p class="aq-five">安全</p>
+                      </div>
+                    </div>
+                    <div class="left zffang-left">
+                      <img class="zf-fangimg" src="../images/zf-fangimg.png">
+                      <p>企业服务</p>
+                    </div>
+                    <div class="clearf"></div>
+                  </div>
+                  <div class="clearf"></div>
+                </div>
+                
+                <div class="zf-appmain">
+                  <h3>阶段成果</h3>
+                  <div class="left zf-appcon">
+                    <img class="zf-appimgclass" src="../images/zf-appimg.png">
+                    <div class="zffang-header">
+                      <h4>居民</h4>
+                      <p>社区住户在民生领域关注的高频生活服务</p>
+                      <div class="zffang-content">
+                        <p>电费查询缴纳</p>
+                        <p>煤气查询缴纳</p>
+                        <p>水费查询缴纳</p>
+                        <p>供热查询缴纳</p>
+                        <p>网费查询缴纳</p>
+                        <p>学费查询缴纳</p>
+                      </div>
+                    </div>
+                    <div class="zffang-header zffang-header-right">
+                      <h4>政务服务</h4>
+                      <p>政府在民生领域提供相关资源整合以及技术服务</p>
+                      <div class="zffang-content">
+                        <p>供电局缴费系统</p>
+                        <p>天然气缴费系统</p>
+                        <p>自来水缴费系统</p>
+                        <p>供热缴费系统</p>
+                        <p>网络运营商系统</p>
+                        <p>学费缴费系统</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearf"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+            <!-- <div id="yangzydiv"></div> -->
+          </div>
+        </div>
+        <!--核心产品第九行-->
+        <div class="hx-linefive">
+          <div class="hx-linefive-main">
+            <div class="left hx-linefive-lefttext">
+              <p>如果您对我们的产品和服务感兴趣，</p>
+              <p>如果您准备做些不同的惊人的决定，</p>
+              <p>我们的销售代表很愿意为您提供一些有用的信息。</p>
+              <div class="hx-linefive-btn">
+                <a class="hx-linefive-leftbtn" id="yvyue1">在线预约咨询</a>
+                <a class="hx-linefive-rightbtn"  id="lianxi1">获取联系方式</a>
+                <div class="clearf"></div>
+              </div>
+              <div class="hx-linefive-bottomtext">
+                <p>您也可以直接致电佰邦达服务电话：022-65837100</p>
+                <p>销售代表期待为您解答任何问题。</p>
+              </div>
+            </div>
+            <div class="right hx-linefive-right">
+              <img class="diqiu-imgclass" src="../images/diqiu.png">
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer">
+          <div class="footer-main">
+            <p>2016 BBDTEK All right reserved.各商标由其各自所有人持有。京ICP备09029096号-1京公网安备11010802011114</p>
+            <p class="footer-linetwo"><a  id="zhaopin">招聘</a> | <a  id="lianxi">联系方式</a> | <a  id="wangzhan">网站地图</a> |
+              <a  id="yinsi">隐私声明</a></p>
+            </div>
+          </div>
+        </footer>
+        <div class="returntop">
+          <div class="returntop-mian"><a href="javascript:window.scrollTo( 0, 0 );" title="返回顶部"><img src="../images/return-.png" /></a></div>
+          <div class="returnbottom-mian"><a href="#sy-linefour" title="寻找导航"><img src="../images/search.png" /></a></div>
+  </div>
+      </div>
+    </body>
+    </html>

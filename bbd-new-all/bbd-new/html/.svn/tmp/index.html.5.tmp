@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<title>佰邦达-首页</title>
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<link type="text/css" rel="stylesheet" href="../css/public.css">
+<<<<<<< .mine
+<link rel="stylesheet" href="../css/monokai.min.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="">
+<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../js/touchslider.dev.js"></script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript" src="../js/scripts.js"></script>
+
+
+<style type="text/css">
+.goup{
+  position:absolute;
+  bottom:480px;
+}
+.godown{
+  position: absolute;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+  //图片轮播和文字轮播
+  $(".index-pt").slick({
+  centerMode: true,
+  centerPadding: '0px',
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  });
+  $('.index-text').slick();
+  
+  $("#oneimg").attr("src","../images/index-center2.png");
+  $('.slick-prev').click(function(){
+    $('.index-pt').slickNext();
+    if($("#onediv").hasClass("slick-center")){
+      $("#twoimg").attr("src","../images/index-center2.png");
+    }else{
+      $("#twoimg").attr("src","../images/index-left1.png");
+    }
+    if($("#twodiv").hasClass("slick-center")){
+      $("#threeimg").attr("src","../images/index-center2.png");
+    }else{
+      $("#threeimg").attr("src","../images/index-left1.png");
+    }
+    if($("#threediv").hasClass("slick-center")){
+      $("#fourimg").attr("src","../images/index-center2.png");
+    }else{
+      $("#fourimg").attr("src","../images/index-right1.png");
+    }
+    if($("#fourdiv").hasClass("slick-center")){
+      $("#fiveimg").attr("src","../images/index-center2.png");
+    }else{
+      $("#fiveimg").attr("src","../images/index-right1.png");
+    }
+    if($("#fivediv").hasClass("slick-center")){
+      $("#oneimg").attr("src","../images/index-center2.png");
+    }else{
+      $("#oneimg").attr("src","../images/index-right1.png");
+    }
+
+  })
+  $('.slick-next').click(function(){
+    $('.index-pt').slickPrev();
+    if($("#onediv").hasClass("slick-center")){
+      $("#fiveimg").attr("src","../images/index-center2.png");
+    }else{
+      $("#fiveimg").attr("src","../images/index-left1.png");
+    }
+    if($("#twodiv").hasClass("slick-center")){
+      $("#oneimg").attr("src","../images/index-center2.png");
+    }else{
+      $("#oneimg").attr("src","../images/index-left1.png");
+    }
+    if($("#threediv").hasClass("slick-center")){
+      $("#twoimg").attr("src","../images/index-center2.png");
+    }else{
+      $("#twoimg").attr("src","../images/index-right1.png");
+    }
+    if($("#fourdiv").hasClass("slick-center")){
+      $("#threeimg").attr("src","../images/index-center2.png");
+    }else{
+      $("#threeimg").attr("src","../images/index-right1.png");
+    }
+    if($("#fivediv").hasClass("slick-center")){
+      $("#fourimg").attr("src","../images/index-center2.png");
+    }else{
+      $("#fourimg").attr("src","../images/index-right1.png");
+    }
+
+  })
+
+//点击出先8张图片
+$("#zhengfu").css( "cursor","pointer")
+$("#zhengfu").click(function(){
+  $(".goup").slideDown(2000);
+  $(".godown").slideDown(2000);
+})
+ 
+}); 
+
+
+</script>
+=======
+<script src="../js/alert.js"></script>
+>>>>>>> .r2565
+</head>
+<body>
+<div class="mask" id="yinsibody">
+	 <div class="form-body">
+		<div class="secret-wrap">
+			<a href="#" id="close"></a>
+			<div class="secret-text">
+				<h1>隐私声明</h1>
+				<div class="secret-left">
+				<h2>我们收集哪些信息</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您能在匿名的状态下访问佰邦达科技网站并获取信息。在您主动留下个人信息以便得到所需咨询时，我们收集这些信息：称呼，公司名称，Email和电话号码，并征求您的确认。</p>
+				<h2>关于您的个人信息</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;佰邦达科技严格保护您个人信息的安全。我们使用各种安全技术和程序来保护您的个人信息不被未经授权的访问、使用或泄露。
+　　佰邦达科技不会未经您的允许将收集的信息与第三方共享，或者有充分理由相信必须这样做才能：(a) 满足法律或行政法规的明文规定；（b）符合佰邦达科技相关服务条款、软件许可使用协议的约定；(c)保护佰邦达科技的权利或财产，以及 (d) 在紧急情况下保护佰邦达科技员工、佰邦达科技产品或服务的用户或大众的个人安全。</p>
+				</div>
+			</div>
+			<div class="secret-pic">
+				<img src="../images/alert05img.png" />
+			</div>
+		</div>
+      </div>
+	 </div>
+	<div class="mask" id="wangzhanbody">
+	<div class="form-body">
+		<div class="map-wrap">
+		<div class="map-body">
+			<a href="#" id="close"></a>
+			<h2>核心产品</h2>
+			<div class="map-list">
+				<ul>
+					<li><a href="#">> C2B移动云平台</a></li>
+					<li><a href="#">> B2B移动云平台</a></li>
+					<li><a href="#">> 大数据平台</a></li>
+				</ul>
+			</div>
+			<h2>商品案例</h2>
+			<div class="map-list">
+				<ul>
+					<li><a href="#">> 互联网+航空</a></li>
+					<li><a href="#">> 互联网+医疗</a></li>
+					<li><a href="#">> 互联网+植物</a></li>
+					<li><a href="#">> 互联网+美妆</a></li>
+					<li><a href="#">> 互联网+办公</a></li>
+					<li><a href="#">> 互联网+行政</a></li>
+				</ul>
+			</div>
+			<div class="map-left">
+			<h2>关于佰邦达</h2>
+			<div class="map-list">
+				<ul>	
+					<li><a href="#">> 公司文化</a></li>
+					<li><a href="#">> 发展历程</a></li>
+					<li><a href="#">> 行业地位</a></li>
+					<li><a href="#">> 部分客户</a></li>
+				</ul>
+			</div>
+			</div>
+		  </div>
+		</div>
+      </div>
+	</div>
+ 	<div class="mask" id="zhaopinbody">
+      <div class="form-body">
+		<div class="information-wrap">
+			<a href="#" id="close"></a>
+			<ul class="information-list">
+				<li>
+					<a href="#">电商运营主管[天津]</a>
+					<p>经验1-3年/学历不限/全职</p>
+				</li>
+				<li>
+					<a href="#">JAVA开发工程师[北京]</a>
+					<p>经验1-3年/学历不限/全职</p>
+				</li>
+				<li>
+					<a href="#">高级UI设计师[天津]</a>
+					<p>经验1-3年/大专/全职</p>
+				</li>
+				<li>
+					<a href="#">JAVA开发工程师[深圳]</a>
+					<p>经验1-3年/本科/全职</p>
+				</li>
+				<li>
+					<a href="#">JAVA[天津]</a>
+					<p>经验1-3年/大专/全职</p>
+				</li>
+			</ul>
+			<ul class="information-list">
+				<li>
+					<a href="#">产品经理[天津]</a>
+					<p>经验1-3年/学历不限/全职</p>
+				</li>
+				<li>
+					<a href="#">会计[北京]</a>
+					<p>经验3-5年/本科/全职</p>
+				</li>
+				<li>
+					<a href="#">HTML5[天津]</a>
+					<p>经验1-3年/本科/全职</p>
+				</li>
+				<li>
+					<a href="#">测试工程师[北京]</a>
+					<p>经验1-3年/大专/全职</p>
+				</li>
+			</ul>
+			<p class="information-text">请将简历发送至公司邮箱：<a href="#">admin@bbdtek.com</a></p><p class="information-text">或登录各大招聘网站联系面试</p>
+		</div>
+      </div>
+	</div>
+ <div class="mask" id="lianxibody">
+          <div class="form-body">
+			<div class="contact-wrap">
+				<ul class="left contact-list">
+					<li>
+						<img src="../images/alerttelephone.png"/>
+						<p>&nbsp;&nbsp;010-62553988</p>
+                        <div class="clearf"></div>
+					</li>
+					<li>
+						<img src="../images/alertsimple.png"/>
+						<p>admin@bbdtek.com</p>
+                        <div class="clearf"></div>
+					</li>
+					<li>
+						<img src="../images/alertlocation.png"/>
+                        <div class="clearf"></div>
+						<ul>
+							<li>天津地址:天津市滨海新区中新天津生态城国家动漫园B1座2层</li>
+							<li>北京地址:北京市海淀区西直门外高粱桥斜街19号院6号楼110室</li>
+							<li>上海地址:上海市静安区延平路425号1号楼5层</li>
+							<li>苏州地址:苏州工业园区星湖街328号创意产业园10-402</li>
+						</ul>
+                        <div class="clearf"></div>
+					</li>
+				</ul>
+                <div class="left contact-list-dayin">
+                  <img src="../images/alertdayin.png"/>
+                </div>
+                <div class="clearf"></div>
+				<a href="#" id="close"></a>
+			  </div>
+            </div>
+		</div>
+	
+  <div class="wrap">
+    <header>
+        <!--头部第一行logo-->
+        <div class="index-header">
+          <div class="index-header-lineonemain">
+            <div class="left index-logo"><img src="../images/bbd-logo.png"></div>
+            <div class="right">
+              <ul>
+                <!--选中的蓝色状态使用类index-toptab-checked-->
+                <li class="index-toptab-checked">首页<div class="toptab-checked"></div></li>
+                <li class=""><a href="hx-pro-two.html">核心产品</a>
+                  <div class="toptab-checked"></div>
+                </li>
+                <li><a href="shangyeanli.html">商业案例</a><div class="toptab-checked"></div></li>
+                <li>关于佰邦达<div class="toptab-checked"></div></li>
+              </ul>
+              <div class="clearf"></div>
+            </div>
+            <div class="clearf"></div>
+          </div>
+      </div>   
+    </header>
+    <section>
+      <!--图片及图片上的内容 第一-->
+      <div class="index-lunboone indexBannerHk">
+        <ul id="indexSlider">
+          <li>
+            <img src="../images/index-lunbo1.png">
+          </li>
+          <li>
+            <img src="../images/index-lunbo1.png">
+          </li>
+          <li>
+            <img src="../images/index-lunbo1.png">
+          </li>
+        </ul>
+        <div id="pagenavi">
+          <a class="active"></a>
+          <a></a>
+          <a></a>
+        </div>
+        <!--里面带蒙层的内容-->
+        <div class="mengceng-main indexBannerHk">
+          <!--<img src="../images/zz-img.png">-->
+          <div class="mengceng-left-main">
+          <ul id="indexSlider1">
+          <li>
+            <p class="mengceng-left-onetext">天津中心生态城</p>
+            <p class="">智慧城市项目</p>
+            <p class="mengceng-left-threetext">ECO CITY 。。。</p>
+            <p class="mengceng-left-fourtext">-咨询设计方法论</p>
+            <p class="">-调研范围</p>
+            <p class="">-阶段成果</p>
+            <a>了解详情></a>
+          </li>
+          <li>
+            <p class="mengceng-left-onetext">天津中心生态城</p>
+            <p class="">智慧城市项目</p>
+            <p class="mengceng-left-threetext">ECO CITY 。。。</p>
+            <p class="mengceng-left-fourtext">-咨询设计方法论</p>
+            <p class="">-调研范围</p>
+            <p class="">-阶段成果</p>
+            <a>了解详情></a>
+          </li>
+          <li>
+            <p class="mengceng-left-onetext">天津中心生态城</p>
+            <p class="">智慧城市项目</p>
+            <p class="mengceng-left-threetext">ECO CITY 。。。</p>
+            <p class="mengceng-left-fourtext">-咨询设计方法论</p>
+            <p class="">-调研范围</p>
+            <p class="">-阶段成果</p>
+            <a>了解详情></a>
+          </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+      <!--2个切换按钮切换内容区域 第二-->
+      <div class="index-width">
+        <div class="index-width-main">
+          <div class="index-hxpro-title">
+            <!--直线-->
+            <span class="left"></span>
+            <!--标题-->
+            <div class="left index-hxpro-text">
+              <p class="hxpro-text-lineone">核心产品</p>
+              <p>CORE PRODUCT</p>
+            </div>
+            <!--直线-->
+            <span class="right"></span>
+            <div class="clearf"></div>
+          </div>
+          <!--箭头切换出现的3个图片-->
+          <div class="index-pt">
+            <!--未选中时使用类pt-left 选中时使用类pt-left和pt-leftchecked-->
+            <div id="onediv">
+              <img src="../images/index-leftone.png" id="oneimg">
+              <p>B2B移动平台</p>
+            </div>
+            <!--<div class="left pt-left pt-leftchecked">
+              <img src="../images/index-left1.png">
+              <p>B2B移动平台</p>
+            </div>-->
+            <!--<div class="left pt-center">
+              <img src="../images/index-left1.png">
+              <p>C2B移动云平台</p>
+            </div>-->
+            <div id="twodiv">
+              <img src="../images/index-left1.png" id="twoimg">
+              <p>C2B移动云平台</p>
+            </div>
+            <div id="threediv">
+              <img src="../images/index-rightone.png" id="threeimg">
+              <!-- <img src="../images/index-center2.png" style="display:none" id="twoimg"> -->
+              <p>大数据平台</p>
+              
+            </div>
+            <!-- <div id="fourdiv">
+              <img src="../images/index-right1.png" id="fourimg">
+              <p>大数据平台</p>
+            </div>
+            <div id="fivediv">
+              <img src="../images/index-right1.png" id="fiveimg">
+              <p>大数据平台</p>
+            </div> -->
+            <!--<div class="left pt-right pt-rightchecked">
+              <img src="../images/index-right2.png">
+              <p>大数据平台</p>
+            </div>-->
+          </div>
+          <!--左右箭头加中间的文字内容区域-->
+          <div class="index-ptshow">
+            <!-- <span class="left" id="left">
+              <img src="../images/index-left.png">
+            </span> -->
+            <div class="index-text">
+              <div class="left ptshow-text">
+                <p>-移动C2B云平台通过典型社交属性，将企业五个方面的信息传</p>
+                <p>达给公众，以赢得客户的青睐；-主要包括品牌推广、企业形象塑造、</p>
+                <p>企业文化呈现、产品推介、优势展示；</p>
+                <a>了解详情></a>
+              </div>
+              <div class="left ptshow-text">
+                <p>-移动C2B云平台通过典型社交属性，将企业五个方面的信息传</p>
+                <p>达给公众，以赢得客户的青睐；-主要包括品牌推广、企业形象塑造、</p>
+                <p>企业文化呈现、产品推介、优势展示；</p>
+                <a>了解详情></a>
+              </div>
+              <div class="left ptshow-text">
+                <p>-移动C2B云平台通过典型社交属性，将企业五个方面的信息传</p>
+                <p>达给公众，以赢得客户的青睐；-主要包括品牌推广、企业形象塑造、</p>
+                <p>企业文化呈现、产品推介、优势展示；</p>
+                <a>了解详情></a>
+              </div>
+              <div class="left ptshow-text">
+                <p>-移动C2B云平台通过典型社交属性，将企业五个方面的信息传</p>
+                <p>达给公众，以赢得客户的青睐；-主要包括品牌推广、企业形象塑造、</p>
+                <p>企业文化呈现、产品推介、优势展示；</p>
+                <a>了解详情></a>
+              </div>
+            </div>
+            <!-- <span class="right" id="right">
+              <img src="../images/index-right.png">
+            </span> -->
+            <div class="clearf"></div>
+          </div>
+        </div>
+      </div>
+      <!--解决方案一整行-->
+          <div class="index-width index-jjfa">
+            <div class="index-width-main jjfa-main">
+              <div class="left jjfa-main-left">
+                <img src="../images/hlw-jia.png" class="left">
+                <p>解决方案</p>
+                <div class="clearf"></div>
+              </div>
+              <ul class="left">
+                <li><a>航空</a></li>
+                <li><a>医疗</a></li>
+                <li><a>养殖业</a></li>
+                <li><a>美妆</a></li>
+                <!--选中的样式使用类jefa-checked-->
+                <li class="jefa-checked" id="zhengfu"><a>政府</a></li>
+              </ul>
+              <div class="clearf"></div>
+            </div>
+          </div>
+      <!--解决方案对应下面的方块模块-->
+      <div class="index-width jjfa-maincon">
+        <img src="../images/index-diqiu.png">
+        <div class="index-width-main jjfa-maincon-fangkuai">
+          <ul class="goup" style="display:none;">
+            <li class="jjfa-lione-abso">
+              <img src="../images/fa-img1.png">
+              <a href=""></a>
+            </li>
+            <li><img src="../images/fa-img2.png" id="changeimg"></li>
+            <li class="no-bg"></li>
+            <li><img src="../images/fa-img4.png"></li>
+          </ul>
+          <ul class="godown" style="display:none;">
+            <li><img src="../images/fa-img5.png"></li>
+            <li class="jjfa-litwo-abso">
+              <img src="../images/fa-img6.png">
+              <a href=""></a>
+            </li>
+            <li><img src="../images/fa-img7.png"></li>
+            <li><img src="../images/fa-img8.png"></li>
+          </ul>
+          <div class="clearf"></div>
+        </div>
+        <div class="jjfa-height"></div>
+      </div>
+      <!--联系我们模块-->
+      <div class="index-width index-lxus">
+        <div class="index-width-main index-lxus-main">
+            <div class="index-hxpro-title">
+            <!--直线-->
+            <span class="left"></span>
+            <!--标题-->
+            <div class="left index-hxpro-text">
+              <p class="hxpro-text-lineone">联系我们</p>
+              <p>CONTACT US</p>
+            </div>
+            <!--直线-->
+            <span class="right"></span>
+            <div class="clearf"></div>
+          </div>
+          <!--下面的图片加文字-->
+          <div class="lxus-imgtext">
+            <ul>
+              <li><img src="../images/person.png"><p>010-62553988</p></li>
+              <li><img src="../images/telephone-location.png"><p>010-62553988</p></li>
+              <li><img src="../images/location-pointer.png"><p>天津市滨海新区国家动漫园B1室</p></li>
+              <li class="lxus-imgtext-only"><img src="../images/simple-envelope.png"><p>admin@bbdtek.com</p></li>
+            </ul>
+            <div class="clearf"></div>
+            <a href="" class="right">详细信息></a>
+            <div class="clearf"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer-main">
+          <p>2016 bbdtek All right reserved.各商标由其各自所有人持有。京ICP备09029096号-1京公网安备11010802011</p>
+          <p class="footer-linetwo"><a href="#" id="zhaopin">招聘</a> | <a href="#" id="lianxi">联系方式</a> | <a href="#" id="wangzhan">网站地图</a> |
+            <a href="#" id="yinsi">隐私声明</a></p>
+        </div>
+      </div>
+    </footer>
+    <div class="returntop">
+      <div><a href="javascript:window.scrollTo( 0, 0 );"><img src="../images/return .png" /></a></div>
+      <div><a href="javascript:window.scrollTo( 0, 1410 );"><img src="../images/search.png" /></a></div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+//轮播图
+console=window.console || {dir:new Function(),log:new Function()};
+var active=0,
+  as=document.getElementById('pagenavi').getElementsByTagName('a');
+  for(var i=0;i<as.length;i++){
+  (function(){
+    var j=i;
+    as[i].onclick=function(){
+      t4.slide(j);
+      t5.slide(j);
+      return false;
+    }
+  })();
+}
+var t4=new TouchSlider({id:'indexSlider', speed:500, timeout:3000, before:function(index){
+    as[active].className='';
+    active=index;
+    as[active].className='active';
+  }});
+var t5=new TouchSlider({id:'indexSlider1', speed:500, timeout:3002, before:function(index){
+    as[active].className='';
+    active=index;
+    as[active].className='active';
+  }});
+
+
+</script>
+</html>

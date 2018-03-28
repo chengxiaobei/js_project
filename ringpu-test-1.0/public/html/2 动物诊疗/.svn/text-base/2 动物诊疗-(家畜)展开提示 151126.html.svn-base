@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>2动物诊疗-(家畜)展开提示</title>
+<link type="text/css" rel="stylesheet" href="../../css/public.css">
+<link type="text/css" rel="stylesheet" href="../../css/rp_style3.css">
+</head>
+<body class="whiteBg">
+  <div class="wrap">
+    <header>
+      <a class="back-btn"></a>
+      <h2>动物诊疗</h2>
+      <a class="reg-btn help-btn">帮助信息</a>
+    </header>
+    <section class="main-section-animal">
+      <!--第一行-->
+      <div class="edit-animal-main">
+        <div class="edit-animal-lineone">
+       	  <p class="left">基本信息*</p>
+       	  <p class="right edit-animal-color">完成</p>
+       	  <div class="clearf"></div>
+        </div>
+      </div>
+      <!--第一行下拉出现的内容-->
+      <div class="edit-animal-maincon">
+        <!--第一行下拉出现的内容,,里面的第一行-->
+        <div class="edit-lineonemain">
+          <div class="edit-lineone">
+            <p class="left edit-lineone-left">送检人*</p>
+            <p class="left edit-lineone-input"><input placeholder="请输入送检人姓名"></p>
+            <div class="clearf"></div>
+          </div>
+        </div>
+          <!--第一行下拉出现的内容,,里面的第二行-->
+        <div class="edit-lineonemain">
+          <div class="edit-lineone">
+            <p class="left edit-lineone-left">联系电话*</p>
+            <p class="left edit-lineone-input"><input placeholder="请输入送检人联系电话"></p>
+            <div class="clearf"></div>
+          </div>
+        </div>
+          <!--第一行下拉出现的内容,,里面的第三行-->
+        <div class="edit-linethreemain">
+            <div class="edit-linethree">
+              <p class="left">送检目的*</p>
+              <div class="clearf"></div>
+              <div class="edit-linethree-choose">
+                <ul>
+                  <!--未选中时使用类jck-unchecked-img-->
+                  <li class="left"><span></span>健康检测</li>
+                  <li class="left"><span></span>免疫效果评估</li>
+                  <li class="left"><span></span>临床诊断</li>
+                  <li class="left"><span></span>垂直评估</li>
+                  <li class="left"><span></span>对比试验</li>
+                  <li class="left"><span class="jck-unchecked-img"></span>其他</li>
+                  <div class="clearf"></div>
+                </ul>
+              </div>
+              <div class="edit-linethree-textarea">
+                <textarea placeholder="请输入其他送检目的"></textarea>
+              </div>
+              <p class="edit-textareatext">0/<span>50</span></p>
+            </div>
+        </div>
+      </div>
+        <!--第二行-->
+        <div class="edit-animal-main edit-main-notopborder">
+          <div class="edit-animal-lineone">
+         	  <p class="left">送检样品信息*</p>
+         	  <p class="right edit-animal-color">完成</p>
+         	  <div class="clearf"></div>
+          </div>
+        </div>
+        <!--第二行下拉出现的内容-->
+        <div class="edit-animal-maincon">
+          <!--第二行下拉出现的内容,,里面的第一行-->
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">送检单位*</p>
+              <p class="left edit-lineone-input"><input placeholder="请输入送检单位"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第二行-->
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">全场养殖量*</p>
+              <p class="left edit-lineone-input"><input placeholder="请输入全场养殖量"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第三行-->
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">联系人*</p>
+              <p class="left edit-lineone-input"><input placeholder="请输入联系人姓名"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第四行-->
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">电话</p>
+              <p class="left edit-lineone-input"><input placeholder="请输入联系人电话"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第五行-->
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">品种*</p>
+              <p class="left edit-lineone-input"><input placeholder="请输入品种"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第六行-->
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">级别*</p>
+              <p class="left edit-lineone-input"><input placeholder="请输入级别"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第七行-->
+          <div class="edit-linethreemain">
+              <div class="edit-linethree">
+                <p class="left">详细地址</p>
+                <div class="clearf"></div>
+                <div class="edit-linethree-textarea edit-linethree-textatwo">
+                  <textarea placeholder="请输入除地区外街道详细地址"></textarea>
+                </div>
+                <p class="edit-textareatext">0/<span>40</span></p>
+              </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第八行-->
+          <div class="edit-lineonemain-eight">
+            <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">样品类型数量*</p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left edit-linetwo-eight">
+                <!--选中时使用类edit-checked-->
+                <span class="left"></span>血清
+              </p>
+              <p class="left edit-lineone-input"><input placeholder="请输入样品份数"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left edit-linetwo-eight">
+              <span class="left"></span>组织</p>
+              <p class="left edit-lineone-input"><input placeholder="请输入样品份数"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left edit-linetwo-eight">
+              <span class="left"></span>脐带血</p>
+              <p class="left edit-lineone-input"><input placeholder="请输入样品份数"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left edit-linetwo-eight">
+              <span class="left"></span>精液</p>
+              <p class="left edit-lineone-input"><input placeholder="请输入样品份数"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left edit-linetwo-eight">
+              <span class="left"></span>乳液</p>
+              <p class="left edit-lineone-input"><input placeholder="请输入样品份数"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第八行里面2个input的块-->
+          <div class="edit-eight-else">
+            <div class="eight-else-main">
+              <!--选中时使用类jck-else-ckecked，未选中时直接使用span-->
+              <span></span>其他
+            </div>
+            <div class="eight-else-input">
+              <input class="left" placeholder="请输入样品名称">
+              <input class="left eight-else-inputright" placeholder="请输入样品份数">
+              <div class="clearf"></div>
+            </div>
+          </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第九行-->
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">开始发病日龄</p>
+              <p class="left edit-lineone-input"><input placeholder="请输入开始发病日龄"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第十行-->
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">送检日龄</p>
+              <p class="left edit-lineone-input"><input placeholder="送检日龄"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第十一行-->
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">发病率</p>
+              <p class="left edit-lineone-input"><input placeholder="检测病毒、细菌必填"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第十二行-->
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">死亡率</p>
+              <p class="left edit-lineone-input"><input placeholder="检测病毒、细菌必填"></p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第十三行-->
+          <div class="edit-lineonemain">
+            <div class="edit-lineone">
+              <p class="left edit-lineone-left">拟检疫病*</p>
+              <div class="clearf"></div>
+            </div>
+          </div>
+          <!--第二行下拉出现的内容,,里面的第十四行-->
+          <div class="edit-linethreemain edit-linethreemain-shisi">
+            <!--拟检疫病里面的7个小块中的第一个-->
+            <div class="edit-linethree">
+              <p class="left edit-linetwo-shisi">
+              <!--选中时使用类edit-shisi-checked 未选中时使用类span-->
+              <span class=""></span>抗体检测</p>
+              <div class="clearf"></div>
+              <div class="edit-linethree-textarea edit-linethree-textatwo">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="edit-textareatext">0/<span>100</span></p>
+            </div>
+            <!--拟检疫病里面的7个小块中的第二个-->
+            <div class="edit-linethree">
+              <p class="left edit-linetwo-shisi">
+              <!--选中时使用类edit-shisi-checked 未选中时使用类span-->
+              <span class=""></span>病毒检测</p>
+              <div class="clearf"></div>
+              <div class="edit-linethree-textarea edit-linethree-textatwo">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="edit-textareatext">0/<span>100</span></p>
+            </div>
+            <!--拟检疫病里面的7个小块中的第三个-->
+            <div class="edit-linethree">
+              <p class="left edit-linetwo-shisi">
+              <!--选中时使用类edit-shisi-checked 未选中时使用类span-->
+              <span class=""></span>病毒分离</p>
+              <div class="clearf"></div>
+              <div class="edit-linethree-textarea edit-linethree-textatwo">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="edit-textareatext">0/<span>100</span></p>
+            </div>
+            <!--拟检疫病里面的7个小块中的第四个-->
+            <div class="edit-linethree">
+              <p class="left edit-linetwo-shisi">
+              <!--选中时使用类edit-shisi-checked 未选中时使用类span-->
+              <span class=""></span>细菌检测及药敏</p>
+              <div class="clearf"></div>
+              <div class="edit-linethree-textarea edit-linethree-textatwo">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="edit-textareatext">0/<span>100</span></p>
+            </div>
+            <!--拟检疫病里面的7个小块中的第五个-->
+            <div class="edit-linethree">
+              <p class="left edit-linetwo-shisi">
+              <!--选中时使用类edit-shisi-checked 未选中时使用类span-->
+              <span class=""></span>基因测序</p>
+              <div class="clearf"></div>
+              <div class="edit-linethree-textarea edit-linethree-textatwo">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="edit-textareatext">0/<span>100</span></p>
+            </div>
+            <!--拟检疫病里面的7个小块中的第六个-->
+            <div class="edit-linethree">
+              <p class="left edit-linetwo-shisi">
+              <!--选中时使用类edit-shisi-checked 未选中时使用类span-->
+              <span class=""></span>病例切片</p>
+              <div class="clearf"></div>
+              <div class="edit-linethree-textarea edit-linethree-textatwo">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="edit-textareatext">0/<span>100</span></p>
+            </div>
+            <!--拟检疫病里面的7个小块中的第七个-->
+            <div class="edit-linethree edit-textarea-minheight">
+              <p class="left edit-linetwo-shisi">
+              <!--选中时使用类edit-shisi-checked 未选中时使用类span-->
+              <span class=""></span>其他</p>
+              <div class="clearf"></div>
+              <div class="edit-linethree-textarea edit-linethree-textatwo">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="edit-textareatext">0/<span>100</span></p>
+            </div>
+          </div>
+        </div>
+        <!--第三行-->
+        <div class="edit-animal-main edit-main-notopborder">
+          <div class="edit-animal-lineone">
+            <p class="left">用药方案与疗效</p>
+            <p class="right edit-animal-color">完成</p>
+            <div class="clearf"></div>
+          </div>
+        </div>
+        <!--第三行展开的内容-->
+        <div class="edit-mainlinethree">
+          <div class="mainlinethree-textarea">
+            <div class="mainlinethree-textarea-main">
+              <textarea placeholder="请输入详情"></textarea>
+            </div>
+            <p class="">0/<span>100</span></p>
+          </div>
+        </div>
+        <!--第四行-->
+        <div class="edit-animal-main edit-main-notopborder">
+          <div class="edit-animal-lineone">
+            <p class="left">免疫信息（检测抗体必填）</p>
+            <p class="right edit-animal-color">完成</p>
+            <div class="clearf"></div>
+          </div>
+        </div>
+        <!--第四行展开的内容-->
+        <div class="edit-linefour-allmain">
+          <div class="edit-animal-linefour">
+            <div class="edit-animal-linefourmain">
+              <p class="linefourmain-title">疫苗信息（检测抗体必填）</p>
+              <div class="animal-linefourmain-texta">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="linefourmain-texta-right">0/<span>100</span></p>
+            </div>
+          </div>
+          <div class="edit-animal-linefour">
+            <div class="edit-animal-linefourmain">
+              <p class="linefourmain-title">免疫情况（检测抗体必填）</p>
+              <div class="animal-linefourmain-texta">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="linefourmain-texta-right">0/<span>100</span></p>
+            </div>
+          </div>
+        </div>
+        <!--第五行-->
+        <div class="edit-animal-main edit-main-notopborder">
+          <div class="edit-animal-lineone">
+            <p class="left">临床表现（检测病毒、细菌必填）</p>
+            <p class="right edit-animal-color">完成</p>
+            <div class="clearf"></div>
+          </div>
+        </div>
+        <div class="edit-linefour-allmain">
+          <div class="edit-animal-linefour">
+            <div class="edit-animal-linefourmain">
+              <p class="linefourmain-title">临床表现（检测病毒、细菌必填）</p>
+              <div class="animal-linefourmain-texta">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="linefourmain-texta-right">0/<span>100</span></p>
+            </div>
+          </div>
+          <div class="edit-animal-linefour">
+            <div class="edit-animal-linefourmain">
+              <p class="linefourmain-title">剖检病变（检测病毒、细菌必填）</p>
+              <div class="animal-linefourmain-texta">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="linefourmain-texta-right">0/<span>100</span></p>
+            </div>
+          </div>
+          <div class="edit-animal-linefour">
+            <div class="edit-animal-linefourmain">
+              <p class="linefourmain-title">初步诊断</p>
+              <div class="animal-linefourmain-texta">
+                <textarea placeholder="请输入详情"></textarea>
+              </div>
+              <p class="linefourmain-texta-right">0/<span>100</span></p>
+            </div>
+          </div>
+        </div>
+        <!--第六行-->
+        <div class="edit-animal-main edit-main-notopborder">
+          <div class="edit-animal-lineone">
+            <p class="left">建议检查的项目</p>
+            <p class="right edit-animal-color">完成</p>
+            <div class="clearf"></div>
+        </div>
+      </div>
+      <div class="edit-mainlinethree">
+          <div class="mainlinethree-textarea">
+            <div class="mainlinethree-textarea-main">
+              <textarea placeholder="请输入详情"></textarea>
+            </div>
+            <p class="">0/<span>100</span></p>
+          </div>
+        </div>
+        <!--按钮-->
+        <a href="">提交采样单</a>
+    </section>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

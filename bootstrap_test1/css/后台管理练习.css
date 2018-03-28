@@ -1,0 +1,38 @@
+body{
+	padding:50px 0;
+}
+.navbar-form{
+	margin-right:10px;
+}
+.sidebar{
+	background-color: #ddd;
+	border-right:1px solid #eee;
+	position: fixed;
+	top:51px;
+	bottom: 0;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y:auto; 
+	display: block;
+	/*padding:0 0px 10px 15px;*/
+	z-index: 1000;
+}
+.nav-sidebar{
+	margin : 20px -15px 0 -15px;
+}
+.nav-sidebar > li > a{
+	padding-left: 20px;
+	padding-right: 11px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+.content{
+	padding:20px;
+}
+.panel{
+	margin: 10px 0 20px 0;
+}

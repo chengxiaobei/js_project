@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>轮播图练习</title>
+  <script src="../../js/jquery-1.11.0.min.js"></script>
+  <link rel="stylesheet" href="../../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+  <script src="../../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+  <style>
+  #slidershow{
+    width: 500px;
+  }
+  </style>
+</head>
+<body>
+  <div id="slidershow" class="carousel" data-ride="carousel" data-interval="1000">
+    <!-- 设置轮播图顺序 -->
+    <ol class="carousel-indicators">
+      <li class="active" data-target="#slidershow" data-slide-to="0">1</li>
+      <li  data-target="#slidershow" data-slide-to="1">2</li>
+      <li data-target="#slidershow" data-slide-to="2">3</li>
+      </ol>
+<!-- 设置轮播图图片 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="##"><img src="http://images3.c-ctrip.com/rk/201407/ll580x145.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <h3>图片标题1</h3>
+                <p>描述内容1...</p>
+            </div>
+        </div>
+        <div class="item">
+            <a href="##"><img src="http://images3.c-ctrip.com/dj/201408/zj/zj_580145.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <h3>图片标题2</h3>
+                <p>描述内容2...</p>
+            </div>
+        </div>
+        <div class="item">
+            <a href="##"><img src="http://images3.c-ctrip.com/dj/201408/zqgq_580145.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <h3>图片标题3</h3>
+                <p>描述内容3...</p>
+            </div>
+        </div>
+    </div>
+      <!-- 向左的按钮 -->
+      <a class="left carousel-control " href="#slidershow" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#slidershow" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+
+    </div>
+ 
+  </div>
+</body>
+</html>

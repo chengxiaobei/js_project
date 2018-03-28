@@ -1,0 +1,16 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	padding-top: 0px;
+}
+.panel-group{
+	margin-top:2px; 
+	margin-left: 5px;
+}
+.panel .panel-title a{
+	color:#2e93d3;
+	text-decoration: none;
+	display: block;
+}

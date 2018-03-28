@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="../css/public.css" rel="stylesheet" />
+		<link href="../css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      window.onload=function(){
+        $("#close").click(function(){
+          window.history.go(-1);
+        })
+
+      }
+    </script>
+	</head>
+	<body>
+<<<<<<< .mine
+      <div class="form-body">
+		<div class="information-wrap">
+			<a href="#" id="close"></a>
+			<ul class="information-list">
+				<li>
+					<a href="#">电商运营主管[天津]</a>
+					<p>经验1-3年/学历不限/全职</p>
+				</li>
+				<li>
+					<a href="#">JAVA开发工程师[北京]</a>
+					<p>经验1-3年/学历不限/全职</p>
+				</li>
+				<li>
+					<a href="#">高级UI设计师[天津]</a>
+					<p>经验1-3年/大专/全职</p>
+				</li>
+				<li>
+					<a href="#">JAVA开发工程师[深圳]</a>
+					<p>经验1-3年/本科/全职</p>
+				</li>
+				<li>
+					<a href="#">JAVA[天津]</a>
+					<p>经验1-3年/大专/全职</p>
+				</li>
+			</ul>
+			<ul class="information-list">
+				<li>
+					<a href="#">产品经理[天津]</a>
+					<p>经验1-3年/学历不限/全职</p>
+				</li>
+				<li>
+					<a href="#">会计[北京]</a>
+					<p>经验3-5年/本科/全职</p>
+				</li>
+				<li>
+					<a href="#">HTML5[天津]</a>
+					<p>经验1-3年/本科/全职</p>
+				</li>
+				<li>
+					<a href="#">测试工程师[北京]</a>
+					<p>经验1-3年/大专/全职</p>
+				</li>
+			</ul>
+			<p class="information-text">请将简历发送至公司邮箱：<a href="mailto:admin@bbdtek.com">admin@bbdtek.com</a></p><p class="information-text">或登录各大招聘网站联系面试</p>
+		</div>
+=======
+      <div class="mask">
+        <div class="form-body">
+          <div class="information-wrap">
+              <a href="#" id="close"></a>
+              <ul class="information-list">
+                  <li>
+                      <a href="#">电商运营主管[天津]</a>
+                      <p>经验1-3年/学历不限/全职</p>
+                  </li>
+                  <li>
+                      <a href="#">JAVA开发工程师[北京]</a>
+                      <p>经验1-3年/学历不限/全职</p>
+                  </li>
+                  <li>
+                      <a href="#">高级UI设计师[天津]</a>
+                      <p>经验1-3年/大专/全职</p>
+                  </li>
+                  <li>
+                      <a href="#">JAVA开发工程师[深圳]</a>
+                      <p>经验1-3年/本科/全职</p>
+                  </li>
+                  <li>
+                      <a href="#">JAVA[天津]</a>
+                      <p>经验1-3年/大专/全职</p>
+                  </li>
+              </ul>
+              <ul class="information-list">
+                  <li>
+                      <a href="#">产品经理[天津]</a>
+                      <p>经验1-3年/学历不限/全职</p>
+                  </li>
+                  <li>
+                      <a href="#">会计[北京]</a>
+                      <p>经验3-5年/本科/全职</p>
+                  </li>
+                  <li>
+                      <a href="#">HTML5[天津]</a>
+                      <p>经验1-3年/本科/全职</p>
+                  </li>
+                  <li>
+                      <a href="#">测试工程师[北京]</a>
+                      <p>经验1-3年/大专/全职</p>
+                  </li>
+              </ul>
+              <p class="information-text">请将简历发送至公司邮箱：<a href="#">admin@bbdtek.com</a></p><p class="information-text">或登录各大招聘网站联系面试</p>
+          </div>
+        </div>
+>>>>>>> .r2563
+      </div>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>4预览图片</title>
+<link type="text/css" rel="stylesheet" href="../../css/rp_style3.css">
+<script type="text/javascript" src="../../less/less.js"></script>
+<script type="text/javascript" src="../../js/common/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    var liWidth = $(".ylpic-mainlb")[0].offsetWidth;
+    var liHeight = $(".ylpic-mainlb")[0].offsetHeight;
+    $(".ylpic-mainlb-ul").css("height", liHeight);
+    $(".ylpic-mainlb-ul li").css({"width" : liWidth, "height" : liHeight});
+    $(".ylpic-mainlb-ul .ylpic-mainlb-div").css({"width" : liWidth, "height" : liHeight});
+  });
+</script>
+</head>
+<body class="whiteBg deledt-bg">
+  <div class="wrap">
+	<header>
+	  <a class="back-btn"></a>
+	  <h2>
+        <!--span标签不要换行-->
+        <span>5</span><span>/</span><span>50</span> 
+      </h2>
+       <a class="reg-btn fabiao-btn">完成</a>
+	</header>
+    <section class="main-section">
+      <!-- 轮播图主容器 -->
+      <div class="ylpic-mainlb ylpic-imgtop">
+        <!-- 轮播图 -->
+        <ul class="ylpic-mainlb-ul">
+          <li>
+            <div class="ylpic-mainlb-div">
+              <img src="../../images/yzzx_img3.png">
+            </div>
+          </li>
+        </ul>
+        <div class="clearf"></div>
+      </div>
+     </section>
+     <footer>
+       <div class="ylpic-bottom">
+          <!--未勾选时使用类ylpic-unchecked-->
+          <a class="left"></a>
+          <span class="left">选择</span>
+          <div class="clearf"></div>
+        </div>
+     </footer>
+	</div>
+</body>
+</html>

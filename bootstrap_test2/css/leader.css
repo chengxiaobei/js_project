@@ -1,0 +1,30 @@
+.input-group{
+	margin-right:20px; 
+}
+.col-md-4 img{
+	width: 100%;
+	height: 150px;
+}
+.list-group-item{
+	border:0px;
+}
+.divider{
+	border: 1px dotted #ddd;
+}
+.text-center{
+	text-align: center;
+}
+.content{
+	margin: 0 60px;
+}
+.media .media-left img{
+	height: 70px;
+	width: 70px;
+}
+.media-list{
+	margin: 10px 5px 0 5px;
+}
+.ads img{
+	height: 80px;
+	width: 100%;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>4选择相册</title>
+<link type="text/css" rel="stylesheet" href="../../css/rp_style3.css">
+</head>
+<body class="whiteBg">
+	<div class="wrap">
+	   <header>
+		 <h2>选择相册</h2>
+         <a class="reg-btn fabiao-btn">取消</a>
+	   </header>
+     <section class="main-section">
+       <div>
+       <!--第一行整块-->
+         <div class="chooseph-main">
+         <!--左边图片加文字-->
+           <div class="chooseph-left left">
+               <div class="choose-leftpic left">
+                   <img src="../../images/rou2.png">
+               </div>
+               <div class="choose-righttext left">
+                   <p class="choose-name">文件夹名</p>
+                   <p class="choose-num"><span>（</span><span>123</span><span>）</span></p>
+                   <div class="clearf"></div>
+               </div>
+               <div class="clearf"></div>
+           </div>
+           <!--右边的箭头-->
+           <div class="chooseph-right right">
+               <a class="right"></a>
+           </div>
+           <div class="clearf"></div>
+         </div>
+         <!--第二行整块-->
+         <div class="chooseph-main">
+         <!--左边图片加文字-->
+           <div class="chooseph-left left">
+               <div class="choose-leftpic left">
+                   <img src="../../images/rou4.png">
+               </div>
+               <div class="choose-righttext left">
+                   <p class="choose-name">文件夹名</p>
+                   <p class="choose-num"><span>（</span><span>123</span><span>）</span></p>
+                   <div class="clearf"></div>
+               </div>
+               <div class="clearf"></div>
+           </div>
+           <!--右边的箭头-->
+           <div class="chooseph-right right">
+               <a class="right"></a>
+           </div>
+           <div class="clearf"></div>
+         </div>
+         
+       </div>
+     </section>
+	</div>
+</body>
+</html>

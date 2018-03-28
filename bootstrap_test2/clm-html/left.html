@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网页练习3</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/left.css">
+</head>
+<body>
+    <div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+					<strong>></strong> 个人信息
+					</a>
+				</h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse">
+				<div class="panel-body">
+					<p><a href="./personal.html" data-tab="pinfo" target="myframe"><span class="glyphicon glyphicon-user"></span> 个人信息</a></p>
+		    		<p><a href="./changeps.html" data-tab="ps" target="myframe"><span class="glyphicon glyphicon-lock"></span> 修改密码</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+					<strong>></strong> 文件管理
+					</a>
+				</h4>
+			</div>
+			<div id="collapse2" class="panel-collapse collapse">
+				<div class="panel-body">
+					<p><a href="./file.html" target="myframe"><span class="glyphicon glyphicon-folder-open"></span> 文件管理</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

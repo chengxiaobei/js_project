@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>意见反馈</title>
+<link type="text/css" rel="stylesheet" href="../css/rp_style2.css">
+<link type="text/css" rel="stylesheet" href="../css/rp_style3.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="back-btn" href=""></a>
+      <h2>意见反馈</h2>
+      <a class="reg-btn" href="">提交</a>
+    </header>
+    <section class="main-section">
+      <!--问题1-->
+      <div class="dtym-question center-mt">
+        <div class="dtym-title">1.您对哪些方面的资讯更感兴趣？（多选）</div>
+        <!--选中是 answer-checked 没选中是 answer-check-->
+        <div class="dtym-answer answer-checked">养殖知识</div>
+        <div class="dtym-answer answer-checked">行业政策</div>
+        <div class="dtym-answer answer-check">企业动态</div>
+      </div>
+      <!--问题2-->
+      <div class="dtym-question">
+        <div class="dtym-title">2.资讯更新频率如何？（单选）</div>
+        <!--选中是 answer-checked 没选中是 answer-check-->
+        <div class="dtym-answer answer-checked">太慢</div>
+        <div class="dtym-answer answer-check">适中</div>
+        <div class="dtym-answer answer-check">没注意</div>
+      </div>
+      <!--问题3-->
+      <div class="dtym-question fankui-nomarbom">
+        <div class="dtym-title">3.请写下其他反馈意见</div>
+        <!--反馈意见-->
+        <div class="dtym-opinbox">
+          <div class="dtym-opinion">
+            <textarea></textarea>
+            <div class="dtym-plus">0/100</div>
+          </div>
+        </div>
+      </div>
+      <!--下面的添加照片区域-->
+       <div class="fankui-mainpic">
+          <div class="fpl-picture">
+            <ul>
+              <li><img src="../images/rou1.png"></li>
+              <li><img src="../images/rou2.png"></li>
+              <li><img src="../images/rou3.png"></li>
+              <li><img src="../images/rou4.png"></li>
+              <li><img src="../images/rou1.png"></li>
+              <li><img src="../images/rou2.png"></li>
+              <li class="picture-addbtn">
+              <input type="file">
+                <img src="../images/addpicture-img.png">
+                  <span>添加照片</span>
+              </li>
+            </ul>
+            <div class="clearf"></div>
+          </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>
+
+
+
+

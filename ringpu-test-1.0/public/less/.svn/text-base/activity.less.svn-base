@@ -1,0 +1,1325 @@
+@import "_base.less";
+/*
+*下载免疫宝页面20170208
+*/
+.myb-download-body{
+  position:relative;
+  padding-top: 73%;
+  background: #1e1a16 url(../images/myb_main_bg.png) no-repeat top center;
+  background-size: 100% auto; 
+  .myb-down-saomiao{
+    position:fixed;
+    top:22%;
+    left:8%;
+    .myb-saomiao-syd{
+    margin-bottom:10px;
+    }
+    img{
+      width:55%;
+    }
+  }
+}
+
+/*
+ *下载app_v02_151220.html
+ */
+/*背景*/
+.yzb-download-body{
+  position:relative;
+  padding-top: 73%;
+  background: #c3ee62 url(../images/yzb_main_bg.jpg) no-repeat top center;
+  background-size: 100% auto; 
+}
+.yzb-download-body.yzb-download-anzhuo{
+  background: #c3ee62 url(../images/yzb-download-anzhuo.jpg) no-repeat top center;
+  background-size: 100% auto; 
+}
+/*养殖宝下载--一个二维码居中*/
+.yzb-down-cen{
+  width:100%;
+  margin-bottom:5px;
+  .yzb-down-cenmain{
+    width:35%;
+    margin:0 auto;
+    text-align:center;
+    img{
+        width:86%;
+      }
+    p.yzb-center{
+      color:#f9dd77;
+      font-size:@base-fsize - 1;
+      padding-bottom:10px;
+      span{
+        display:inline-block;
+        font-size:@base-fsize - 2;
+      }
+    }
+    
+  }
+}
+.yzb-down-saomiao.yzb-down-lanzi{
+  .yzb-down-saomiao-main{
+    width:100%;
+    h2.an-zhuo-text{
+      position:absolute;
+      top:20%;
+      color:#fff;
+      top: -108%;
+      right: 8%;
+    }
+    a{
+      display: block;
+      width: 70%;
+      height: 28px;
+      margin: 4px auto 0;
+      font-size: 15px;
+      color: #2a2a45;
+      line-height: 28px;
+      text-align: center;
+      font-family: "微软雅黑", "宋体";
+      background: url(../images/download_bg_left.png) no-repeat left center, url(../images/download_bg_right.png) no-repeat right center, url(../images/download_bg_center.png) repeat-x left center;
+      background-size: auto 38px, auto 38px, auto 38px;
+      cursor: pointer;
+      //border: 1px solid #222236;
+      border-radius: 8px;
+        }
+    p{
+      color:#f9dd77;
+      //color:#3e88ad;
+      span{
+        display:inline-block;
+        font-size:@base-fsize - 2;
+      }
+    }
+    .yzb-saomiao-left{
+      width:33%;
+      //margin-right:10%;
+      p{
+        width:100%;
+      }
+      img{
+        width:82%;
+      }
+    }
+  }
+}
+/*养殖宝下载*/
+.yzb-down-saomiao{
+  width:100%;
+  .yzb-down-saomiao-main{
+    width:80%;
+    margin:0 auto;
+    text-align:center;
+    p{
+        color:#f9dd77;
+        font-size:@base-fsize - 1;
+        width:108%;
+      }
+    a{
+      display: block;
+      width: 65%;
+      height: 30px;
+      margin: 5px auto 0;
+      font-size: 16px;
+      color: #2a2a45;
+      line-height: 30px;
+      text-align: center;
+      font-family: "微软雅黑", "宋体";
+      background: url(../images/download_bg_left.png) no-repeat left center, url(../images/download_bg_right.png) no-repeat right center, url(../images/download_bg_center.png) repeat-x left center;
+      background-size: auto 38px, auto 38px, auto 38px;
+      cursor: pointer;
+      //border: 1px solid #222236;
+      border-radius: 8px;
+        }
+    .yzb-saomiao-left{
+      width:50%;
+      //margin-right:16%;
+      
+      img{
+        width:70%;
+        margin:8px 0 2px 0;
+      }
+    }
+    .yzb-saomiao-right{
+      width:50%;
+      img{
+        width:70%;
+        margin-top:8px;
+      }
+    }
+  }
+}
+/*按钮上的文字*/
+.bebtn-p{
+  font-size: @base-fsize - 2;
+  color: #f9dd77;
+  line-height: @base-lheight + .5;
+  text-align: center;
+}
+/*立即下载按钮*/
+.download-btn{
+  display: block;
+  width: 52%;
+  height: 38px;
+  margin: 3px auto 0;
+  font-size: @base-fsize + 2;
+  color: #2a2a45;
+  line-height: 38px;
+  text-align: center;
+  font-family: "微软雅黑", "宋体";
+  background: url(../images/download_bg_left.png) no-repeat left center, url(../images/download_bg_right.png) no-repeat right center,  url(../images/download_bg_center.png) repeat-x left center;
+  background-size: auto 38px, auto 38px, auto 38px;
+  cursor: pointer;
+  .border(@border-width: 3px, @border-color: #222236);
+  .border-radius(15px);
+}
+/*养殖之旅模块*/
+.yzb-yzzl-con{
+  position: relative;
+  width: @main-width;
+  margin: 53% auto 36px;
+  padding: 58px 6.5% 32px;
+  background: rgba(255, 255, 255, 0.67) url(../images/anwen_bg.png) repeat-y left top;
+  background-size: 100% auto;
+  box-shadow: 2px 2px 0 0 #ace643;
+  .border-radius(8px);
+  .border-box;
+  //养殖之旅标题
+  .main-title-div{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    width: 152px;
+    margin-left: -76px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  //养殖之旅各个模块说明列表
+  .model-exp-ul{
+    li{
+      position: relative;
+      width: 88%;
+      padding: 16px 18px;
+      background: #d8ecb1;
+      .border(@border-width: 2px, @border-color: #bbd598);
+      .border-radius(5px);
+      .border-box;
+      &:nth-child(odd){
+        float: left;
+        .title-div{
+          left: -3px;
+          text-align: left;
+        }
+      }
+      &:nth-child(even){
+        float: right;
+        .title-div{
+          right: 3px;
+          text-align: right;
+        }
+      }
+      &.dwzl-li{margin-bottom: 42px;}
+      &.zxzj-li{margin-bottom: 41px;}
+      &.sc-li{margin-bottom: 53px;}
+      &.yzxy-li{margin-bottom: 46px;}
+      &.yzsq-li{}
+      //模块标题
+      .title-div{
+        position: absolute;
+        width: 95px;
+        height: 38px;
+        top: -28px;
+        img{
+          width: auto;
+          height: 38px;
+        }
+      }
+      p{
+        font-size: @base-fsize - 1;
+        color: #333;
+        line-height: @base-lheight + .3;
+      }
+    }
+  }
+}
+/*二维码模块*/
+.yzb-ewm-con{
+  width: 100%;
+  padding: 20px (100% - @main-width) / 2 25px;
+  background: #2277a2;
+  text-align: center;
+  .border-box;
+  p{
+    padding: 0 25.5%;
+    font-size: @base-fsize - 2;
+    color: #fff;
+    line-height: @base-lheight + .2;
+    .border-box;
+  }
+  img{
+    width: 111px;
+    height: auto;
+    margin-top: 13px;
+  }
+}
+
+
+//下载app_经销商bate_160108
+body.downlo-appp-body{
+  padding-top: 80%;
+  background: #c3ee62 url(../images/downlo-appbg.png) no-repeat top center;
+  background-size: 100% auto;
+  li.yzsq-li.yzsq-libg{
+    background: #eaecb1;
+    border:1px solid #d5d398;
+  }
+}
+
+.downlo-pingtai-body{
+  padding-top: 80%;
+  background: #c3ee62 url(../images/downlo-ptbg.png) no-repeat top center;
+  background-size: 100% auto;
+}
+
+//积分换好礼页面
+.jifen-body{
+  padding-top: 80%;
+  background: #ece2be url(../images/jifen-bgimg.jpg) no-repeat top center;
+  background-size: 100% auto;
+  .jifen-maincon{
+    width:80%;
+    margin:0 auto;
+    .jifen-guize{
+      text-align:center;
+      img{
+      width:80%;
+      }
+    }
+    .jifen-guize-mingxi{
+      text-align:left;
+      margin:20px 0;
+      p{
+        font-size:@base-fsize - 2;
+        line-height:1.8em;
+        color:#666;
+        span{
+          color:#f13741;
+        }
+      }
+    }
+    .jifen-tuijian-btn{
+      text-align:center;
+      margin-bottom:50px;
+        img{
+          width:100%;
+        }
+      }
+    .jifen-mine{
+      text-align:center;
+      margin-bottom:20px;
+      img{
+        width:80%;
+      }
+    }
+    .jifen-yuanbao{
+      width:65%;
+      height:30px;
+      margin:0 auto;
+      img{
+        width:38px;
+        height:auto;
+      }
+      p{
+        color:#de2230;
+        font-size:@base-fsize + 6;
+        margin: 3px 0 0 10%;
+      }
+    }
+    .jifen-tuijian{
+      margin-bottom:40px;
+      .jifen-tuijian-textmain{
+        margin:18px auto;
+        width:140px;
+        p.jifen-tuijian-text{
+          color: #b1441e;
+        }
+        p.jifen-xiala.jifen-shouqi{
+          background: url(../images/jifen-shouqi.png) no-repeat right center;
+          background-size: 15px auto;
+        }
+        p.jifen-xiala{
+          background: url(../images/jifen-xiala.png) no-repeat right center;
+          background-size: 15px auto;
+          width: 15px;
+          height:15px;
+          margin-left: 2px;
+        }
+      }
+      .jifen-tuijian-main{
+        width:100%;
+        background:#fff;
+        .tuijian-maincon.tuijian-maincon-title{
+          background:#f1b030;
+          color:#fff;
+        }
+        .tuijian-maincon{
+          width:100%;
+          height:2.8em;
+          line-height:2.8em;
+          text-align:center;
+          display:inline-block;
+          font-size:@base-fsize - 2;
+          .border-bottom;
+          box-sizing:border-box;
+        }
+        .tuijian-left{
+          width:50%;
+          max-width:50%;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          overflow:hidden;
+          padding:0 5px;
+          box-sizing:border-box;
+        }
+        .tuijian-right{
+          width:50%;
+          padding:0 2px;
+          max-width:50%;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          overflow:hidden;
+          .border-left;
+          box-sizing:border-box;
+        }
+      }  
+    }
+    .jifen-erweima{
+      text-align:center;
+      img{
+        width:70%;
+      }
+      p{
+        font-size:@base-fsize - 2;
+        padding-top:13px;
+      }
+    }
+  }
+}
+//最下面的内容积分注意事项
+.jifen-zy-width{
+  width:100%;
+  background:#f3dbab;
+  font-size:@base-fsize - 2;
+  line-height:10px;
+  padding-bottom:54px;
+  p{
+    margin-top:16px;
+  }
+  .jifen-zhuyi{
+    background:#f6a037;
+    margin-top:50px;
+    color:#fff;
+    text-align:center;
+    width:100%;
+    height:30px;
+    line-height:30px;
+  }
+  .jifen-zhuyi-maincon{
+    width:85%;
+    margin:0 auto;
+    line-height:16px;
+    color:#666;
+  }
+}
+
+//转盘
+.zhuanpan-download-body.zhuanpan-download-bodytwo{
+  background: url(../images/zhuanpan-bgtwo.png) no-repeat top center;  
+  background-size: 100% auto;
+}
+body.zhuanpan-download-body{
+  position:relative;
+  padding-top: 80%;
+  background: url(../images/zhuanpan-bg.jpg) no-repeat top center;
+  background-size: 100% auto; 
+  .zhuanpan-main{
+    width:82%;
+    height:auto;
+    margin:0 auto;
+    .zhuanpan-main-con{
+      position:relative;
+      img{
+        width:100%;
+        height:auto;
+      }
+      img.zhuanpan-check{
+        position:absolute;
+        top: 29%;
+        left: 30%;
+        width: 41%;
+      }
+      .zhuanpan-jihui{
+        position:absolute;
+        top:-18px;
+        right:-6.5%;
+        p{
+          font-size:@base-fsize + 2;
+          color:#d38542;
+          text-align:right;
+          text-shadow: 0 0 5px #fff;
+        }
+        p.zhuanpan-jihui-num{
+          span{
+            display:inline-block;
+            color:#ff471b;
+            font-size:@base-fsize + 7;
+          }
+        }
+      }
+    }
+  }
+  .zhuanpan-bom-bg{
+    position:relative;
+    margin-top:11%;
+    background: url(../images/zhuanpan-bombg.jpg) repeat-y top center;
+    background-size: 100% auto;
+    .zhuanpan-mypre{
+      margin:0 auto;
+      width:@main-width;
+      position: relative;
+      overflow: hidden;
+      img.zhuanpan-mypre-img{
+        width:100%;
+        min-height:78px;
+        max-height:78px;
+        height:auto;
+      }
+      .zhuanpan-mypre-main{
+        position: absolute;
+        left: 27%;
+        width: 70%;
+        top:0;
+        height: 80px;
+        min-height: 80px;
+        max-height: 80px;
+        overflow:hidden;
+        .zhuanpan-mypre-right{
+          position: absolute;
+          width: 100000px;
+          //margin-left: 24%;
+          margin-top:13px;
+          color: #fff;
+          top: 0;
+          font-size: @base-fsize + 6;
+          color:#fff;
+          //margin-top: -19%;
+          top:0;
+          .mypre-right-nonepre{
+            margin: 17px 0 0 25px;
+          }
+          .mypre-right-one{
+            //width:176px;
+            box-sizing:border-box;
+            img{
+              width: 40px;
+              margin-left:11px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .zhuanpan-phb-bg{
+    background: #ffed9f;
+    position:relative;
+    width:@main-width;
+    margin:5% auto;
+    border-radius: 18px;
+    text-align:center;
+    padding:6% 9%;
+    box-sizing:border-box;
+    img.zhuanpan-phb-bgimg{
+      width:100%;
+      height:100%;
+      left:1.5%;
+      top:0;
+      margin-left:-1.5%;
+      position:absolute;
+    }
+    p{
+      color:#c86407;
+    }
+    p.zhuanpan-mingdan-martop{
+      margin-top:15px;
+    }
+    .zhuanpan-mingdan{
+      padding-top:7px;
+      p.mingdan-tel{
+        margin-left:18px;
+      }
+    }
+  }
+  .zhuanpan-hd-con{
+    width:@main-width;
+    text-align:center;
+    margin:0 auto;
+    padding-bottom: 30px;
+    p{
+      color:#ca6c10;
+      background:#ffed9f;
+    }
+    p.zhuanpan-hd-title{
+      width: 100px;
+      border-radius: 10px;
+      height: 20px;
+      line-height: 20px;
+      margin: 0 auto;
+    }
+    .zhuanpan-hd-maincon{
+      background:#ffed9f;
+      padding:15px;
+      margin-top:10px;
+      border-radius:18px;
+     box-sizing:border-box;
+      p{
+        line-height: 20px;
+        text-align: left;
+      }
+    }
+  }
+}
+//大转盘弹窗
+.zhuanpan-alert{
+  width:100%;
+  //实物奖品背景
+  .zhuanpan-alert-bg.zhuanpan-alert-probg{
+    background: url(../images/实物奖品背景.png) no-repeat top center;
+    background-size: 100% auto;
+    img{
+      width: 126px;
+      margin: 38px 0 5px 0;
+    }
+    p{
+      color:#999;
+      position:absolute;
+      bottom:86px;
+      left: 50px;
+    }
+    h3{
+      position:absolute;
+      bottom:100px;
+      left: 63px;
+    }
+    span.zhuanpan-alert-binum{
+      position:absolute;
+      display:inline-block;
+      color: #f77e0d;
+      top: 144px;
+      left: 162px;
+      font-size: 40px;
+    }
+  }
+  //实物抽完
+  .zhuanpan-alert-bg.zhuanpan-alert-swnonebg{
+    background: url(../images/实物抽完.png) no-repeat top center;
+    background-size: 100% auto;
+  }
+  //已抽完
+  .zhuanpan-alert-bg.zhuanpan-alert-ycwbg{
+    background: url(../images/已抽完.png) no-repeat top center;
+    background-size: 100% auto;
+  }
+  //未开始
+  .zhuanpan-alert-bg.zhuanpan-alert-wksbg{
+    background: url(../images/未开始.png) no-repeat top center;
+    background-size: 100% auto;
+  }
+  //已结束
+  .zhuanpan-alert-bg.zhuanpan-alert-overbg{
+    background: url(../images/已结束.png) no-repeat top center;
+    background-size: 100% auto;
+  }
+  //未登录类名
+  .zhuanpan-alert-bg.zhuanpan-alert-loginbg{
+    background: url(../images/登录.png) no-repeat top center;
+    background-size: 100% auto;
+    p.zhuanpan-alert-dl{
+      position: absolute;
+      bottom: 50px;
+      left: 78px;
+      color: #c86407;;
+    }
+  }
+  //未中奖类名
+  .zhuanpan-alert-bg.zhuanpan-alert-noprobg{
+    background: url(../images/转盘-未中奖.png) no-repeat top center;
+    background-size: 100% auto;
+  }
+  .zhuanpan-alert-bg{
+    position: absolute;
+    left: 50%;
+    width: 294px;
+    height: 330px;
+    top: 50%;
+    margin-top: -165px;
+    margin-left: -147px;
+    border-radius: 3px;
+    background: #fff;
+    text-align: center;
+    background: url(../images/明天继续.png) no-repeat top center;
+    background-size: 100% auto;
+    a.zhuanpan-alert-btn{
+      position:absolute;
+      bottom:30px;
+      left: 50%;
+      margin-left: -110px;
+      display:inline-block;
+      width:220px;
+      height:46px;
+      line-height:46px;
+      background:#00a6ec;;
+      color:#fff;
+      font-size:@base-fsize + 4;
+      border-radius:30px;
+    }
+  }
+}
+
+
+//端午活动列表页
+.duanwu-lunbo{
+  width:100%;
+  height:auto;
+  margin-bottom:10px;
+  img{
+      width:100%;height:auto;
+    }
+}
+.duanwu-list{
+  width:100%;
+  .border-bottom;
+  background:#fff;
+  .duanwu-list-main{
+    width:94%;
+    margin:0 auto;
+    .duanwu-list-left{
+      width:30%;
+      display: table-cell;
+      vertical-align: middle;
+        img{
+          width:84%;
+          height:auto;
+          padding:15px 0;
+        }
+    }
+    .duanwu-list-center{
+      width:58%;
+      margin:20px 3%;
+      display: table-cell;
+      vertical-align: middle;
+       h2{
+        font-size:@base-fsize + 1;
+        margin-bottom: 5px;
+      }
+      p{
+        line-height:20px;
+      }
+    }
+  .duanwu-list-right{
+      width:6%;
+      display: table-cell;
+      vertical-align: middle;
+      text-align:right;
+      img{
+        width:8px;
+        height:auto;
+      }
+    }
+    
+  }
+}
+//端午详情页
+.duanwu-detail{
+  width:100%;
+  margin-top:56px;
+  .duanwu-detail-main.no-textindent{
+    p{
+      text-indent:0;
+    }
+  }
+    .duanwu-detail-main{
+      width:94%;
+      margin:0 auto 50px;
+    span{
+      text-align:center;
+      display:inline-block;
+    }
+    h3{
+      margin:12px 0 5px 0;
+      font-size:@base-fsize + 2;
+    }
+    p{
+      line-height:20px;
+      font-size:@base-fsize + 2;
+      text-indent:2em;
+      margin-top:8px;
+    }
+    img{
+      width:100%;
+      margin:12px 0;
+    }
+    .dw-ban{
+      img{
+        width:47%;
+      }
+    }
+  }
+}
+
+
+
+
+//摇钱树活动
+.body-money-tree{
+    position:relative;
+    background: #20124b url(../images/moon-bg.png) no-repeat top center;
+    background-size: 100% auto;
+    //section{
+    //  padding-top: 6.9%;
+    //}
+  .font-zd{
+    color:#fed23b;
+    font-size: 14px;
+  }
+    .money-tree-top{
+        color:#fff;
+        p.tree-top-center{
+            text-align: center;
+            margin-top: 5%;
+            span{
+                &:first-child{
+                    display: inline-block;
+                }
+                &:last-child{
+                    color:#e8983c;
+                }
+            }
+        }
+        p.tree-top-right{
+            position: absolute;
+            right: 3%;
+            top: 0;
+            span{
+                &:first-child{
+                    display: inline-block;
+                }
+                &:last-child{
+                    color:#e8983c;
+                }
+            }
+        }
+    }
+    //中间的月饼树
+    .money-tree-centertree{
+      //margin-bottom: 42%;
+      position: relative;
+      width: 100%;
+      //摇一摇
+      .yaoyiyao-dongh{
+        animation: yyy-dongh 0.5s infinite;
+        -webkit-animation: yyy-dongh 0.5s infinite;
+        -moz-animation: yyy-dongh 0.5s infinite;
+        -ms-animation: yyy-dongh 0.5s infinite;
+        -o-animation: yyy-dongh 0.5s infinite;
+      }
+      .moon-tree{
+        border-radius: 10000px;
+        left: -1%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 120% 0 0;
+        position: relative;
+        width: 100%;
+        //闪动
+        .starshine{
+          animation-name: shine-dongh;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-play-state: running;
+          /* Safari and Chrome: */
+          -webkit-animation-name: shine-dongh;
+          -webkit-animation-duration: 2s;
+          -webkit-animation-timing-function: linear;
+          -webkit-animation-delay: 0s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-direction: alternate;
+          -webkit-animation-play-state: running;
+        }
+        .shine1{
+          animation-name: shine-dongh;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-play-state: running;
+          /* Safari and Chrome: */
+          -webkit-animation-name: shine-dongh;
+          -webkit-animation-duration: 2s;
+          -webkit-animation-timing-function: linear;
+          -webkit-animation-delay: 0s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-direction: alternate;
+          -webkit-animation-play-state: running;
+        }
+        .shine2{
+          animation-name: shine-dongh;
+          animation-duration: 1.5s;
+          animation-timing-function: linear;
+          animation-delay: 0.5s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-play-state: running;
+          /* Safari and Chrome: */
+          -webkit-animation-name: shine-dongh;
+          -webkit-animation-duration: 1.5s;
+          -webkit-animation-timing-function: linear;
+          -webkit-animation-delay: 0.5s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-direction: alternate;
+          -webkit-animation-play-state: running;
+        }
+        .shine3{
+          animation-name: shine-dongh;
+          animation-duration: 1.2s;
+          animation-timing-function: linear;
+          animation-delay: 1s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-play-state: running;
+          /* Safari and Chrome: */
+          -webkit-animation-name: shine-dongh;
+          -webkit-animation-duration: 1.2s;
+          -webkit-animation-timing-function: linear;
+          -webkit-animation-delay: 1s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-direction: alternate;
+          -webkit-animation-play-state: running;
+        }
+        .shine4{
+          animation-name: shine-dongh;
+          animation-duration: 1s;
+          animation-timing-function: linear;
+          animation-delay: 1.5s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-play-state: running;
+          /* Safari and Chrome: */
+          -webkit-animation-name: shine-dongh;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-timing-function: linear;
+          -webkit-animation-delay: 1.5s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-direction: alternate;
+          -webkit-animation-play-state: running;
+        }
+        .shine5{
+          animation-name: shine-dongh;
+          animation-duration: 0.8s;
+          animation-timing-function: linear;
+          animation-delay: 2s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-play-state: running;
+          /* Safari and Chrome: */
+          -webkit-animation-name: shine-dongh;
+          -webkit-animation-duration: 0.8s;
+          -webkit-animation-timing-function: linear;
+          -webkit-animation-delay: 2s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-direction: alternate;
+          -webkit-animation-play-state: running;
+        }
+        img{
+          height: auto;
+          left: 50%;
+          margin-left: -39%;
+          position: absolute;
+          top: 27%;
+          width: 80%;
+        }
+        .none{
+          display: none;
+        }
+      }
+    }
+
+    //中间的日期
+    .money-tree-centerdate{
+        //padding-top: 120%;
+        text-align: center;
+        p{
+            text-align: center;
+            color: #fff;
+            &:nth-child(2){
+                padding:8px 0 12px 0;
+            }
+        }
+      .total_times{
+        color:#fed23b;
+        font-size: 24px;
+      }
+        img{
+            width:130px;
+        }
+      .yyy-button{
+        animation-name: yyy-dongh;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-play-state: running;
+        /* Safari and Chrome: */
+        -webkit-animation-name: yyy-dongh;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: normal;
+        -webkit-animation-play-state: running;
+      }
+    }
+}
+
+//底部的注意事项
+    .money-tree-bottomnotice{
+        padding-top: 8%;
+        ul.tree-bottomnotice-tab{
+            display: block;
+            width:96%;
+            margin:0 auto;
+            li.tab-checked{
+                background: #f483b5;
+                color: #fff;
+            }
+            li{
+                display: inline-block;
+                text-align: center;
+                width:19.47%;
+                height: 36px;
+                line-height: 36px;
+                background: #fff;
+                color:#f94153;
+                font-size: 13px;
+                border-top-left-radius:5px;
+                border-top-right-radius:5px;
+                margin-left: 4.43%;
+              //&:nth-child(1){
+              //  margin-left: 4.4%;
+              //}
+              //  &:nth-child(2){
+              //      margin-left: 4.4%;
+              //  }
+              //&:nth-child(3){
+              //  margin-left: 4.4%;
+              //}
+              //&:nth-child(4){
+              //  margin-left: 4.4%;
+              //}
+            }
+        }
+        .tree-bottomnotice-list{
+            background: #f483b5;
+            padding:20px 14px;
+            h3{
+                font-weight: normal;
+                font-size: 13px;
+            }
+            p{
+                font-size: 12px;
+                text-indent: 2em;
+                line-height: 20px;
+            }
+        }
+        .tree-bottomnotice-list.bottomnotice-listgift{
+            padding-bottom: 65px;
+            h3{
+                padding-bottom: 15px;
+            }
+            p{
+                padding-bottom: 10px;
+            }
+        }
+        .tree-bottomnotice-list.bottomnotice-listniu{
+            p{
+                width: auto;
+                text-indent: 1em;
+                span{
+                    display: inline-block;
+                    margin-right: 5px;
+                    width: auto;
+                }
+            }
+        }
+      .tree-bottomnotice-list.bottomnotice-listgift{
+        img{
+          width: 64px;
+          border-radius: 3px;
+        }
+      }
+    }
+
+//种了月饼的弹窗
+.money-tree-alert,.alert-nochance{
+    position: fixed;
+    top:50%;
+    margin-top:-175px;
+    margin-left: -145px;
+    left:50%;
+    width:290px;
+    height:350px;
+    background: url(../images/money-yuebing-bg.png) no-repeat center center;
+    background-size: 290px 350px;
+    text-align: center;
+    .tree-close{
+        width:40px;
+        height:40px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        img{
+            width: 20px;
+            margin-top:14px;
+        }
+    }
+    p.money-tree-num{
+        width: 4em;
+        text-align: right;
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        font-size: 24px;
+        color: #fed23b;
+    }
+    p.money-tree-times{
+      width: 4em;
+      text-align: right;
+      position: absolute;
+      left: 25.5%;
+      top: 60.8%;
+      font-size: 24px;
+      color: #fed23b;
+    }
+    .money-tree-bombtn{
+        width:232px;
+        margin: 0 auto 0;
+        position: absolute;
+        bottom: 15px;
+        left: 29px;
+        a{
+            display: inline-block;
+            width:109px;
+            height:44px;
+            line-height: 44px;
+            border-radius:20px;
+            font-size: 15px;
+            color:#934d0e;
+            background: #fed23b;
+        }
+        a.right{
+            color:#fff;
+            background: #39a7de;
+        }
+        a.only-btn{
+            width:130px;
+        }
+    }
+}
+//机会用光弹窗
+.alert-nochance{
+    background: url(../images/moneytree-nochance.png) no-repeat center center;
+    .nochance-text{
+        width:100%;
+        padding: 34px 25px 0 30px;
+        text-align: left;
+        p{
+            width: 240px;
+            font-size: 19px;
+            color:white;
+            line-height: 28px;
+        }
+    }
+}
+
+
+@keyframes shine-dongh {
+  0% {filter:alpha(opacity=100); -moz-opacity:1; -khtml-opacity: 1; opacity: 1;}
+  25% {filter:alpha(opacity=90); -moz-opacity:0.90; -khtml-opacity: 0.90; opacity: 0.90;}
+  50% {filter:alpha(opacity=75); -moz-opacity:0.75; -khtml-opacity: 0.75; opacity: 0.75;}
+  75% {filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;}
+  100% {filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity: 0; opacity: 0;}
+}
+@-webkit-keyframes shine-dongh {
+  0% {filter:alpha(opacity=100); -moz-opacity:1; -khtml-opacity: 1; opacity: 1;}
+  25% {filter:alpha(opacity=90); -moz-opacity:0.90; -khtml-opacity: 0.90; opacity: 0.90;}
+  50% {filter:alpha(opacity=75); -moz-opacity:0.75; -khtml-opacity: 0.75; opacity: 0.75;}
+  75% {filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;}
+  100% {filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity: 0; opacity: 0;}
+}
+@-moz-keyframes shine-dongh {
+  0% {filter:alpha(opacity=100); -moz-opacity:1; -khtml-opacity: 1; opacity: 1;}
+  25% {filter:alpha(opacity=90); -moz-opacity:0.90; -khtml-opacity: 0.90; opacity: 0.90;}
+  50% {filter:alpha(opacity=75); -moz-opacity:0.75; -khtml-opacity: 0.75; opacity: 0.75;}
+  75% {filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;}
+  100% {filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity: 0; opacity: 0;}
+}
+@-ms-keyframes shine-dongh {
+  0% {filter:alpha(opacity=100); -moz-opacity:1; -khtml-opacity: 1; opacity: 1;}
+  25% {filter:alpha(opacity=90); -moz-opacity:0.90; -khtml-opacity: 0.90; opacity: 0.90;}
+  50% {filter:alpha(opacity=75); -moz-opacity:0.75; -khtml-opacity: 0.75; opacity: 0.75;}
+  75% {filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;}
+  100% {filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity: 0; opacity: 0;}
+}
+
+
+//国庆活动
+ .money-tree-bottomnotice.tenactive-notice{
+        padding-top: 8%;
+        ul.tree-bottomnotice-tab{
+            display: block;
+            width:96%;
+            margin:0 auto;
+            li.tab-checked{
+                background: #92d247;
+                color: #fff;
+            }
+            li{
+                display: inline-block;
+                text-align: center;
+                width:19.47%;
+                height: 36px;
+                line-height: 36px;
+                background: #fff;
+                color:#4d8727;
+                font-size: 13px;
+                border-top-left-radius:5px;
+                border-top-right-radius:5px;
+                margin-left: 4.43%;
+              //&:nth-child(1){
+              //  margin-left: 4.4%;
+              //}
+              //  &:nth-child(2){
+              //      margin-left: 4.4%;
+              //  }
+              //&:nth-child(3){
+              //  margin-left: 4.4%;
+              //}
+              //&:nth-child(4){
+              //  margin-left: 4.4%;
+              //}
+            }
+        }
+        .tree-bottomnotice-list{
+            background: #92d247;
+            padding:20px 14px;
+            h3{
+                font-weight: normal;
+                font-size: 13px;
+            }
+            p{
+                font-size: 12px;
+                text-indent: 2em;
+                line-height: 20px;
+            }
+        }
+        .tree-bottomnotice-list.bottomnotice-listgift{
+            padding-bottom: 65px;
+            h3{
+                padding-bottom: 15px;
+            }
+            p{
+                padding-bottom: 10px;
+            }
+        }
+        .tree-bottomnotice-list.bottomnotice-listniu{
+            p{
+                width: auto;
+                text-indent: 1em;
+                span{
+                    display: inline-block;
+                    margin-right: 5px;
+                    width: auto;
+                }
+            }
+        }
+      .tree-bottomnotice-list.bottomnotice-listgift{
+        img{
+          width: 64px;
+          border-radius: 3px;
+        }
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

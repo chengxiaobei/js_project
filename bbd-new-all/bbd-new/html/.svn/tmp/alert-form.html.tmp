@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="../css/style.css" rel="stylesheet"/>
+		<link href="../css/public.css" rel="stylesheet" />
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				$("#close").click(function(){
+					window.history.go(-1);
+				})
+
+			}
+		</script>
+	</head>
+	<body>
+	<div class="mask">
+		<div class="form-body">
+		<div class="form-wrap">
+			<div class="form-input">
+				<form>
+					<p>请留下您的需求</p>
+					<span>稍后会有相关领域咨询与专家与您联系！</span>
+					<ul>
+						<li><input type="text" placeholder="称呼" /><p><a></a>请输入姓名</p></li>
+						<li><input type="text" placeholder="公司" /></li>
+						<li><input type="text" placeholder="Email" /></li>
+						<li><input type="text" placeholder="电话" /></li>
+						<textarea>需求简述</textarea><p><a></a>请输入需求描述</p>
+					</ul>
+				</form>
+				<div class="form-contact"><a href="#">与我联系</a></div>
+				<div class="form-footer">
+					<p>佰邦达不会将您在本网页留下的信息交转给第三方作为销售推广只用。<a href="#">隐私条款</a>和<a href="#">安全声明</a>。</p>
+				</div>
+			</div>
+			<div class="form-ad">
+				<span>佰邦达科技</span>
+				<p>专业的互联网+转型升级解决方案提供商协助您的企业无痛升级</p>
+				<p>服务热线：400-8888-8888</p>
+			</div>
+			<a href="#" id="close"></a>
+		</div>
+		</div>
+	</div>
+      <!--第一块-->
+      <div class="about04-first">
+          <div class="about04-img">
+              <img src="../images/bbd-fuwuimg.png" />
+              <div class="about04-seconddaohang">
+                  <ul>
+                  <!-- 选中的蓝色字体使用类daohangchoosed -->
+                      <li class="daohangchoosed"><a href="#">公司文化</a></li>
+                      <li><a href="#">发展历程</a></li>
+                      <li><a href="#">行业地位</a></li>
+                      <li><a href="#">部分客户</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <!--第二块-->
+      <div class="bbdtwo-linetwo">
+        <div class="bbdtwo-linetwo-main">
+          <div class="bbdtwo-linetwo-text">
+            <h3>2013</h3>
+            <p>佰邦达科技(天津)有限公司成立于2013年12月，国际知名VC投资，致力于成为业内最大的传统企业互联网＋升级改
+造云服务商，通过互联网和云计算助力企业成功。</p>
+          </div>
+          <div class="bbdtwo-linetwo-text">
+            <h3>2014</h3>
+            <p>在航空业取得突破，至今已成功为国内外20多家航空公司提供云计算解决方案，包括海南航空，香港航空等。</p>
+          </div>
+          <div class="bbdtwo-linetwo-text">
+            <h3>2015</h3>
+            <p>将服务延伸到天津地区的更多传统行业，包括医疗、农业、生产制造、美妆、办公、政府等行业的上市公司及大中
+小型企业。</p>
+          </div>
+          <div class="bbdtwo-linetwo-text">
+            <h3>2016</h3>
+            <p>持技术创新，通过一流的软件技术与解决方案，塑造品牌形象，借助互联网新时代发展趋势，不断强化自己，与
+伙伴公司共创美好未来。</p>
+          </div>
+        </div>
+      </div>
+      <!--核心产品第五行-->
+      <div class="hx-linefive">
+        <div class="hx-linefive-main">
+          <div class="left hx-linefive-lefttext">
+            <p>如果您对我们的产品和服务感兴趣，</p>
+            <p>如果您准备做些不同的惊人的决定，</p>
+            <p>我们的销售代表很愿意为您提供一些有用的信息。</p>
+            <div class="hx-linefive-btn">
+              <a class="hx-linefive-leftbtn">在线咨询</a>
+              <a class="hx-linefive-rightbtn">预约面谈</a>
+              <div class="clearf"></div>
+            </div>
+            <div class="hx-linefive-bottomtext">
+              <p>您也可以直接致电佰邦达服务电话：400-8888-88888</p>
+              <p>销售代表期待为您解答任何问题。</p>
+            </div>
+          </div>
+          <div class="right hx-linefive-right">
+            <img src="../images/diqiu.png">
+          </div>
+        </div>
+      </div>
+	</body>
+</html>
