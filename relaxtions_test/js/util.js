@@ -37,6 +37,7 @@ var store = {
 		storageUtil.set(currUsersKey,user,"session");
 		return storageUtil.get(usersKey);
 	},
+	// updatepw:function()
 }
 store._init();
 // 配置模拟数据

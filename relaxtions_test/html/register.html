@@ -51,33 +51,33 @@
 	<script src="../js/datastore-test.js"></script>
 	<script src="../js/util.js"></script>
 	<script type="text/javascript">
-	$("#submit").click(function(){
-		var Phone=$("#phonenumber").val();
-		var identify=$("#identify").val()
-		var Password=$("#password").val();
-		var confirmPass1=$("#confirm").val();
-		if(checkPhone(Phone)&&checkidencode(identify)&&checkpassword(Password)&&checkpassword(confirmPass1)&&confirmPass(Password,confirmPass1)){
-			var userList=storageUtil.get(store.key.users);
-			for(var i=0;i<=userList.length-1;i++){
-				// 判断手机号是否注册
-				if(Phone==userList[i].phone){
-					alert("该手机号已注册");
-					return;
+		$("#submit").click(function(){
+			var Phone=$("#phonenumber").val();
+			var identify=$("#identify").val()
+			var Password=$("#password").val();
+			var confirmPass1=$("#confirm").val();
+			if(checkPhone(Phone)&&checkidencode(identify)&&checkpassword(Password)&&checkpassword(confirmPass1)&&confirmPass(Password,confirmPass1)){
+				var userList=storageUtil.get(store.key.users);
+				for(var i=0;i<=userList.length-1;i++){
+					// 判断手机号是否注册
+					if(Phone==userList[i].phone){
+						alert("该手机号已注册");
+						return;
+					}
 				}
-			}
-			window.location.href="./login.html";
-			store.adduser({
-			id:5,
-			phone:Phone,
-			name:'baoxd',
-			password:Password,
-			image:'../image/2.jpg',
-			county:'河南省开封市',
-			email:'3467404721@qq.com'
-			});
-		}	
-		
-	})
+				window.location.href="./login.html";
+				store.adduser({
+				id:5,
+				phone:Phone,
+				name:'baoxd',
+				password:Password,
+				image:'../image/2.jpg',
+				county:'河南省开封市',
+				email:'3467404721@qq.com'
+				});
+			}	
+			
+		})
 
 	</script>
 </body>
