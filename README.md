@@ -1,2 +1,5 @@
 # js_project
-html,css,js,boostrap
+
+boostrap_test2为最初学习boostrap时练习的内容
+boostrap_test1为用boostrap编写的页面
+relaxtion_test为 bootstrap+js编写的一个网站，待优化
