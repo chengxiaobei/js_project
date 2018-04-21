@@ -1,0 +1,7 @@
+2018-03-21 21:40:28,237-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-21 21:40:28,239-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-21 21:40:34,631-BrowserEngine-INFO-starting firefox browser.
+2018-03-21 21:40:35,325-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-21 21:40:38,839-BrowserEngine-INFO-Maximize the current window
+2018-03-21 21:40:38,851-BrowserEngine-INFO-Set implicitly wait 10 seconds.
+2018-03-21 21:40:38,910-BasePage-INFO-Had find the element '  ' successfulby id via vuale: kw

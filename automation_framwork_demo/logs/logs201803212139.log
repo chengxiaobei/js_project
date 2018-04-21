@@ -1,0 +1,6 @@
+2018-03-21 21:39:34,494-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-21 21:39:34,494-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-21 21:39:40,921-BrowserEngine-INFO-starting firefox browser.
+2018-03-21 21:39:41,443-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-21 21:39:44,959-BrowserEngine-INFO-Maximize the current window
+2018-03-21 21:39:44,970-BrowserEngine-INFO-Set implicitly wait 10 seconds.

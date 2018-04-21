@@ -1,0 +1,12 @@
+2018-03-22 11:09:43,009-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-22 11:09:43,009-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-22 11:09:48,187-BrowserEngine-INFO-starting firefox browser.
+2018-03-22 11:09:49,214-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-22 11:09:52,872-BrowserEngine-INFO-Maximize the current window
+2018-03-22 11:09:52,875-BrowserEngine-INFO-Set implicitly wait 10 seconds.
+2018-03-22 11:09:52,891-BasePage-INFO-Had find the element '  ' successfulby id via vuale: kw
+2018-03-22 11:09:52,960-BasePage-INFO-Had type 'selenium' in inputBox
+2018-03-22 11:09:54,976-BasePage-INFO-Had find the element '' successfulby xpath via value: //*[@id='su']
+2018-03-22 11:09:55,220-BasePage-INFO-The element '' was clicked.
+2018-03-22 11:09:57,321-BasePage-INFO-Had take screenshot and save to folder:/screenshots
+2018-03-22 11:09:57,323-BasePage-INFO-current page title is selenium_百度搜索

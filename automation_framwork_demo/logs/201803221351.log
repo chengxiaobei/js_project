@@ -1,0 +1,7 @@
+2018-03-22 13:51:32,282-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-22 13:51:32,282-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-22 13:51:37,440-BrowserEngine-INFO-starting firefox browser.
+2018-03-22 13:51:40,053-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-22 13:51:43,562-BrowserEngine-INFO-Maximize the current window
+2018-03-22 13:51:43,565-BrowserEngine-INFO-Set implicitly wait 10 seconds.
+2018-03-22 13:51:43,579-BasePage-INFO-Had find the element '新闻' successfulby xpath via value: //*[@id='u1']/a[1]

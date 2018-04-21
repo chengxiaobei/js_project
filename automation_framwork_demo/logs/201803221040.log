@@ -1,0 +1,23 @@
+2018-03-22 10:40:09,367-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-22 10:40:09,367-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-22 10:40:14,582-BrowserEngine-INFO-starting firefox browser.
+2018-03-22 10:40:17,733-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-22 10:40:21,252-BrowserEngine-INFO-Maximize the current window
+2018-03-22 10:40:21,267-BrowserEngine-INFO-Set implicitly wait 10 seconds.
+2018-03-22 10:40:21,283-BasePage-INFO-Had find the element '  ' successfulby id via vuale: kw
+2018-03-22 10:40:21,354-BasePage-INFO-Had type 'selenium' in inputBox
+2018-03-22 10:40:23,368-BasePage-INFO-Had find the element '' successfulby xpath via value: //*[@id='su']
+2018-03-22 10:40:23,609-BasePage-INFO-The element '' was clicked.
+2018-03-22 10:40:25,720-BasePage-INFO-Had take screenshot and save to folder:/screenshots
+2018-03-22 10:40:25,723-BasePage-INFO-current page title is selenium_百度搜索
+2018-03-22 10:40:25,980-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-22 10:40:25,980-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-22 10:40:31,164-BrowserEngine-INFO-starting firefox browser.
+2018-03-22 10:40:34,502-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-22 10:40:36,013-BrowserEngine-INFO-Maximize the current window
+2018-03-22 10:40:36,013-BrowserEngine-INFO-Set implicitly wait 10 seconds.
+2018-03-22 10:40:36,029-BasePage-INFO-Had find the element '  ' successfulby id via vuale: kw
+2018-03-22 10:40:36,105-BasePage-INFO-Had type 'python' in inputBox
+2018-03-22 10:40:36,121-BasePage-INFO-Had find the element '' successfulby xpath via value: //*[@id='su']
+2018-03-22 10:40:37,226-BasePage-INFO-The element '' was clicked.
+2018-03-22 10:40:39,290-BasePage-INFO-Had take screenshot and save to folder:/screenshots

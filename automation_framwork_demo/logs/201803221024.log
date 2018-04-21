@@ -1,0 +1,33 @@
+2018-03-22 10:24:25,213-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-22 10:24:25,213-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-22 10:24:30,375-BrowserEngine-INFO-starting firefox browser.
+2018-03-22 10:24:36,914-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-22 10:24:40,450-BrowserEngine-INFO-Maximize the current window
+2018-03-22 10:24:40,450-BrowserEngine-INFO-Set implicitly wait 10 seconds.
+2018-03-22 10:24:40,466-BasePage-INFO-Had find the element '  ' successfulby id via vuale: kw
+2018-03-22 10:24:40,538-BasePage-INFO-Had type 'selenium' in inputBox
+2018-03-22 10:24:40,553-BasePage-INFO-Had find the element '' successfulby xpath via value: //*[@id='su']
+2018-03-22 10:24:40,786-BasePage-INFO-The element '' was clicked.
+2018-03-22 10:24:42,982-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-22 10:24:42,982-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-22 10:24:48,176-BrowserEngine-INFO-starting firefox browser.
+2018-03-22 10:24:53,627-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-22 10:24:57,153-BrowserEngine-INFO-Maximize the current window
+2018-03-22 10:24:57,155-BrowserEngine-INFO-Set implicitly wait 10 seconds.
+2018-03-22 10:24:57,160-BasePage-INFO-Had find the element '  ' successfulby id via vuale: kw
+2018-03-22 10:24:57,233-BasePage-INFO-Had type 'python' in inputBox
+2018-03-22 10:24:57,252-BasePage-INFO-Had find the element '' successfulby xpath via value: //*[@id='su']
+2018-03-22 10:24:57,480-BasePage-INFO-The element '' was clicked.
+2018-03-22 10:24:58,105-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-22 10:24:58,105-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-22 10:24:59,543-BasePage-INFO-Had take screenshot and save to folder:/screenshots
+2018-03-22 10:25:02,799-BrowserEngine-INFO-starting firefox browser.
+2018-03-22 10:25:07,331-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-22 10:25:08,996-BrowserEngine-INFO-Maximize the current window
+2018-03-22 10:25:09,000-BrowserEngine-INFO-Set implicitly wait 10 seconds.
+2018-03-22 10:25:09,016-BasePage-INFO-Had find the element '  ' successfulby id via vuale: kw
+2018-03-22 10:25:09,086-BasePage-INFO-Had type 'selenium' in inputBox
+2018-03-22 10:25:09,099-BasePage-INFO-Had find the element '' successfulby xpath via value: //*[@id='su']
+2018-03-22 10:25:10,196-BasePage-INFO-The element '' was clicked.
+2018-03-22 10:25:12,263-BasePage-INFO-Had take screenshot and save to folder:/screenshots
+2018-03-22 10:25:12,266-BasePage-INFO-current page title is 百度一下，你就知道

@@ -1,0 +1,37 @@
+1523524659722	geckodriver	INFO	geckodriver 0.19.1
+1523524659728	geckodriver	INFO	Listening on 127.0.0.1:51137
+1523524662799	mozrunner::runner	INFO	Running command: "D:\\install\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\85867\\AppData\\Local\\Temp\\rust_mozprofile.OYA8CVgYlqfi"
+Unable to read VR Path Registry from C:\Users\85867\AppData\Local\openvr\openvrpaths.vrpath
+1523524663377	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\85867\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\85867\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\85867\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\85867\AppData\Local\openvr\openvrpaths.vrpath
+1523524664897	Marionette	INFO	Listening on port 51155
+[Child 44624, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9392, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9392, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[Parent 50240, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/commo[Parent 44132, Gecko_IOThread] WARNING: pipe error: 10
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+[Child 45624, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 45624, Chrome[GPU 47936, Chrome_ChildT[GPU 46092, Chrome_ChildThread] WARNING: pi
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+csor=3&pwd=py&cb=jQuery110205303736744595847_1522469469845&_=1522469469858, line 1: TypeError: jQuery110205303736744595847_1522469469845 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=pytho&json=1&p=3&sid=1439_21124_20929&req=2&bs=selenium&pbs=selenium&csor=5&pwd=pyth&cb=jQuery110205303736744595847_1522469469845&_=1522469469860, line 1: TypeError: jQuery110205303736744595847_1522469469845 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=python&json=1&p=3&sid=1439_21124_20929&req=2&bs=selenium&pbs=selenium&csor=6&pwd=pytho&cb=jQuery110205303736744595847_1522469469845&_=1522469469861, line 1: TypeError: jQuery110205303736744595847_1522469469845 is not a function
+[Parent 53168, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+l_win.cc, line 346
+.cc, line 346
+[Child 17372, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+e 1: TypeError: jQuery110203039684399247412_1521687343629 is not a function
+[Child 17444, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+RNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346

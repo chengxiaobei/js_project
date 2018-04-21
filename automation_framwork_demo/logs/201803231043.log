@@ -1,0 +1,31 @@
+2018-03-23 10:43:20,193-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-23 10:43:20,193-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-23 10:43:25,341-BrowserEngine-INFO-starting firefox browser.
+2018-03-23 10:43:27,849-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-23 10:43:31,354-BrowserEngine-INFO-Maximize the current window
+2018-03-23 10:43:31,357-BrowserEngine-INFO-Set implicitly wait 10 seconds.
+2018-03-23 10:43:31,371-BasePage-INFO-Had find the element '  ' successfulby id via vuale: kw
+2018-03-23 10:43:31,443-BasePage-INFO-Had type 'selenium' in inputBox
+2018-03-23 10:43:33,459-BasePage-INFO-Had find the element '' successfulby xpath via value: //*[@id='su']
+2018-03-23 10:43:33,697-BasePage-INFO-The element '' was clicked.
+2018-03-23 10:43:35,799-BasePage-INFO-Had take screenshot and save to folder:/screenshots
+2018-03-23 10:43:35,802-BasePage-INFO-current page title is selenium_百度搜索
+2018-03-23 10:43:35,815-BasePage-INFO-Had find the element '  ' successfulby id via vuale: kw
+2018-03-23 10:43:35,871-BasePage-INFO-Had type 'python' in inputBox
+2018-03-23 10:43:35,884-BasePage-INFO-Had find the element '' successfulby xpath via value: //*[@id='su']
+2018-03-23 10:43:36,115-BasePage-INFO-The element '' was clicked.
+2018-03-23 10:43:38,194-BasePage-INFO-Had take screenshot and save to folder:/screenshots
+2018-03-23 10:43:38,489-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-23 10:43:38,489-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-23 10:43:43,628-BrowserEngine-INFO-starting firefox browser.
+2018-03-23 10:43:46,226-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-23 10:43:49,736-BrowserEngine-INFO-Maximize the current window
+2018-03-23 10:43:49,740-BrowserEngine-INFO-Set implicitly wait 10 seconds.
+2018-03-23 10:43:49,743-BasePage-INFO-current page title is 百度一下，你就知道
+2018-03-23 10:43:49,999-BrowserEngine-INFO-You had select Firefox browser.
+2018-03-23 10:43:50,000-BrowserEngine-INFO-The test server url is: https://www.baidu.com
+2018-03-23 10:43:55,144-BrowserEngine-INFO-starting firefox browser.
+2018-03-23 10:43:58,125-BrowserEngine-INFO-open url:https://www.baidu.com
+2018-03-23 10:44:01,631-BrowserEngine-INFO-Maximize the current window
+2018-03-23 10:44:01,635-BrowserEngine-INFO-Set implicitly wait 10 seconds.
+2018-03-23 10:44:06,779-BasePage-INFO-Had take screenshot and save to folder:/screenshots
